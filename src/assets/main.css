@@ -1,0 +1,337 @@
+/* ----------------- MODE CLAIR ----------------- */
+:root {
+  --primary-color: #007bff;
+  --hover-bg-color: rgba(0, 0, 0, 0.05);
+  --sidebar-bg-color: #ebebeb;
+  --text-color: #333;
+  --button-bg-color: #171717;
+  --button-hover-color: #0c66ed;
+  --border-radius: 0.6rem;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --bar-gradient: linear-gradient(90deg, transparent, var(--primary-color));
+}
+
+/* ----------------- MODE SOMBRE ----------------- */
+.dark-mode {
+  --primary-color: #ff0a0a;
+  --hover-bg-color: rgba(255, 255, 255, 0.1);
+  --sidebar-bg-color: #121212;
+  --text-color: #e0e0e0;
+  --button-bg-color: #333;
+  --button-hover-color: #ff1e1e;
+  --box-shadow: rgba(255, 255, 255, 0.1);
+  --bar-gradient: linear-gradient(90deg, transparent, var(--primary-color));
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: var(--sidebar-bg-color);
+  color: var(--text-color);
+  height: 100%;
+  /* Nécessaire pour le positionnement fixe */
+  overflow: hidden;
+  /* Empêche le défilement global */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+
+}
+
+.degree-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+
+
+
+/*------------------------------
+Style des référence 
+--------------------------------*/
+
+.carrousel-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 95%;
+    
+}
+
+.carrousel {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    gap: 30px;  /* Espacement entre les éléments */
+    width: 80%;
+    
+}
+
+.container-references {
+    flex: 0 0 calc(100%/3 - 30px);  /* Largeur fixe pour 3 par ligne */
+    box-shadow: 0 8px 16px var(--box-shadow);
+    background-color: var(--sidebar-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+    margin: 10px 0;
+}
+
+.profil-reference {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.container-references img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/* Flèches de navigation */
+.nav-button {
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.nav-button:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.nav-button.right {
+    right: 10px;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .container-references {
+        flex: 0 0 calc(50% - 30px);  /* 2 éléments par ligne sur tablette */
+    }
+}
+
+@media (max-width: 600px) {
+    .container-references {
+        flex: 0 0 100%;  /* 1 élément visible sur mobile */
+    }
+
+    .nav-button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+/* ----------------- BOUTON PDF ANIMÉ ----------------- */
+.cv-container {
+
+  text-align: center;
+  margin: 30px 0;
+}
+
+#pdf-button {
+  position: relative;
+  font-family: inherit;
+  font-size: 1vw;
+  border-radius: 40em;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  background-color: var(--button-bg-color);
+  padding: 1em 2em;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Cercles animés */
+#pdf-button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: var(--button-hover-color);
+  border-radius: 50%;
+  transition: 0.6s ease, opacity 0.6s ease;
+}
+
+#pdf-button span:nth-child(6) {
+  position: relative;
+}
+
+/* Position initiale des cercles */
+#pdf-button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+#pdf-button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+#pdf-button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+#pdf-button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+#pdf-button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+/* Animation lors du survol */
+#pdf-button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  opacity: 1;
+}
+
+
+
+/* Styles pour le bouton close-details */
+.close-details {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--hover-bg-color);
+  border-radius: var(--border-radius);
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: var(--sidebar-bg-color);
+  color: var(--text-color);
+}
+.bottone1 {
+  width: 100%;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: var(--border-radius);
+  background: var(--primary-color);
+  /* Utilise la couleur principale */
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  /* Texte blanc pour un meilleur contraste */
+}
+
+.bottone1:hover {
+  box-shadow: 7px 5px 56px -14px var(--button-hover-color);
+  /* Couleur survol */
+}
+
+.bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px var(--button-hover-color);
+  /* Couleur sur clic */
+}
+
+.close-details>svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.close-details:hover>svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.close-details:hover {
+  box-shadow: 9px 9px 33px var(--box-shadow), -9px -9px 33px var(--hover-bg-color);
+  transform: translateY(-2px);
+}
+
+.couleurIcone .svg-border {
+  stroke: var(--text-color);
+  /* Changez cette couleur pour la bordure */
+  stroke-width: 1;
+  /* Ajustez l'épaisseur de la bordure */
+}
+
+/* --------Taille des test pour les différesntes parties : */
+
+.text-base{
+  font-size: 1.1vw;
+}
+
+.group-skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.projet-container {
+  background-color: var(--sidebar-bg-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--box-shadow);
+}
+
+.content-custom,
+.border-primary-color {
+  background-color: var(--hover-bg-color);
+  border-right: 4px solid var(--primary-color);
+  border-left: 4px solid #0ea5e9;
+  padding: 15px;
+  border-radius: 8px;
+  color: var(--text-color);
+}
