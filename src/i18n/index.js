@@ -100,6 +100,7 @@ const messages = {
         azure: 'Azure',
         azure_devops: 'Azure DevOps',
         git: 'Git',
+        typescript: 'TypeScript',
         //#endregion 
 
         //#region Language 
@@ -407,6 +408,7 @@ const messages = {
         azure: 'Azure',
         azure_devops: 'Azure DevOps',
         git: 'Git',
+        typescript: 'TypeScript',
         //#endregion 
 
         //#region Language 
@@ -708,6 +710,9 @@ const messages = {
         azure: 'Azure',
         azure_devops: 'Azure DevOps',
         git: 'Git',
+        typescript: 'TypeScript',
+        springboot:'Spring Boot',
+        java:'java',
         //#endregion 
 
         //#region Language 

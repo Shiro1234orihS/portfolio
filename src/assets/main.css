@@ -48,9 +48,25 @@ html {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
 
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-color), #4f46e5);
+  border-radius: 2px;
 }
 
 .degree-title {
@@ -66,95 +82,99 @@ Style des référence
 --------------------------------*/
 
 .carrousel-wrapper {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    width: 95%;
-    
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 95%;
+
 }
 
 .carrousel {
-    display: flex;
-    transition: transform 0.7s ease-in-out;
-    gap: 30px;  /* Espacement entre les éléments */
-    width: 80%;
-    
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  gap: 30px;
+  /* Espacement entre les éléments */
+  width: 80%;
+
 }
 
 .container-references {
-    flex: 0 0 calc(100%/3 - 30px);  /* Largeur fixe pour 3 par ligne */
-    box-shadow: 0 8px 16px var(--box-shadow);
-    background-color: var(--sidebar-bg-color);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    transition: transform 0.3s ease;
-    margin: 10px 0;
+  flex: 0 0 calc(100%/3 - 30px);
+  /* Largeur fixe pour 3 par ligne */
+  box-shadow: 0 8px 16px var(--box-shadow);
+  background-color: var(--sidebar-bg-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+  margin: 10px 0;
 }
 
 .profil-reference {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
 }
 
 .container-references img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 
 /* Flèches de navigation */
 .nav-button {
-    background-color: var(--button-bg-color);
-    color: white;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    transition: background-color 0.3s ease;
+  background-color: var(--button-bg-color);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-    background-color: var(--button-hover-color);
+  background-color: var(--button-hover-color);
 }
 
 .nav-button:disabled {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 
 .nav-button.right {
-    right: 10px;
+  right: 10px;
 }
 
 
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .container-references {
-        flex: 0 0 calc(50% - 30px);  /* 2 éléments par ligne sur tablette */
-    }
+  .container-references {
+    flex: 0 0 calc(50% - 30px);
+    /* 2 éléments par ligne sur tablette */
+  }
 }
 
 @media (max-width: 600px) {
-    .container-references {
-        flex: 0 0 100%;  /* 1 élément visible sur mobile */
-    }
+  .container-references {
+    flex: 0 0 100%;
+    /* 1 élément visible sur mobile */
+  }
 
-    .nav-button {
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-    }
+  .nav-button {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -247,6 +267,7 @@ Style des référence
   background: var(--sidebar-bg-color);
   color: var(--text-color);
 }
+
 .bottone1 {
   width: 100%;
   padding-left: 33px;
@@ -302,11 +323,11 @@ Style des référence
 
 /* --------Taille des test pour les différesntes parties : */
 
-.text-base{
+.text-base {
   font-size: 1.1vw;
 }
 
-.group-skill{
+.group-skill {
   display: flex;
   align-items: center;
   justify-content: center;
