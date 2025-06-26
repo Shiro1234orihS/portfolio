@@ -67,6 +67,7 @@ const messages = {
         //#region Technical 
         skills_title: 'Skills',
         app_dev: 'Application Development',
+        prog_lang: 'Programming languages',
         frameworks: 'Frameworks',
         api_creation: 'API Creation',
         web_design: 'Web Design',
@@ -101,6 +102,11 @@ const messages = {
         azure_devops: 'Azure DevOps',
         git: 'Git',
         typescript: 'TypeScript',
+        biblio: 'Library',
+        biblio_graphique: '3D Graphics Library',
+        biblio_test: 'Test/mock library',
+        ORM: 'ORM / Persistence',
+        sequelize: 'Sequelize',
         //#endregion 
 
         //#region Language 
@@ -375,6 +381,7 @@ const messages = {
         //#region Technical
         skills_title: 'Compétences',
         app_dev: 'Développement d\'application',
+        prog_lang: 'Langages de programmation',
         frameworks: 'Frameworks',
         api_creation: 'Création d\'API',
         web_design: 'Conception de pages Web',
@@ -409,6 +416,11 @@ const messages = {
         azure_devops: 'Azure DevOps',
         git: 'Git',
         typescript: 'TypeScript',
+        biblio: 'Bibliothèque',
+        biblio_graphique: 'Bibliothèque graphique 3D',
+        biblio_test: 'Bibliothèque de test/mock',
+        ORM: 'ORM / Persistance',
+        sequelize: 'Sequelize',
         //#endregion 
 
         //#region Language 
@@ -677,6 +689,7 @@ const messages = {
         //#region Technical 
         skills_title: 'Competências',
         app_dev: 'Desenvolvimento de Aplicações',
+        prog_lang: 'Linguagens de programação',
         frameworks: 'Frameworks',
         api_creation: 'Criação de API',
         web_design: 'Design de Páginas Web',
@@ -711,8 +724,13 @@ const messages = {
         azure_devops: 'Azure DevOps',
         git: 'Git',
         typescript: 'TypeScript',
-        springboot:'Spring Boot',
-        java:'java',
+        springboot: 'Spring Boot',
+        java: 'java',
+        biblio: 'Biblioteca',
+        biblio_graphique: 'Biblioteca de gráficos 3D',
+        biblio_test: 'Biblioteca de teste/simulação',
+        ORM: 'ORM / Persistência',
+        sequelize: 'Sequelize',
         //#endregion 
 
         //#region Language 
