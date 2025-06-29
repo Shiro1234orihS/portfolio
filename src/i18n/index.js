@@ -49,6 +49,7 @@ const messages = {
         project_west: 'Wests Of Survival',
         project_west_desc: 'Design and creation of a video game.',
         second_year_project: 'Second Year Project',
+        third_year_project: 'Third Year Project',
         project_bmw_laravel: 'BMW Laravel Project',
         project_bmw_laravel_desc: 'Website developed with Laravel and Bootstrap for managing used vehicles.',
         project_bmw_vue: 'BMW Vue.js Project',
@@ -62,6 +63,11 @@ const messages = {
         project_keypass_desc: 'Creation of a website, a browser extension, and a mobile application to securely view and manage passwords.',
         project_earningcall: 'Earning Call Consultation Site',
         project_earningcall_desc: 'Website developed with Laravel and Bootstrap to consult various Earnings Calls.',
+        project_home_assistant: 'Home Assistant Project',
+        project_home_assistant_desc: 'Development of a website to visualize data collected by various sensors, then processed by an artificial intelligence model.',
+        project_home_assistant_2: 'Home Assistant Project 2.0',
+        project_home_assistant_2_desc: 'Development of a website to visualize data collected by various sensor.',
+
         //#endregion
 
         //#region Technical 
@@ -363,6 +369,7 @@ const messages = {
         project_west: 'Wests Of Survival',
         project_west_desc: 'Conception et création d\'un jeu vidéo.',
         second_year_project: 'Projet de deuxième année',
+        third_year_project: 'Projet de troisième année',
         project_bmw_laravel: 'Projet BMW Laravel',
         project_bmw_laravel_desc: 'Site développé avec Laravel et Bootstrap pour la gestion de véhicules d\'occasion.',
         project_bmw_vue: 'Projet BMW Vue.js',
@@ -376,6 +383,11 @@ const messages = {
         project_keypass_desc: 'Création d\'un site web, d\'une extension de navigateur et d\'une application mobile permettant de visualiser et gérer les mots de passe de manière sécurisée.',
         project_earningcall: 'Site pour consulter les différents Earnings Call',
         project_earningcall_desc: 'Site développé avec Laravel et Bootstrap pour consulter les différents Earnings Call.',
+        project_home_assistant: 'Projet Home Assistant',
+        project_home_assistant_desc: 'Développement d’un site web permettant de visualiser les données collectées par différents capteurs, puis interprétées par un modèle d’intelligence artificielle.',
+        project_home_assistant_2: 'Projet Home Assistant 2.0',
+        project_home_assistant_2_desc: 'Développement d’un site web permettant de visualiser les données collectées par différents capteurs.',
+
         //#endregion
 
         //#region Technical
@@ -671,6 +683,7 @@ const messages = {
         project_west: 'Wests Of Survival',
         project_west_desc: 'Concepção e criação de um jogo de vídeo.',
         second_year_project: 'Projeto do Segundo Ano',
+        third_year_project: 'Projeto do terceiro ano',
         project_bmw_laravel: 'Projeto BMW Laravel',
         project_bmw_laravel_desc: 'Site desenvolvido com Laravel e Bootstrap para gestão de veículos usados.',
         project_bmw_vue: 'Projeto BMW Vue.js',
@@ -684,6 +697,10 @@ const messages = {
         project_keypass_desc: 'Criação de um site, uma extensão de navegador e um aplicativo móvel para visualizar e gerenciar senhas de forma segura.',
         project_earningcall: 'Site de Consulta de Earnings Call',
         project_earningcall_desc: 'Site desenvolvido com Laravel e Bootstrap para consultar diversos Earnings Calls.',
+        project_home_assistant: 'Projeto Home Assistant',
+        project_home_assistant_desc: 'Desenvolvimento de um site para visualizar os dados coletados por diversos sensores , posteriormente processados por um modelo de inteligência artificial.',
+        project_home_assistant_2: 'Projeto Home Assistant 2.0',
+        project_home_assistant_2_desc: 'Desenvolvimento de um site para visualizar os dados coletados por diversos sensores.',
         //#endregion
 
         //#region Technical 
