@@ -59,10 +59,10 @@ function ouvrirPDF1() {
         <span class="barreVisuel"></span>
       </router-link>
 
-      <!-- <router-link to="loisir" class="lien">
+      <router-link to="loisir" class="lien">
         {{ $t('leisure') }}
         <span class="barreVisuel"></span>
-      </router-link> -->
+      </router-link>
 
 
       <fieldset class="container-buttons">

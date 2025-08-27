@@ -98,6 +98,18 @@ onMounted(() => {
                     </div>
                     <p class="skill-name">{{ $t('csharp') }}</p>
                 </div>
+<<<<<<< HEAD
+            </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="skills-container" data-category="mobile">
+            <div class="category-header">
+                <h2 class="degree-title">{{ $t('app_dev') }}</h2>
+            </div>
+            <div class="skills-grid">
+=======
+>>>>>>> 02d8ef4 ([add] ^mein de chose)
                 <div class="skill">
                     <div class="progress-circle" data-percent="80">
                         <svg>
@@ -118,7 +130,84 @@ onMounted(() => {
                         <img src="./../../public/picture/technical/typescript.png" alt="CShapeIcone">
                         <div class="percentage-text">0%</div>
                     </div>
+<<<<<<< HEAD
+                    <p class="skill-name">{{ $t('react_native') }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Frameworks -->
+        <div class="skills-container" data-category="backend">
+            <div class="category-header">
+                <h2 class="degree-title">{{ $t('frameworks') }}</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="progress-circle" data-percent="95">
+                        <svg>
+                            <circle cx="55" cy="55" r="45"></circle>
+                            <circle class="progress" cx="55" cy="55" r="45"></circle>
+                        </svg>
+                        <img src="./../../public/picture/technical/EntityFrameworkCore.png" alt="Entity Framework">
+                        <div class="percentage-text">0%</div>
+                    </div>
+                    <p class="skill-name">{{ $t('entity_framework') }}</p>
+                </div>
+                <div class="skill">
+                    <div class="progress-circle" data-percent="70">
+                        <svg>
+                            <circle cx="55" cy="55" r="45"></circle>
+                            <circle class="progress" cx="55" cy="55" r="45"></circle>
+                        </svg>
+                        <img src="./../../public/picture/technical/moq.png" alt="Moq">
+                        <div class="percentage-text">0%</div>
+                    </div>
+                    <p class="skill-name">{{ $t('moq') }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Development -->
+        <div class="skills-container" data-category="api">
+            <div class="category-header">
+                <h2 class="degree-title">{{ $t('api_creation') }}</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="progress-circle" data-percent="90">
+                        <svg>
+                            <circle cx="55" cy="55" r="45"></circle>
+                            <circle class="progress" cx="55" cy="55" r="45"></circle>
+                        </svg>
+                        <img src="./../../public/picture/technical/ASPIcone.png" alt="ASP.NET">
+                        <div class="percentage-text">0%</div>
+                    </div>
+                    <p class="skill-name">{{ $t('aspnet') }}</p>
+                </div>
+                <div class="skill">
+                    <div class="progress-circle" data-percent="90">
+                        <svg>
+                            <circle cx="55" cy="55" r="45"></circle>
+                            <circle class="progress" cx="55" cy="55" r="45"></circle>
+                        </svg>
+                        <img src="./../../public/picture/technical/nodeJsIncone.png" alt="Node.js">
+                        <div class="percentage-text">0%</div>
+                    </div>
+                    <p class="skill-name">{{ $t('nodejs') }}</p>
+                </div>
+                <div class="skill">
+                    <div class="progress-circle" data-percent="90">
+                        <svg>
+                            <circle cx="55" cy="55" r="45"></circle>
+                            <circle class="progress" cx="55" cy="55" r="45"></circle>
+                        </svg>
+                        <img src="./../../public/picture/technical/ExpressIcone.png" alt="ExpressIcone.js">
+                        <div class="percentage-text">0%</div>
+                    </div>
+                    <p class="skill-name">{{ $t('express') }}</p>
+=======
                     <p class="skill-name">{{ $t('typescript') }}</p>
+>>>>>>> 02d8ef4 ([add] ^mein de chose)
                 </div>
             </div>
         </div>
@@ -210,7 +299,11 @@ onMounted(() => {
         <!-- API Development -->
         <div class="skills-container" data-category="api">
             <div class="category-header">
+<<<<<<< HEAD
+                <h2 class="degree-title">{{ $t('frameworks') }}</h2>
+=======
                 <h2 class="degree-title">{{ $t('api_creation') }}</h2>
+>>>>>>> 02d8ef4 ([add] ^mein de chose)
             </div>
             <div class="skills-grid">
                 <div class="skill">
@@ -493,37 +586,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* ----------------- SKILLS WRAPPER ----------------- */
-.skills-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    background: linear-gradient(135deg, var(--primary-color), #4f46e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(135deg, var(--primary-color), #4f46e5);
-    border-radius: 2px;
-}
-
 /* ----------------- SKILLS CONTAINER ----------------- */
 .skills-container {
     background: linear-gradient(135deg, var(--sidebar-bg-color) 0%, rgba(255, 255, 255, 0.1) 100%);
@@ -570,21 +632,6 @@ onMounted(() => {
     gap: 1rem;
 }
 
-
-
-.degree-title {
-    font-weight: 600;
-    color: var(--text-color);
-    margin: 0;
-
-    font-size: 2rem;
-    padding: 0.5rem;
-    background: linear-gradient(135deg, var(--primary-color), #9a95e9);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* ----------------- SKILLS GRID ----------------- */
 .skills-grid {
@@ -740,9 +787,7 @@ circle:first-child {
 
 /* ----------------- RESPONSIVE DESIGN ----------------- */
 @media (max-width: 768px) {
-    .skills-wrapper {
-        padding: 1rem;
-    }
+
 
     .section-title {
         font-size: 2rem;

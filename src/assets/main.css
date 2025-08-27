@@ -69,12 +69,29 @@ html {
   border-radius: 2px;
 }
 
-.degree-title {
-  font-size: 1.8rem;
-  color: var(--primary-color);
+/* En-tête principal */
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
+.degree-title {
+  font-size: 1.8rem;
+  color: var(--text-color, #333);
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, var(--primary-color), #4f46e5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 300;
+}
 
 
 /*------------------------------
@@ -355,4 +372,465 @@ Style des référence
   padding: 15px;
   border-radius: 8px;
   color: var(--text-color);
+}
+
+/* ===== TECH STACK SECTION CSS ===== */
+
+/* Variables CSS nécessaires */
+:root {
+  --vue-primary: #4FC08D;
+  --vue-secondary: #42b883;
+  --vue-dark: #2c3e50;
+  --asp-primary: #512BD4;
+  --postgres-primary: #336791;
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --radius: 0.75rem;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mode sombre */
+.dark-mode {
+  --background: #0f172a;
+  --surface: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border: #334155;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Section principale */
+.skills-section {
+  margin: 4rem 0;
+}
+
+/* En-tête de section (optionnel) */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--vue-primary), var(--vue-secondary));
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+/* Grille des catégories de technologies */
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Catégorie de technologie */
+.tech-category {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+  position: relative;
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.tech-category:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--category-color);
+}
+
+/* Effet de bordure colorée en haut */
+.tech-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--category-color), transparent);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* En-tête de catégorie */
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--category-color);
+}
+
+.category-icon {
+  font-size: 2rem;
+  color: var(--category-color);
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Grille des compétences */
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Carte de compétence */
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--category-color);
+}
+
+/* Barre latérale colorée au hover */
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--category-color);
+  border-radius: var(--radius) 0 0 var(--radius);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* Partie visuelle de la compétence */
+.skill-visual {
+  flex-shrink: 0;
+}
+
+/* Cercle de progression */
+.progress-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.progress-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-bg {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 6;
+}
+
+.progress-ring {
+  fill: none;
+  stroke: var(--category-color);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+}
+
+/* Icône de la compétence */
+.skill-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* Pourcentage de la compétence */
+.skill-percentage {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--category-color);
+  background: var(--background);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+/* Informations de la compétence */
+.skill-info {
+  flex: 1;
+}
+
+.skill-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem 0;
+}
+
+/* Barre de niveau */
+.skill-level {
+  width: 100%;
+}
+
+.level-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.level-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--category-color), rgba(var(--category-color), 0.6));
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0%;
+}
+
+/* Animation d'apparition */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Design responsive */
+@media (max-width: 1024px) {
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .progress-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-category {
+    padding: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Réduction des animations pour accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .tech-category {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .progress-ring,
+  .level-fill {
+    transition: none;
+  }
+}
+
+/* Source Section */
+.source-section {
+  margin: 4rem 0;
+  padding-bottom: 1%;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, var(--surface), var(--background));
+  border: 2px solid var(--vue-primary);
+}
+
+
+
+.github-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.github-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.github-icon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--text-primary);
+  color: var(--background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.github-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.github-text h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.github-text p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.github-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--text-primary);
+  color: var(--background);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.github-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: var(--vue-primary);
+}
+
+.github-button .button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.github-button .button-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Transitions */
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-fade-enter-from {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
 }
