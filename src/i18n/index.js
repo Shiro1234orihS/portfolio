@@ -67,7 +67,7 @@ const messages = {
         project_home_assistant_desc: 'Development of a website to visualize data collected by various sensors, then processed by an artificial intelligence model.',
         project_home_assistant_2: 'Home Assistant Project 2.0',
         project_home_assistant_2_desc: 'Development of a website to visualize data collected by various sensor.',
-       project_intranet_desc: 'Website centralizing various projects such as a notepad, a password manager, and a calendar',
+        project_intranet_desc: 'Website centralizing various projects such as a notepad, a password manager, and a calendar',
         project_intranet: 'Website gathering multiple projects',
         //#endregion
 
@@ -362,38 +362,38 @@ const messages = {
         //#endregion
 
         //#region keypass
-        keypass_tag:'Security Project',
+        keypass_tag: 'Security Project',
         keypass_project_title: 'Creation of a Password Management Website',
         keypass_project_presentation: 'Project Objective',
         keypass_project_description: 'This project aims to design a complete <strong>secure password management solution</strong>, including a website, a browser extension, and a mobile application.',
 
-        keypass_project_feature_1: '✅ A <strong>website</strong> allowing users to store, manage, and organize their passwords.',
-        keypass_project_feature_2: '✅ A <strong>browser extension</strong> to automatically save passwords.',
-        keypass_project_feature_3: '✅ A <strong>mobile application</strong> for secure access to passwords on the go.',
+        keypass_project_feature_1: 'A <strong>website</strong> allowing users to store, manage, and organize their passwords.',
+        keypass_project_feature_2: 'A <strong>browser extension</strong> to automatically save passwords.',
+        keypass_project_feature_3: 'A <strong>mobile application</strong> for secure access to passwords on the go.',
 
         keypass_project_security: 'The goal is to provide a <strong>smooth and secure interface</strong>, ensuring data confidentiality through <strong>advanced encryption</strong>.',
 
         keypass_technologies_used: 'Technologies and Tools Used',
-        keypass_tech_frontend: '🎨 <strong>Front-end</strong>: Vue.js and Bootstrap for a modern and responsive user interface.',
-        keypass_tech_backend: '🛠 <strong>Back-end</strong>: Laravel to manage users and secure database interactions.',
-        keypass_tech_database: '💾 <strong>Database</strong>: PostgreSQL, with password encryption (bcrypt, AES-256).',
-        keypass_tech_security: '🔒 <strong>Security</strong>: Integration of <strong>2FA (Two-Factor Authentication)</strong> and AES encryption for data protection.',
-        keypass_tech_containerization: '📦 <strong>Containerization</strong>: Docker for portability and compatibility across different systems.',
-        keypass_tech_cloud: '☁️ <strong>Cloud Deployment</strong>: Azure for hosting and backend service management.',
+        keypass_tech_frontend: '<strong>Front-end</strong>: Vue.js and Bootstrap for a modern and responsive user interface.',
+        keypass_tech_backend: '<strong>Back-end</strong>: Laravel to manage users and secure database interactions.',
+        keypass_tech_database: '<strong>Database</strong>: PostgreSQL, with password encryption (bcrypt, AES-256).',
+        keypass_tech_security: '<strong>Security</strong>: Integration of <strong>2FA (Two-Factor Authentication)</strong> and AES encryption for data protection.',
+        keypass_tech_containerization: '<strong>Containerization</strong>: Docker for portability and compatibility across different systems.',
+        keypass_tech_cloud: '<strong>Cloud Deployment</strong>: Azure for hosting and backend service management.',
 
         keypass_toggle_competences: 'Show project skills',
         keypass_hide_competences: 'Hide skills',
 
         keypass_developed_features: 'Developed Features',
-        keypass_feature_1: '🔹<strong> Secure password creation and storage</strong> with AES-256 encryption.',
-        keypass_feature_2: '🔹<strong> Secure password generator</strong> based on customizable criteria.',
-        keypass_feature_3: '🔹<strong> Browser extension</strong> for saving and autofilling credentials.',
-        keypass_feature_4: '🔹<strong> Multi-device synchronization</strong> with a secure API.',
+        keypass_feature_1: '<strong> Secure password creation and storage</strong> with AES-256 encryption.',
+        keypass_feature_2: '<strong> Secure password generator</strong> based on customizable criteria.',
+        keypass_feature_3: '<strong> Browser extension</strong> for saving and autofilling credentials.',
+        keypass_feature_4: '<strong> Multi-device synchronization</strong> with a secure API.',
 
         keypass_challenges_solutions: 'Challenges and Solutions',
-        keypass_challenge_1: '✅ <strong>Password security</strong>: Implementation of <strong>AES-256 encryption</strong> and encrypted database storage.',
-        keypass_challenge_2: '✅ <strong>Performance and optimization</strong>: Using <strong>Redis caches</strong> to speed up access to encrypted data.',
-        keypass_challenge_3: '✅ <strong>Reliability and availability</strong>: Implementation of an <strong>automatic backup system</strong> and hosting on Azure.',
+        keypass_challenge_1: '<strong>Password security</strong>: Implementation of <strong>AES-256 encryption</strong> and encrypted database storage.',
+        keypass_challenge_2: '<strong>Performance and optimization</strong>: Using <strong>Redis caches</strong> to speed up access to encrypted data.',
+        keypass_challenge_3: '<strong>Reliability and availability</strong>: Implementation of an <strong>automatic backup system</strong> and hosting on Azure.',
 
         keypass_technical_skills: 'Technical Skills',
         keypass_frontend: 'Front-end',
@@ -404,6 +404,13 @@ const messages = {
         keypass_project_results: 'Results',
         keypass_result_1: '- <strong>Flexibility</strong>: Compatible with all browsers and accessible on mobile and desktop.',
         keypass_result_2: '- <strong>Enhanced security</strong>: Integration of best practices in cryptography and strong authentication.',
+        keypass_tag: 'Security Project',
+        keypass_hero_subtitle: 'Secure and intuitive password manager',
+        keypass_project_security: 'The goal is to provide a <strong>smooth and secure interface</strong>, ensuring data confidentiality through <strong>advanced encryption</strong>.',
+        keypass_tech_database_title: 'Database',
+        keypass_tech_security_title: 'Security',
+        vue_technical_skills_subtitle: 'Technologies mastered in this project',
+
         //#endregion
 
         //#region Earnincall
@@ -413,19 +420,19 @@ const messages = {
         earning_project_goal: 'The goal of this site is to provide an intuitive and centralized interface to consult these events and facilitate investment decision-making.',
 
         earning_technologies_used: 'Technologies and Tools Used',
-        earning_tech_frontend: '🎨 <strong>Front-end</strong>: Angular for a dynamic and high-performance user interface.',
-        earning_tech_api: '📡 <strong>API Integration</strong>: Connection to financial APIs to retrieve real-time earnings call announcements.',
+        earning_tech_frontend: '<strong>Front-end</strong>: Angular for a dynamic and high-performance user interface.',
+        earning_tech_api: '<strong>API Integration</strong>: Connection to financial APIs to retrieve real-time earnings call announcements.',
 
         earning_toggle_competences: 'Show project skills',
         earning_hide_competences: 'Hide skills',
 
         earning_developed_features: 'Developed Features',
-        earning_feature_1: '🔹 <strong>Dynamic display of earnings calls</strong> with filters by company, date, and industry sector.',
-        earning_feature_2: '🔹 <strong>Integration of financial APIs</strong> to automatically retrieve announcements from listed companies.',
+        earning_feature_1: '<strong>Dynamic display of earnings calls</strong> with filters by company, date, and industry sector.',
+        earning_feature_2: '<strong>Integration of financial APIs</strong> to automatically retrieve announcements from listed companies.',
 
         earning_challenges_solutions: 'Challenges and Solutions',
-        earning_challenge_1: '✅ <strong>Optimization of Angular performance</strong>: Asynchronous data loading with lazy loading.',
-        earning_challenge_2: '✅ <strong>API request management</strong>: Implementation of caching to prevent excessive external API requests.',
+        earning_challenge_1: '<strong>Optimization of Angular performance</strong>: Asynchronous data loading with lazy loading.',
+        earning_challenge_2: '<strong>API request management</strong>: Implementation of caching to prevent excessive external API requests.',
 
         earning_technical_skills: 'Technical Skills',
         earning_frontend: 'Front-end',
@@ -433,6 +440,33 @@ const messages = {
         earning_project_review: 'Project Review',
         earning_project_results: 'Results',
         earning_result_1: '- <strong>Flexibility</strong>: The site runs on different systems without requiring complex installation.',
+
+        earning_project_tag: 'Financial Platform',
+        earning_hero_subtitle: 'Real-time analysis of corporate financial results',
+        earning_goal_title: 'Project Objective',
+        earning_features_main_title: 'Main Features',
+        earning_tech_stack_subtitle: 'Technology stack and financial APIs',
+        earning_tech_frontend_title: 'Frontend',
+        earning_tech_api_title: 'APIs & Data',
+        earning_skills_subtitle: 'Technical skills implemented',
+        earning_project_success: 'Successful Project',
+        earning_impact_modern: 'Modern and intuitive interface',
+        earning_impact_performance: 'Optimized performance',
+        earning_impact_realtime: 'Accurate real-time data',
+
+        // Technologies descriptions
+        earning_tech_angular_desc: 'TypeScript framework for dynamic interfaces',
+        earning_tech_api_desc: 'Real-time financial APIs integration',
+
+        // Features
+        earning_feature_realtime_title: 'Real-Time Analysis',
+        earning_feature_realtime_desc: 'Financial data updated instantly',
+        earning_feature_viz_title: 'Advanced Visualizations',
+        earning_feature_viz_desc: 'Interactive charts and dashboards',
+        earning_feature_search_title: 'Smart Search',
+        earning_feature_search_desc: 'Multi-criteria filtering and search',
+        earning_feature_responsive_title: 'Responsive Interface',
+        earning_feature_responsive_desc: 'Optimized for all devices',
         //#endregion
 
         toggle_details: 'Show more content',
@@ -505,7 +539,7 @@ const messages = {
         project_home_assistant_desc: 'Développement d’un site web permettant de visualiser les données collectées par différents capteurs, puis interprétées par un modèle d’intelligence artificielle.',
         project_home_assistant_2: 'Projet Home Assistant 2.0',
         project_home_assistant_2_desc: 'Développement d’un site web permettant de visualiser les données collectées par différents capteurs.',
-      project_earningcall_desc: 'Site développé avec Angular pour consulter les différents Earnings Call.',
+        project_earningcall_desc: 'Site développé avec Angular pour consulter les différents Earnings Call.',
         project_intranet_desc: 'Site centralisant plusieurs projets tels qu’un bloc-notes, un gestionnaire de mots de passe et un agenda',
         project_intranet: 'Site rassemblant plusieurs projets',
         //#endregion
@@ -795,41 +829,47 @@ const messages = {
         //#endregion
 
         //#region Keypass
-         keypass_tag:'Projet de Sécurité',
+        keypass_tag: 'Projet de Sécurité',
         keypass_project_title: 'Création d\'un site de gestion de mots de passe',
         keypass_project_presentation: 'Objectif du projet',
         keypass_project_description: 'Ce projet vise à concevoir une solution complète de <strong>gestion sécurisée des mots de passe</strong>, incluant un site web, une extension de navigateur et une application mobile.',
 
-        keypass_project_feature_1: '✅ Un <strong>site web</strong> permettant aux utilisateurs de stocker, gérer et organiser leurs mots de passe.',
-        keypass_project_feature_2: '✅ Une <strong>extension de navigateur</strong> pour enregistrer automatiquement les mots de passe.',
-        keypass_project_feature_3: '✅ Une <strong>application mobile</strong> pour un accès sécurisé aux mots de passe en déplacement.',
+        keypass_project_feature_1: 'Un <strong>site web</strong> permettant aux utilisateurs de stocker, gérer et organiser leurs mots de passe.',
+        keypass_project_feature_2: 'Une <strong>extension de navigateur</strong> pour enregistrer automatiquement les mots de passe.',
+        keypass_project_feature_3: 'Une <strong>application mobile</strong> pour un accès sécurisé aux mots de passe en déplacement.',
 
         keypass_project_security: 'L\'objectif est d\'offrir une <strong>interface fluide et sécurisée</strong>, garantissant la confidentialité des données grâce à un <strong>chiffrement avancé</strong>.',
 
         keypass_technologies_used: 'Technologies et outils utilisés',
-        keypass_tech_frontend: '🎨 <strong>Front-end</strong> : Vue.js et Bootstrap pour une interface utilisateur moderne et réactive.',
-        keypass_tech_backend: '🛠 <strong>Back-end</strong> : Laravel pour gérer les utilisateurs et sécuriser les interactions avec la base de données.',
-        keypass_tech_database: '💾 <strong>Base de données</strong> : PostgreSQL, avec chiffrement des mots de passe (bcrypt, AES-256).',
-        keypass_tech_security: '🔒 <strong>Sécurité</strong> : Intégration de <strong>2FA (authentification à deux facteurs)</strong> et chiffrement AES pour protéger les données.',
+        keypass_tech_frontend: '<strong>Front-end</strong> : Vue.js et Bootstrap pour une interface utilisateur moderne et réactive.',
+        keypass_tech_backend: '<strong>Back-end</strong> : Laravel pour gérer les utilisateurs et sécuriser les interactions avec la base de données.',
+        keypass_tech_database: '<strong>Base de données</strong> : PostgreSQL, avec chiffrement des mots de passe (bcrypt, AES-256).',
+        keypass_tech_security: '<strong>Sécurité</strong> : Intégration de <strong>2FA (authentification à deux facteurs)</strong> et chiffrement AES pour protéger les données.',
 
         keypass_toggle_competences: 'Afficher les compétences du projet',
         keypass_hide_competences: 'Masquer les compétences',
 
         keypass_developed_features: 'Fonctionnalités développées',
-        keypass_feature_1: '🔹<strong> Création et stockage sécurisé des mots de passe</strong> avec chiffrement AES-256.',
-        keypass_feature_2: '🔹<strong> Générateur de mots de passe sécurisé</strong> basé sur des critères personnalisables.',
-        keypass_feature_3: '🔹<strong> Extension navigateur</strong> pour enregistrement et remplissage automatique des identifiants.',
-        keypass_feature_4: '🔹<strong> Synchronisation multi-appareils</strong> avec une API sécurisée.',
+        keypass_feature_1: '<strong> Création et stockage sécurisé des mots de passe</strong> avec chiffrement AES-256.',
+        keypass_feature_2: '<strong> Générateur de mots de passe sécurisé</strong> basé sur des critères personnalisables.',
+        keypass_feature_3: '<strong> Extension navigateur</strong> pour enregistrement et remplissage automatique des identifiants.',
+        keypass_feature_4: '<strong> Synchronisation multi-appareils</strong> avec une API sécurisée.',
 
         keypass_challenges_solutions: 'Défis et solutions',
-        keypass_challenge_1: '✅ <strong>Sécurisation des mots de passe</strong> : Implémentation d\'un <strong>chiffrement AES-256</strong> et d\'un stockage chiffré en base de données.',
-        keypass_challenge_2: '✅ <strong>Performance et optimisation</strong> : Utilisation de <strong>caches Redis</strong> pour accélérer l’accès aux données chiffrées.',
-        keypass_challenge_3: '✅ <strong>Fiabilité et disponibilité</strong> : Mise en place d’un <strong>système de sauvegarde automatique</strong> et d’un hébergement sur Azure.',
+        keypass_challenge_1: '<strong>Sécurisation des mots de passe</strong> : Implémentation d\'un <strong>chiffrement AES-256</strong> et d\'un stockage chiffré en base de données.',
+        keypass_challenge_2: '<strong>Performance et optimisation</strong> : Utilisation de <strong>caches Redis</strong> pour accélérer l’accès aux données chiffrées.',
+        keypass_challenge_3: '<strong>Fiabilité et disponibilité</strong> : Mise en place d’un <strong>système de sauvegarde automatique</strong> et d’un hébergement sur Azure.',
 
         keypass_project_review: 'Bilan du projet',
         keypass_project_results: 'Résultats',
         keypass_result_1: '- <strong>Flexibilité</strong> : Compatible avec tous les navigateurs et accessible sur mobile et desktop.',
         keypass_result_2: '- <strong>Sécurité renforcée</strong> : Intégration des meilleures pratiques en cryptographie et authentification forte.',
+        keypass_tag: 'Projet de Sécurité',
+        keypass_hero_subtitle: 'Gestionnaire de mots de passe sécurisé et intuitif',
+        keypass_project_security: 'L\'objectif est d\'offrir une <strong>interface fluide et sécurisée</strong>, garantissant la confidentialité des données grâce à un <strong>chiffrement avancé</strong>.',
+        keypass_tech_database_title: 'Base de données',
+        keypass_tech_security_title: 'Sécurité',
+        vue_technical_skills_subtitle: 'Technologies maîtrisées dans ce projet',
         //#endregion
 
         //#region Earnincall
@@ -839,19 +879,19 @@ const messages = {
         earning_project_goal: 'Ce site vise à offrir une interface intuitive et centralisée pour consulter ces événements et faciliter la prise de décision en matière d’investissement.',
 
         earning_technologies_used: 'Technologies et outils utilisés',
-        earning_tech_frontend: '🎨 <strong>Front-end</strong> : Angular pour une interface utilisateur dynamique et performante.',
-        earning_tech_api: '📡 <strong>Intégration d\'API</strong> : Connexion aux API financières pour récupérer les annonces d\'earnings calls en temps réel.',
+        earning_tech_frontend: '<strong>Front-end</strong> : Angular pour une interface utilisateur dynamique et performante.',
+        earning_tech_api: '<strong>Intégration d\'API</strong> : Connexion aux API financières pour récupérer les annonces d\'earnings calls en temps réel.',
 
         earning_toggle_competences: 'Afficher les compétences du projet',
         earning_hide_competences: 'Masquer les compétences',
 
         earning_developed_features: 'Fonctionnalités développées',
-        earning_feature_1: '🔹 <strong>Affichage dynamique des earnings calls</strong> avec filtres par entreprise, date et secteur d\'activité.',
-        earning_feature_2: '🔹 <strong>Intégration d’API financières</strong> pour récupérer automatiquement les annonces des entreprises cotées.',
+        earning_feature_1: '<strong>Affichage dynamique des earnings calls</strong> avec filtres par entreprise, date et secteur d\'activité.',
+        earning_feature_2: '<strong>Intégration d’API financières</strong> pour récupérer automatiquement les annonces des entreprises cotées.',
 
         earning_challenges_solutions: 'Défis et solutions',
-        earning_challenge_1: '✅ <strong>Optimisation des performances Angular</strong> : Chargement asynchrone des données avec lazy loading.',
-        earning_challenge_2: '✅ <strong>Gestion des appels API</strong> : Implémentation de caches pour éviter les requêtes excessives aux API externes.',
+        earning_challenge_1: '<strong>Optimisation des performances Angular</strong> : Chargement asynchrone des données avec lazy loading.',
+        earning_challenge_2: '<strong>Gestion des appels API</strong> : Implémentation de caches pour éviter les requêtes excessives aux API externes.',
 
         earning_technical_skills: 'Compétences techniques',
         earning_frontend: 'Front-end',
@@ -859,6 +899,33 @@ const messages = {
         earning_project_review: 'Bilan du projet',
         earning_project_results: 'Résultats',
         earning_result_1: '- <strong>Flexibilité</strong> : Le site fonctionne sur différents systèmes sans nécessiter d’installation complexe.',
+
+        earning_project_tag: 'Plateforme Financière',
+        earning_hero_subtitle: 'Analyse en temps réel des résultats financiers d\'entreprises',
+        earning_goal_title: 'Objectif du projet',
+        earning_features_main_title: 'Fonctionnalités principales',
+        earning_tech_stack_subtitle: 'Stack technologique et APIs financières',
+        earning_tech_frontend_title: 'Frontend',
+        earning_tech_api_title: 'APIs & Données',
+        earning_skills_subtitle: 'Compétences techniques mises en œuvre',
+        earning_project_success: 'Projet Réussi',
+        earning_impact_modern: 'Interface moderne et intuitive',
+        earning_impact_performance: 'Performance optimisée',
+        earning_impact_realtime: 'Données précises en temps réel',
+
+        // Technologies descriptions
+        earning_tech_angular_desc: 'Framework TypeScript pour interfaces dynamiques',
+        earning_tech_api_desc: 'Intégration d\'APIs financières temps réel',
+
+        // Features
+        earning_feature_realtime_title: 'Analyse en Temps Réel',
+        earning_feature_realtime_desc: 'Données financières actualisées instantanément',
+        earning_feature_viz_title: 'Visualisations Avancées',
+        earning_feature_viz_desc: 'Graphiques interactifs et tableaux de bord',
+        earning_feature_search_title: 'Recherche Intelligente',
+        earning_feature_search_desc: 'Filtrage et recherche multi-critères',
+        earning_feature_responsive_title: 'Interface Responsive',
+        earning_feature_responsive_desc: 'Optimisée pour tous les appareils',
         //#endregion
 
         toggle_details: 'Afficher plus de contenu',
@@ -929,7 +996,7 @@ const messages = {
         project_home_assistant_desc: 'Desenvolvimento de um site para visualizar os dados coletados por diversos sensores , posteriormente processados por um modelo de inteligência artificial.',
         project_home_assistant_2: 'Projeto Home Assistant 2.0',
         project_home_assistant_2_desc: 'Desenvolvimento de um site para visualizar os dados coletados por diversos sensores.',
-            project_intranet_desc: 'Site que centraliza vários projetos como um bloco de notas, um gerenciador de senhas e uma agenda',
+        project_intranet_desc: 'Site que centraliza vários projetos como um bloco de notas, um gerenciador de senhas e uma agenda',
         project_intranet: 'Site que reúne vários projetos',
         //#endregion
 
@@ -1222,7 +1289,7 @@ const messages = {
         //#endregion
 
         //#region Keypass
-         keypass_tag:'Projeto de Segurança',
+        keypass_tag: 'Projeto de Segurança',
         keypass_project_title: 'Criação de um site de gerenciamento de senhas',
         keypass_project_presentation: 'Objetivo do Projeto',
         keypass_project_description: 'Este projeto tem como objetivo criar uma solução completa de <strong>gerenciamento seguro de senhas</strong>, incluindo um site, uma extensão de navegador e um aplicativo móvel.',
@@ -1245,15 +1312,15 @@ const messages = {
         keypass_hide_competences: 'Ocultar habilidades',
 
         keypass_developed_features: 'Funcionalidades Desenvolvidas',
-        keypass_feature_1: '🔹<strong> Criação e armazenamento seguro de senhas</strong> com criptografia AES-256.',
-        keypass_feature_2: '🔹<strong> Gerador de senhas seguras</strong> baseado em critérios personalizáveis.',
-        keypass_feature_3: '🔹<strong> Extensão de navegador</strong> para salvar e preencher automaticamente as credenciais.',
-        keypass_feature_4: '🔹<strong> Sincronização entre dispositivos</strong> usando uma API segura.',
+        keypass_feature_1: '<strong> Criação e armazenamento seguro de senhas</strong> com criptografia AES-256.',
+        keypass_feature_2: '<strong> Gerador de senhas seguras</strong> baseado em critérios personalizáveis.',
+        keypass_feature_3: '<strong> Extensão de navegador</strong> para salvar e preencher automaticamente as credenciais.',
+        keypass_feature_4: '<strong> Sincronização entre dispositivos</strong> usando uma API segura.',
 
         keypass_challenges_solutions: 'Desafios e Soluções',
-        keypass_challenge_1: '✅ <strong>Segurança das senhas</strong>: Implementação de <strong>criptografia AES-256</strong> e armazenamento seguro no banco de dados.',
-        keypass_challenge_2: '✅ <strong>Desempenho e otimização</strong>: Uso de <strong>caches Redis</strong> para acelerar o acesso aos dados criptografados.',
-        keypass_challenge_3: '✅ <strong>Confiabilidade e disponibilidade</strong>: Implementação de um <strong>sistema de backup automático</strong> e hospedagem na Azure.',
+        keypass_challenge_1: '<strong>Segurança das senhas</strong>: Implementação de <strong>criptografia AES-256</strong> e armazenamento seguro no banco de dados.',
+        keypass_challenge_2: '<strong>Desempenho e otimização</strong>: Uso de <strong>caches Redis</strong> para acelerar o acesso aos dados criptografados.',
+        keypass_challenge_3: '<strong>Confiabilidade e disponibilidade</strong>: Implementação de um <strong>sistema de backup automático</strong> e hospedagem na Azure.',
 
         keypass_technical_skills: 'Habilidades Técnicas',
         keypass_frontend: 'Front-end',
@@ -1264,6 +1331,12 @@ const messages = {
         keypass_project_results: 'Resultados',
         keypass_result_1: '- <strong>Flexibilidade</strong>: Compatível com todos os navegadores e acessível em dispositivos móveis e desktops.',
         keypass_result_2: '- <strong>Segurança aprimorada</strong>: Integração das melhores práticas em criptografia e autenticação forte.',
+        keypass_tag: 'Projeto de Segurança',
+        keypass_hero_subtitle: 'Gerenciador de senhas seguro e intuitivo',
+        keypass_project_security: 'O objetivo é oferecer uma <strong>interface fluida e segura</strong>, garantindo a confidencialidade dos dados através de <strong>criptografia avançada</strong>.',
+        keypass_tech_database_title: 'Banco de dados',
+        keypass_tech_security_title: 'Segurança',
+        vue_technical_skills_subtitle: 'Tecnologias dominadas neste projeto',
         //#endregion
 
         //#region Earnincall
@@ -1273,25 +1346,52 @@ const messages = {
         earning_project_goal: 'O objetivo deste site é fornecer uma interface intuitiva e centralizada para consultar esses eventos e facilitar a tomada de decisão em investimentos.',
 
         earning_technologies_used: 'Tecnologias e Ferramentas Utilizadas',
-        earning_tech_frontend: '🎨 <strong>Front-end</strong>: Angular para uma interface de usuário dinâmica e de alto desempenho.',
-        earning_tech_api: '📡 <strong>Integração de API</strong>: Conexão a APIs financeiras para obter anúncios de earnings calls em tempo real.',
+        earning_tech_frontend: '<strong>Front-end</strong>: Angular para uma interface de usuário dinâmica e de alto desempenho.',
+        earning_tech_api: '<strong>Integração de API</strong>: Conexão a APIs financeiras para obter anúncios de earnings calls em tempo real.',
 
         earning_toggle_competences: 'Mostrar habilidades do projeto',
         earning_hide_competences: 'Ocultar habilidades',
 
         earning_developed_features: 'Funcionalidades Desenvolvidas',
-        earning_feature_1: '🔹 <strong>Exibição dinâmica de earnings calls</strong> com filtros por empresa, data e setor.',
-        earning_feature_2: '🔹 <strong>Integração de APIs financeiras</strong> para recuperar automaticamente os anúncios das empresas listadas.',
+        earning_feature_1: '<strong>Exibição dinâmica de earnings calls</strong> com filtros por empresa, data e setor.',
+        earning_feature_2: '<strong>Integração de APIs financeiras</strong> para recuperar automaticamente os anúncios das empresas listadas.',
 
         earning_challenges_solutions: 'Desafios e Soluções',
-        earning_challenge_1: '✅ <strongOtimização do desempenho no Angular</strong>: Carregamento assíncrono de dados com lazy loading.',
-        earning_challenge_2: '✅ <strong>Gerenciamento de chamadas de API</strong>: Implementação de cache para evitar solicitações excessivas a APIs externas.',
+        earning_challenge_1: '<strongOtimização do desempenho no Angular</strong>: Carregamento assíncrono de dados com lazy loading.',
+        earning_challenge_2: '<strong>Gerenciamento de chamadas de API</strong>: Implementação de cache para evitar solicitações excessivas a APIs externas.',
 
         earning_technical_skills: 'Habilidades Técnicas',
         earning_frontend: 'Front-end',
 
         earning_project_review: 'Revisão do Projeto',
         earning_result_1: '- <strong>Flexibilidade</strong>: O site funciona em diferentes sistemas sem necessidade de instalação complexa.',
+
+        earning_project_tag: 'Plataforma Financeira',
+        earning_hero_subtitle: 'Análise em tempo real de resultados financeiros corporativos',
+        earning_goal_title: 'Objetivo do Projeto',
+        earning_features_main_title: 'Funcionalidades Principais',
+        earning_tech_stack_subtitle: 'Stack tecnológico e APIs financeiras',
+        earning_tech_frontend_title: 'Frontend',
+        earning_tech_api_title: 'APIs e Dados',
+        earning_skills_subtitle: 'Competências técnicas implementadas',
+        earning_project_success: 'Projeto Bem-sucedido',
+        earning_impact_modern: 'Interface moderna e intuitiva',
+        earning_impact_performance: 'Performance otimizada',
+        earning_impact_realtime: 'Dados precisos em tempo real',
+
+        // Technologies descriptions
+        earning_tech_angular_desc: 'Framework TypeScript para interfaces dinâmicas',
+        earning_tech_api_desc: 'Integração de APIs financeiras em tempo real',
+
+        // Features
+        earning_feature_realtime_title: 'Análise em Tempo Real',
+        earning_feature_realtime_desc: 'Dados financeiros atualizados instantaneamente',
+        earning_feature_viz_title: 'Visualizações Avançadas',
+        earning_feature_viz_desc: 'Gráficos interativos e dashboards',
+        earning_feature_search_title: 'Busca Inteligente',
+        earning_feature_search_desc: 'Filtragem e busca multi-critérios',
+        earning_feature_responsive_title: 'Interface Responsiva',
+        earning_feature_responsive_desc: 'Otimizada para todos os dispositivos',
         //#endregion
 
         toggle_details: 'Mostrar mais conteúdo',
