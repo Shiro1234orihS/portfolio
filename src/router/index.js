@@ -11,6 +11,8 @@ import WestOfSurvivalView from '@/views/WestOfSurvivalView.vue';
 import LaravelBmwView from '@/views/LaravelBmwView.vue';
 import VueBmxView from '@/views/VueBmxView.vue';
 import VueProjetXView from '@/views/VueProjetXView.vue';
+import HomeassistantView from '@/views/HomeassistantView.vue';
+import Homeassistant2View from '@/views/Homeassistant2View.vue';
 import MiniProjetView from '@/views/MiniProjetView.vue';
 import KeypassView from '@/views/KeypassView.vue';
 import EarningCallView from '@/views/EarningCallView.vue';
@@ -77,6 +79,16 @@ const router = createRouter({
       path: '/vueprojex',
       name: 'vueprojetx',
       component: VueProjetXView,
+    },
+    {
+      path: '/homeassistant',
+      name: 'homeassistant',
+      component: HomeassistantView,
+    },
+      {
+      path: '/homeassistant2',
+      name: 'homeassistant2',
+      component: Homeassistant2View,
     },
     {
       path: '/miniprojet',
