@@ -469,6 +469,198 @@ const messages = {
         earning_feature_responsive_desc: 'Optimized for all devices',
         //#endregion
 
+        //#region HomeAssitant
+        // Hero Section
+        iot_project_tag: 'SAE S5.A.01 - BUT3 INFO RA',
+        iot_hero_title: 'IoT Environmental Monitoring System',
+        iot_hero_subtitle: 'Intelligent surveillance of environmental quality in university buildings',
+        iot_stats_sensors: 'Sensor Types',
+        iot_stats_sites: 'Sites (IUT/TETRAS)',
+
+        // Overview Section
+        iot_overview_title: 'Project Overview',
+        iot_objectives_title: 'Project Objectives',
+        iot_objectives_analyze: 'Analyze measurements from sensors installed at IUT and Tetras in different types of rooms (break, TD, PC)',
+        iot_objectives_actuate: 'Actuate devices (sirens, lamps, smart plugs) according to personalized thresholds',
+        iot_objectives_develop: 'Develop discomfort detection and prediction algorithms',
+        iot_architecture_title: 'System Architecture',
+        iot_architecture_desc: 'The system is built around a distributed architecture with Raspberry Pi collecting data locally and transmitting it to a centralized OVH server for processing and visualization.',
+
+        // Highlights
+        iot_highlight_multisite: 'Multi-site',
+        iot_highlight_multisite_desc: 'IUT and TETRAS monitored simultaneously',
+        iot_highlight_realtime: 'Real Time',
+        iot_highlight_realtime_desc: 'Continuous monitoring 24/7',
+        iot_highlight_predictive: 'Predictive',
+        iot_highlight_predictive_desc: 'AI for anticipation',
+
+        // Toggle Button
+        iot_toggle_hide: 'Hide details',
+        iot_toggle_show: 'View technical details',
+
+        // Tech Stack
+        iot_tech_stack_title: 'Technology Stack',
+        iot_tech_stack_subtitle: 'Technologies and tools used by category',
+        iot_tech_frontend: 'Frontend',
+        iot_tech_backend: 'Backend and API',
+        iot_tech_raspberry: 'Raspberry Pi API',
+        iot_tech_system: 'System & Containerization',
+        iot_tech_data: 'Data & Visualization',
+
+        // Sensors
+        iot_sensors_title: 'Environmental Sensors',
+        iot_sensors_subtitle: 'Complete environmental quality monitoring',
+        iot_sensor_co2_desc: 'Air quality',
+        iot_sensor_temperature_desc: 'Thermal measurement',
+        iot_sensor_light_desc: 'Light intensity',
+        iot_sensor_humidity_desc: 'Humidity level',
+        iot_sensor_noise_desc: 'Sound level',
+        iot_sensor_vibration_desc: 'Vibration detection',
+        iot_sensor_movement_desc: 'Presence detection',
+        iot_sensor_uv_desc: 'UV radiation',
+        iot_sensor_cov_desc: 'Organic compounds',
+        iot_sensor_pm25_desc: 'Fine particles',
+
+        // Features
+        iot_features_title: 'Key Features',
+        iot_features_subtitle: 'Advanced technologies for intelligent monitoring',
+        iot_feature_data_collection_title: 'Data Collection',
+        iot_feature_data_collection_desc: 'Real-time retrieval of environmental measurements',
+        iot_feature_alert_system_title: 'Alert System',
+        iot_feature_alert_system_desc: 'Triggering alarms according to personalized thresholds',
+        iot_feature_visualization_title: 'Visualization',
+        iot_feature_visualization_desc: 'Grafana dashboards for data analysis',
+        iot_feature_ai_title: 'Artificial Intelligence',
+        iot_feature_ai_desc: 'Prediction and anomaly detection with TensorFlow',
+
+        // Phases
+        iot_phases_title: 'Development Phases',
+        iot_phases_subtitle: 'Iterative approach for progressive deployment',
+        iot_phase_v1_title: 'Base Phase',
+        iot_phase_v1_feature_1: 'Raspberry Pi data retrieval API',
+        iot_phase_v1_feature_2: 'Raw data visualization in Grafana',
+        iot_phase_v1_feature_3: 'Discomfort detection algorithm (CO2/noise/movement)',
+        iot_phase_v1_feature_4: 'Temperature regression/prediction',
+        iot_phase_v1_feature_5: 'Open window detection',
+        iot_phase_v1_feature_6: 'Presence detection (staff room)',
+        iot_phase_v2_title: 'Advanced Phase',
+        iot_phase_v2_feature_1: 'Sensor data homogenization',
+        iot_phase_v2_feature_2: 'Advanced visualization in Grafana',
+        iot_phase_v2_feature_3: 'Use of actuators (alarms + lamps)',
+        iot_phase_v2_feature_4: 'ADE integration',
+        iot_phase_v2_feature_5: 'IUT/TETRAS data comparison',
+
+        // Architecture
+        iot_architecture_system_title: 'System Architecture',
+        iot_hardware_title: 'Hardware',
+        iot_hardware_item_1: '2 Raspberry Pi with Docker images',
+        iot_hardware_item_2: 'Multiple sensors (6-1, 9-1, CO2)',
+        iot_hardware_item_3: 'Z-stick 7 + Range extender',
+        iot_hardware_item_4: 'Actuators (lamps, alarms)',
+        iot_software_title: 'Software',
+        iot_software_item_1: 'Zwave-js-ui (sensor communication)',
+        iot_software_item_2: 'Home Assistant (data aggregation)',
+        iot_software_item_3: 'InfluxDB (local storage)',
+        iot_software_item_4: 'Portainer (container supervision)',
+        iot_infrastructure_title: 'Infrastructure',
+        iot_infrastructure_item_1: 'OVH server (1 database per group)',
+        iot_infrastructure_item_2: 'Centralized retrieval API',
+        iot_infrastructure_item_3: 'Grafana dashboards',
+        iot_infrastructure_item_4: 'AI algorithms (TensorFlow)',
+
+        // GitHub Repositories
+        iot_github_front_title: 'GitHub Repository',
+        iot_github_front_desc: 'Access the complete source code of the C# Front project',
+        iot_github_api_title: 'GitHub Repository',
+        iot_github_api_desc: 'Access the complete source code of the C# API project',
+        iot_github_raspi_title: 'GitHub Repository',
+        iot_github_raspi_desc: 'Access the complete source code of the Raspi API project',
+        iot_github_docker_title: 'GitHub Repository',
+        iot_github_docker_desc: 'Access the complete source code of the Raspi OS project',
+        //#endregion
+
+
+        //#region HomeAssitant2
+        // Hero Section
+        java_iot_project_tag: 'Java Refactoring Project',
+        java_iot_hero_title: 'Java IoT System Refactoring',
+        java_iot_hero_subtitle: 'Complete system redesign using Java technologies with hardcoded data in PostgreSQL',
+        java_iot_stats_java: 'Java Stack',
+        java_iot_stats_database: 'PostgreSQL Database',
+
+        // Overview Section
+        java_iot_overview_title: 'Project Overview',
+        java_iot_refactor_title: 'System Refactoring',
+        java_iot_refactor_description: 'This project represents a complete refactoring of the original IoT monitoring system, migrating from a complex distributed architecture to a simplified Java-based solution with hardcoded data in PostgreSQL database.',
+        java_iot_objectives_title: 'Project Objectives',
+        java_iot_objective_1: 'Simplify the system architecture by removing Raspberry Pi dependencies',
+        java_iot_objective_2: 'Implement a pure Java solution using Spring Boot and Vaadin',
+        java_iot_objective_3: 'Use PostgreSQL database with hardcoded environmental data',
+        java_iot_objective_4: 'Create an intuitive interface for data visualization and analysis',
+
+        // Highlights
+        java_iot_highlight_java: 'Full Java',
+        java_iot_highlight_java_desc: 'Complete solution in Java ecosystem',
+        java_iot_highlight_data: 'Static Data',
+        java_iot_highlight_data_desc: 'Hardcoded data in PostgreSQL',
+        java_iot_highlight_simple: 'Simplified',
+        java_iot_highlight_simple_desc: 'No IoT hardware dependencies',
+
+        // Advantages
+        java_iot_advantages_title: 'Key Advantages',
+        java_iot_advantages_subtitle: 'Benefits of the Java-based approach',
+        java_iot_advantage_simplicity_title: 'Architectural Simplicity',
+        java_iot_advantage_simplicity_desc: 'Elimination of hardware complexities and distributed system management',
+        java_iot_advantage_maintenance_title: 'Easy Maintenance',
+        java_iot_advantage_maintenance_desc: 'Centralized codebase and simplified deployment process',
+        java_iot_advantage_performance_title: 'Optimized Performance',
+        java_iot_advantage_performance_desc: 'Direct database access without network latency issues',
+        java_iot_advantage_scalability_title: 'Better Scalability',
+        java_iot_advantage_scalability_desc: 'Horizontal scaling capabilities with Spring Boot',
+
+        // Features
+        java_iot_features_title: 'Key Features',
+        java_iot_features_subtitle: 'Main functionalities of the refactored system',
+        java_iot_feature_refactor_title: 'Complete Refactoring',
+        java_iot_feature_refactor_desc: 'Migration from distributed IoT architecture to monolithic Java solution',
+        java_iot_feature_data_title: 'Hardcoded Data Management',
+        java_iot_feature_data_desc: 'Environmental data stored directly in PostgreSQL database',
+        java_iot_feature_visualization_title: 'Modern Interface',
+        java_iot_feature_visualization_desc: 'Vaadin-based web interface for data visualization',
+        java_iot_feature_simplified_title: 'Simplified Architecture',
+        java_iot_feature_simplified_desc: 'No hardware dependencies or complex IoT integrations',
+
+        // Tech Stack
+        java_iot_tech_stack_title: 'Technology Stack',
+        java_iot_tech_stack_subtitle: 'Java technologies used in the refactoring',
+        java_iot_tech_frontend: 'Frontend',
+        java_iot_tech_backend: 'Backend',
+        java_iot_tech_database: 'Database',
+
+        // Architecture
+        java_iot_architecture_title: 'System Architecture',
+        java_iot_architecture_frontend_title: 'Presentation Layer',
+        java_iot_architecture_frontend_item_1: 'Vaadin components for modern UI',
+        java_iot_architecture_frontend_item_2: 'Responsive design for all devices',
+        java_iot_architecture_frontend_item_3: 'Real-time data visualization charts',
+        java_iot_architecture_frontend_item_4: 'Interactive dashboards and filters',
+
+        java_iot_architecture_backend_title: 'Business Logic',
+        java_iot_architecture_backend_item_1: 'Spring Boot application framework',
+        java_iot_architecture_backend_item_2: 'RESTful API services',
+        java_iot_architecture_backend_item_3: 'Data processing algorithms',
+        java_iot_architecture_backend_item_4: 'Security and authentication',
+
+        java_iot_architecture_data_title: 'Data Management',
+        java_iot_architecture_data_item_1: 'PostgreSQL database engine',
+        java_iot_architecture_data_item_2: 'Hardcoded environmental datasets',
+        java_iot_architecture_data_item_3: 'JPA/Hibernate ORM mapping',
+        java_iot_architecture_data_item_4: 'Data validation and constraints',
+
+        // GitHub
+        java_iot_github_title: 'GitHub Repository',
+        java_iot_github_desc: 'Access the complete Java IoT refactoring source code',
+        //#endregion
         toggle_details: 'Show more content',
         hide_details: 'Hide details',
         source_code: 'Source code'
@@ -928,6 +1120,198 @@ const messages = {
         earning_feature_responsive_desc: 'Optimisée pour tous les appareils',
         //#endregion
 
+
+        //#region HomeAssitant
+        // Hero Section
+        iot_project_tag: 'SAE S5.A.01 - BUT3 INFO RA',
+        iot_hero_title: 'Système IoT de Monitoring Environnemental',
+        iot_hero_subtitle: 'Surveillance intelligente de la qualité environnementale dans les bâtiments universitaires',
+        iot_stats_sensors: 'Types de Capteurs',
+        iot_stats_sites: 'Sites (IUT/TETRAS)',
+
+        // Overview Section
+        iot_overview_title: 'Vue d\'ensemble du projet',
+        iot_objectives_title: 'Objectifs du projet',
+        iot_objectives_analyze: 'Analyser les mesures issues de capteurs installés à l\'IUT et à Tetras dans différents types de salles (pause, TD, PC)',
+        iot_objectives_actuate: 'Actionner des dispositifs (sirènes, lampes, prises connectées) selon des seuils personnalisés',
+        iot_objectives_develop: 'Développer des algorithmes de détection d\'inconfort et de prédiction',
+        iot_architecture_title: 'Architecture du système',
+        iot_architecture_desc: 'Le système s\'articule autour d\'une architecture distribuée avec des Raspberry Pi collectant les données localement et les transmettant vers un serveur centralisé OVH pour traitement et visualisation.',
+
+        // Highlights
+        iot_highlight_multisite: 'Multi-sites',
+        iot_highlight_multisite_desc: 'IUT et TETRAS surveillés simultanément',
+        iot_highlight_realtime: 'Temps Réel',
+        iot_highlight_realtime_desc: 'Monitoring continu 24/7',
+        iot_highlight_predictive: 'Prédictif',
+        iot_highlight_predictive_desc: 'IA pour anticipation',
+
+        // Toggle Button
+        iot_toggle_hide: 'Masquer les détails',
+        iot_toggle_show: 'Voir les détails techniques',
+
+        // Tech Stack
+        iot_tech_stack_title: 'Stack Technologique',
+        iot_tech_stack_subtitle: 'Technologies et outils utilisés par catégorie',
+        iot_tech_frontend: 'Frontend',
+        iot_tech_backend: 'Backend et API',
+        iot_tech_raspberry: 'API Raspberry Pi',
+        iot_tech_system: 'Système & Conteneurisation',
+        iot_tech_data: 'Données & Visualisation',
+
+        // Sensors
+        iot_sensors_title: 'Capteurs Environnementaux',
+        iot_sensors_subtitle: 'Surveillance complète de la qualité environnementale',
+        iot_sensor_co2_desc: 'Qualité de l\'air',
+        iot_sensor_temperature_desc: 'Mesure thermique',
+        iot_sensor_light_desc: 'Intensité lumineuse',
+        iot_sensor_humidity_desc: 'Taux d\'humidité',
+        iot_sensor_noise_desc: 'Niveau sonore',
+        iot_sensor_vibration_desc: 'Détection vibratoire',
+        iot_sensor_movement_desc: 'Détection de présence',
+        iot_sensor_uv_desc: 'Rayonnement UV',
+        iot_sensor_cov_desc: 'Composés organiques',
+        iot_sensor_pm25_desc: 'Particules fines',
+
+        // Features
+        iot_features_title: 'Fonctionnalités Clés',
+        iot_features_subtitle: 'Technologies avancées pour un monitoring intelligent',
+        iot_feature_data_collection_title: 'Collecte de Données',
+        iot_feature_data_collection_desc: 'Récupération en temps réel des mesures environnementales',
+        iot_feature_alert_system_title: 'Système d\'Alerte',
+        iot_feature_alert_system_desc: 'Déclenchement d\'alarmes selon des seuils personnalisés',
+        iot_feature_visualization_title: 'Visualisation',
+        iot_feature_visualization_desc: 'Dashboards Grafana pour l\'analyse des données',
+        iot_feature_ai_title: 'Intelligence Artificielle',
+        iot_feature_ai_desc: 'Prédiction et détection d\'anomalies avec TensorFlow',
+
+        // Phases
+        iot_phases_title: 'Phases de Développement',
+        iot_phases_subtitle: 'Approche itérative pour un déploiement progressif',
+        iot_phase_v1_title: 'Phase de Base',
+        iot_phase_v1_feature_1: 'API de récupération des données Raspberry Pi',
+        iot_phase_v1_feature_2: 'Visualisation des données brutes dans Grafana',
+        iot_phase_v1_feature_3: 'Algorithme de détection d\'inconfort (CO2/bruit/mouvement)',
+        iot_phase_v1_feature_4: 'Régression/Prédiction de température',
+        iot_phase_v1_feature_5: 'Détection fenêtre ouverte',
+        iot_phase_v1_feature_6: 'Détection de présence (salle des personnels)',
+        iot_phase_v2_title: 'Phase Avancée',
+        iot_phase_v2_feature_1: 'Homogénéisation des données de capteurs',
+        iot_phase_v2_feature_2: 'Visualisation avancée dans Grafana',
+        iot_phase_v2_feature_3: 'Utilisation des actionneurs (alarmes + lampes)',
+        iot_phase_v2_feature_4: 'Intégration avec ADE',
+        iot_phase_v2_feature_5: 'Comparaison données IUT/TETRAS',
+
+        // Architecture
+        iot_architecture_system_title: 'Architecture Système',
+        iot_hardware_title: 'Matériel',
+        iot_hardware_item_1: '2 Raspberry Pi avec images Docker',
+        iot_hardware_item_2: 'Capteurs multiples (6-1, 9-1, CO2)',
+        iot_hardware_item_3: 'Z-stick 7 + Range extender',
+        iot_hardware_item_4: 'Actionneurs (lampes, alarmes)',
+        iot_software_title: 'Logiciels',
+        iot_software_item_1: 'Zwave-js-ui (communication capteurs)',
+        iot_software_item_2: 'Home Assistant (agrégation données)',
+        iot_software_item_3: 'InfluxDB (stockage local)',
+        iot_software_item_4: 'Portainer (supervision containers)',
+        iot_infrastructure_title: 'Infrastructure',
+        iot_infrastructure_item_1: 'Serveur OVH (1 base par groupe)',
+        iot_infrastructure_item_2: 'API de récupération centralisée',
+        iot_infrastructure_item_3: 'Dashboards Grafana',
+        iot_infrastructure_item_4: 'Algorithmes IA (TensorFlow)',
+
+        // GitHub Repositories
+        iot_github_front_title: 'Dépôt GitHub',
+        iot_github_front_desc: 'Accédez au code source complet du projet du Front C#',
+        iot_github_api_title: 'Dépôt GitHub',
+        iot_github_api_desc: 'Accédez au code source complet du projet de l\'API C#',
+        iot_github_raspi_title: 'Dépôt GitHub',
+        iot_github_raspi_desc: 'Accédez au code source complet du projet de l\'API de la Raspi',
+        iot_github_docker_title: 'Dépôt GitHub',
+        iot_github_docker_desc: 'Accédez au code source complet du projet de Raspi OS',
+        //#endregion
+
+        //#region HomeAssitant2
+        // Hero Section
+        java_iot_project_tag: 'Projet de Refonte Java',
+        java_iot_hero_title: 'Refonte du Système IoT en Java',
+        java_iot_hero_subtitle: 'Refonte complète du système utilisant les technologies Java avec données en dur dans PostgreSQL',
+        java_iot_stats_java: 'Stack Java',
+        java_iot_stats_database: 'Base PostgreSQL',
+
+        // Overview Section
+        java_iot_overview_title: 'Vue d\'ensemble du projet',
+        java_iot_refactor_title: 'Refonte du Système',
+        java_iot_refactor_description: 'Ce projet représente une refonte complète du système de monitoring IoT original, migrant d\'une architecture distribuée complexe vers une solution Java simplifiée avec des données en dur dans une base PostgreSQL.',
+        java_iot_objectives_title: 'Objectifs du Projet',
+        java_iot_objective_1: 'Simplifier l\'architecture système en supprimant les dépendances Raspberry Pi',
+        java_iot_objective_2: 'Implémenter une solution Java pure utilisant Spring Boot et Vaadin',
+        java_iot_objective_3: 'Utiliser une base PostgreSQL avec des données environnementales en dur',
+        java_iot_objective_4: 'Créer une interface intuitive pour la visualisation et l\'analyse des données',
+
+        // Highlights
+        java_iot_highlight_java: 'Full Java',
+        java_iot_highlight_java_desc: 'Solution complète en écosystème Java',
+        java_iot_highlight_data: 'Données Statiques',
+        java_iot_highlight_data_desc: 'Données en dur dans PostgreSQL',
+        java_iot_highlight_simple: 'Simplifié',
+        java_iot_highlight_simple_desc: 'Aucune dépendance matérielle IoT',
+
+        // Advantages
+        java_iot_advantages_title: 'Avantages Clés',
+        java_iot_advantages_subtitle: 'Bénéfices de l\'approche Java',
+        java_iot_advantage_simplicity_title: 'Simplicité Architecturale',
+        java_iot_advantage_simplicity_desc: 'Élimination des complexités matérielles et de gestion des systèmes distribués',
+        java_iot_advantage_maintenance_title: 'Maintenance Facile',
+        java_iot_advantage_maintenance_desc: 'Base de code centralisée et processus de déploiement simplifié',
+        java_iot_advantage_performance_title: 'Performance Optimisée',
+        java_iot_advantage_performance_desc: 'Accès direct à la base de données sans problèmes de latence réseau',
+        java_iot_advantage_scalability_title: 'Meilleure Évolutivité',
+        java_iot_advantage_scalability_desc: 'Capacités de mise à l\'échelle horizontale avec Spring Boot',
+
+        // Features
+        java_iot_features_title: 'Fonctionnalités Clés',
+        java_iot_features_subtitle: 'Principales fonctionnalités du système refondu',
+        java_iot_feature_refactor_title: 'Refonte Complète',
+        java_iot_feature_refactor_desc: 'Migration de l\'architecture IoT distribuée vers une solution Java monolithique',
+        java_iot_feature_data_title: 'Gestion Données en Dur',
+        java_iot_feature_data_desc: 'Données environnementales stockées directement en base PostgreSQL',
+        java_iot_feature_visualization_title: 'Interface Moderne',
+        java_iot_feature_visualization_desc: 'Interface web basée sur Vaadin pour la visualisation des données',
+        java_iot_feature_simplified_title: 'Architecture Simplifiée',
+        java_iot_feature_simplified_desc: 'Aucune dépendance matérielle ni intégration IoT complexe',
+
+        // Tech Stack
+        java_iot_tech_stack_title: 'Stack Technologique',
+        java_iot_tech_stack_subtitle: 'Technologies Java utilisées dans la refonte',
+        java_iot_tech_frontend: 'Frontend',
+        java_iot_tech_backend: 'Backend',
+        java_iot_tech_database: 'Base de données',
+
+        // Architecture
+        java_iot_architecture_title: 'Architecture Système',
+        java_iot_architecture_frontend_title: 'Couche Présentation',
+        java_iot_architecture_frontend_item_1: 'Composants Vaadin pour UI moderne',
+        java_iot_architecture_frontend_item_2: 'Design responsive pour tous appareils',
+        java_iot_architecture_frontend_item_3: 'Graphiques de visualisation temps réel',
+        java_iot_architecture_frontend_item_4: 'Tableaux de bord interactifs et filtres',
+
+        java_iot_architecture_backend_title: 'Logique Métier',
+        java_iot_architecture_backend_item_1: 'Framework d\'application Spring Boot',
+        java_iot_architecture_backend_item_2: 'Services API RESTful',
+        java_iot_architecture_backend_item_3: 'Algorithmes de traitement des données',
+        java_iot_architecture_backend_item_4: 'Sécurité et authentification',
+
+        java_iot_architecture_data_title: 'Gestion des Données',
+        java_iot_architecture_data_item_1: 'Moteur de base PostgreSQL',
+        java_iot_architecture_data_item_2: 'Jeux de données environnementales en dur',
+        java_iot_architecture_data_item_3: 'Mapping ORM JPA/Hibernate',
+        java_iot_architecture_data_item_4: 'Validation et contraintes des données',
+
+        // GitHub
+        java_iot_github_title: 'Dépôt GitHub',
+        java_iot_github_desc: 'Accédez au code source complet de la refonte Java IoT',
+        //#endregion
         toggle_details: 'Afficher plus de contenu',
         hide_details: 'Masquer les détails',
         source_code: 'Code source'
@@ -1394,6 +1778,197 @@ const messages = {
         earning_feature_responsive_desc: 'Otimizada para todos os dispositivos',
         //#endregion
 
+        //#region HomeAssitant
+        // Hero Section
+        iot_project_tag: 'SAE S5.A.01 - BUT3 INFO RA',
+        iot_hero_title: 'Sistema IoT de Monitoramento Ambiental',
+        iot_hero_subtitle: 'Vigilância inteligente da qualidade ambiental em edifícios universitários',
+        iot_stats_sensors: 'Tipos de Sensores',
+        iot_stats_sites: 'Locais (IUT/TETRAS)',
+
+        // Overview Section
+        iot_overview_title: 'Visão Geral do Projeto',
+        iot_objectives_title: 'Objetivos do Projeto',
+        iot_objectives_analyze: 'Analisar medições de sensores instalados no IUT e Tetras em diferentes tipos de salas (pausa, TD, PC)',
+        iot_objectives_actuate: 'Acionar dispositivos (sirenes, lâmpadas, tomadas inteligentes) segundo limites personalizados',
+        iot_objectives_develop: 'Desenvolver algoritmos de detecção de desconforto e predição',
+        iot_architecture_title: 'Arquitetura do Sistema',
+        iot_architecture_desc: 'O sistema é baseado em uma arquitetura distribuída com Raspberry Pi coletando dados localmente e transmitindo-os para um servidor centralizado OVH para processamento e visualização.',
+
+        // Highlights
+        iot_highlight_multisite: 'Multi-local',
+        iot_highlight_multisite_desc: 'IUT e TETRAS monitorados simultaneamente',
+        iot_highlight_realtime: 'Tempo Real',
+        iot_highlight_realtime_desc: 'Monitoramento contínuo 24/7',
+        iot_highlight_predictive: 'Preditivo',
+        iot_highlight_predictive_desc: 'IA para antecipação',
+
+        // Toggle Button
+        iot_toggle_hide: 'Ocultar detalhes',
+        iot_toggle_show: 'Ver detalhes técnicos',
+
+        // Tech Stack
+        iot_tech_stack_title: 'Stack Tecnológico',
+        iot_tech_stack_subtitle: 'Tecnologias e ferramentas utilizadas por categoria',
+        iot_tech_frontend: 'Frontend',
+        iot_tech_backend: 'Backend e API',
+        iot_tech_raspberry: 'API Raspberry Pi',
+        iot_tech_system: 'Sistema e Containerização',
+        iot_tech_data: 'Dados e Visualização',
+
+        // Sensors
+        iot_sensors_title: 'Sensores Ambientais',
+        iot_sensors_subtitle: 'Monitoramento completo da qualidade ambiental',
+        iot_sensor_co2_desc: 'Qualidade do ar',
+        iot_sensor_temperature_desc: 'Medição térmica',
+        iot_sensor_light_desc: 'Intensidade luminosa',
+        iot_sensor_humidity_desc: 'Nível de umidade',
+        iot_sensor_noise_desc: 'Nível sonoro',
+        iot_sensor_vibration_desc: 'Detecção de vibração',
+        iot_sensor_movement_desc: 'Detecção de presença',
+        iot_sensor_uv_desc: 'Radiação UV',
+        iot_sensor_cov_desc: 'Compostos orgânicos',
+        iot_sensor_pm25_desc: 'Partículas finas',
+
+        // Features
+        iot_features_title: 'Funcionalidades-Chave',
+        iot_features_subtitle: 'Tecnologias avançadas para monitoramento inteligente',
+        iot_feature_data_collection_title: 'Coleta de Dados',
+        iot_feature_data_collection_desc: 'Recuperação em tempo real de medições ambientais',
+        iot_feature_alert_system_title: 'Sistema de Alerta',
+        iot_feature_alert_system_desc: 'Acionamento de alarmes segundo limites personalizados',
+        iot_feature_visualization_title: 'Visualização',
+        iot_feature_visualization_desc: 'Dashboards Grafana para análise de dados',
+        iot_feature_ai_title: 'Inteligência Artificial',
+        iot_feature_ai_desc: 'Predição e detecção de anomalias com TensorFlow',
+
+        // Phases
+        iot_phases_title: 'Fases de Desenvolvimento',
+        iot_phases_subtitle: 'Abordagem iterativa para implementação progressiva',
+        iot_phase_v1_title: 'Fase Base',
+        iot_phase_v1_feature_1: 'API de recuperação de dados do Raspberry Pi',
+        iot_phase_v1_feature_2: 'Visualização de dados brutos no Grafana',
+        iot_phase_v1_feature_3: 'Algoritmo de detecção de desconforto (CO2/ruído/movimento)',
+        iot_phase_v1_feature_4: 'Regressão/Predição de temperatura',
+        iot_phase_v1_feature_5: 'Detecção de janela aberta',
+        iot_phase_v1_feature_6: 'Detecção de presença (sala de pessoal)',
+        iot_phase_v2_title: 'Fase Avançada',
+        iot_phase_v2_feature_1: 'Homogeneização de dados de sensores',
+        iot_phase_v2_feature_2: 'Visualização avançada no Grafana',
+        iot_phase_v2_feature_3: 'Uso de atuadores (alarmes + lâmpadas)',
+        iot_phase_v2_feature_4: 'Integração com ADE',
+        iot_phase_v2_feature_5: 'Comparação de dados IUT/TETRAS',
+
+        // Architecture
+        iot_architecture_system_title: 'Arquitetura do Sistema',
+        iot_hardware_title: 'Hardware',
+        iot_hardware_item_1: '2 Raspberry Pi com imagens Docker',
+        iot_hardware_item_2: 'Sensores múltiplos (6-1, 9-1, CO2)',
+        iot_hardware_item_3: 'Z-stick 7 + Range extender',
+        iot_hardware_item_4: 'Atuadores (lâmpadas, alarmes)',
+        iot_software_title: 'Software',
+        iot_software_item_1: 'Zwave-js-ui (comunicação de sensores)',
+        iot_software_item_2: 'Home Assistant (agregação de dados)',
+        iot_software_item_3: 'InfluxDB (armazenamento local)',
+        iot_software_item_4: 'Portainer (supervisão de containers)',
+        iot_infrastructure_title: 'Infraestrutura',
+        iot_infrastructure_item_1: 'Servidor OVH (1 base por grupo)',
+        iot_infrastructure_item_2: 'API de recuperação centralizada',
+        iot_infrastructure_item_3: 'Dashboards Grafana',
+        iot_infrastructure_item_4: 'Algoritmos de IA (TensorFlow)',
+
+        // GitHub Repositories
+        iot_github_front_title: 'Repositório GitHub',
+        iot_github_front_desc: 'Acesse o código-fonte completo do projeto Front C#',
+        iot_github_api_title: 'Repositório GitHub',
+        iot_github_api_desc: 'Acesse o código-fonte completo do projeto API C#',
+        iot_github_raspi_title: 'Repositório GitHub',
+        iot_github_raspi_desc: 'Acesse o código-fonte completo do projeto API da Raspi',
+        iot_github_docker_title: 'Repositório GitHub',
+        iot_github_docker_desc: 'Acesse o código-fonte completo do projeto Raspi OS',
+        //#endregion
+
+        //#region HomeAssitant2
+        // Hero Section
+        java_iot_project_tag: 'Projeto de Refatoração Java',
+        java_iot_hero_title: 'Refatoração do Sistema IoT em Java',
+        java_iot_hero_subtitle: 'Redesign completo do sistema usando tecnologias Java com dados fixos no PostgreSQL',
+        java_iot_stats_java: 'Stack Java',
+        java_iot_stats_database: 'Base PostgreSQL',
+
+        // Overview Section
+        java_iot_overview_title: 'Visão Geral do Projeto',
+        java_iot_refactor_title: 'Refatoração do Sistema',
+        java_iot_refactor_description: 'Este projeto representa uma refatoração completa do sistema original de monitoramento IoT, migrando de uma arquitetura distribuída complexa para uma solução Java simplificada com dados fixos em banco PostgreSQL.',
+        java_iot_objectives_title: 'Objetivos do Projeto',
+        java_iot_objective_1: 'Simplificar a arquitetura do sistema removendo dependências do Raspberry Pi',
+        java_iot_objective_2: 'Implementar uma solução Java pura usando Spring Boot e Vaadin',
+        java_iot_objective_3: 'Usar banco PostgreSQL com dados ambientais fixos',
+        java_iot_objective_4: 'Criar interface intuitiva para visualização e análise de dados',
+
+        // Highlights
+        java_iot_highlight_java: 'Full Java',
+        java_iot_highlight_java_desc: 'Solução completa no ecossistema Java',
+        java_iot_highlight_data: 'Dados Estáticos',
+        java_iot_highlight_data_desc: 'Dados fixos no PostgreSQL',
+        java_iot_highlight_simple: 'Simplificado',
+        java_iot_highlight_simple_desc: 'Sem dependências de hardware IoT',
+
+        // Advantages
+        java_iot_advantages_title: 'Vantagens Principais',
+        java_iot_advantages_subtitle: 'Benefícios da abordagem Java',
+        java_iot_advantage_simplicity_title: 'Simplicidade Arquitetural',
+        java_iot_advantage_simplicity_desc: 'Eliminação de complexidades de hardware e gerenciamento de sistemas distribuídos',
+        java_iot_advantage_maintenance_title: 'Manutenção Fácil',
+        java_iot_advantage_maintenance_desc: 'Base de código centralizada e processo de implantação simplificado',
+        java_iot_advantage_performance_title: 'Performance Otimizada',
+        java_iot_advantage_performance_desc: 'Acesso direto ao banco sem problemas de latência de rede',
+        java_iot_advantage_scalability_title: 'Melhor Escalabilidade',
+        java_iot_advantage_scalability_desc: 'Capacidades de escalabilidade horizontal com Spring Boot',
+
+        // Features
+        java_iot_features_title: 'Funcionalidades-Chave',
+        java_iot_features_subtitle: 'Principais funcionalidades do sistema refatorado',
+        java_iot_feature_refactor_title: 'Refatoração Completa',
+        java_iot_feature_refactor_desc: 'Migração da arquitetura IoT distribuída para solução Java monolítica',
+        java_iot_feature_data_title: 'Gestão de Dados Fixos',
+        java_iot_feature_data_desc: 'Dados ambientais armazenados diretamente no banco PostgreSQL',
+        java_iot_feature_visualization_title: 'Interface Moderna',
+        java_iot_feature_visualization_desc: 'Interface web baseada em Vaadin para visualização de dados',
+        java_iot_feature_simplified_title: 'Arquitetura Simplificada',
+        java_iot_feature_simplified_desc: 'Sem dependências de hardware ou integrações IoT complexas',
+
+        // Tech Stack
+        java_iot_tech_stack_title: 'Stack Tecnológico',
+        java_iot_tech_stack_subtitle: 'Tecnologias Java utilizadas na refatoração',
+        java_iot_tech_frontend: 'Frontend',
+        java_iot_tech_backend: 'Backend',
+        java_iot_tech_database: 'Banco de dados',
+
+        // Architecture
+        java_iot_architecture_title: 'Arquitetura do Sistema',
+        java_iot_architecture_frontend_title: 'Camada de Apresentação',
+        java_iot_architecture_frontend_item_1: 'Componentes Vaadin para UI moderna',
+        java_iot_architecture_frontend_item_2: 'Design responsivo para todos dispositivos',
+        java_iot_architecture_frontend_item_3: 'Gráficos de visualização em tempo real',
+        java_iot_architecture_frontend_item_4: 'Dashboards interativos e filtros',
+
+        java_iot_architecture_backend_title: 'Lógica de Negócio',
+        java_iot_architecture_backend_item_1: 'Framework de aplicação Spring Boot',
+        java_iot_architecture_backend_item_2: 'Serviços de API RESTful',
+        java_iot_architecture_backend_item_3: 'Algoritmos de processamento de dados',
+        java_iot_architecture_backend_item_4: 'Segurança e autenticação',
+
+        java_iot_architecture_data_title: 'Gestão de Dados',
+        java_iot_architecture_data_item_1: 'Engine de banco PostgreSQL',
+        java_iot_architecture_data_item_2: 'Conjuntos de dados ambientais fixos',
+        java_iot_architecture_data_item_3: 'Mapeamento ORM JPA/Hibernate',
+        java_iot_architecture_data_item_4: 'Validação e restrições de dados',
+
+        // GitHub
+        java_iot_github_title: 'Repositório GitHub',
+        java_iot_github_desc: 'Acesse o código-fonte completo da refatoração Java IoT',
+        //#endregion
         toggle_details: 'Mostrar mais conteúdo',
         hide_details: 'Ocultar detalhes',
         source_code: 'Código fonte'
