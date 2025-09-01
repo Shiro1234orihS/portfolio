@@ -743,6 +743,248 @@ const messages = {
         dashboard_github_title: 'GitHub Repository',
         dashboard_github_desc: 'Access the complete Vue.js dashboard source code',
         //#endregion
+
+        //#region Intranet NotPad 
+        notepad_project_tag: 'Note-Taking Application',
+        notepad_hero_title: 'Multi-Format Note Editor',
+        notepad_hero_subtitle: 'A Vue.js application for creating and managing notes in HTML, Markdown, and plain text',
+        notepad_stats_formats: 'Supported Formats',
+        notepad_stats_responsive: 'Responsive',
+
+        // Overview Section
+        notepad_overview_title: 'Project Overview',
+        notepad_objectives_title: 'Project Objectives',
+        notepad_objective_1: 'Create a note editor supporting multiple formats (HTML, Markdown, Text)',
+        notepad_objective_2: 'Implement an intuitive and modern user interface',
+        notepad_objective_3: 'Provide note organization and search functionalities',
+        notepad_objective_4: 'Ensure automatic saving and data synchronization',
+        notepad_concept_title: 'Application Concept',
+        notepad_concept_description: 'This note-taking application allows users to create, edit, and organize their notes in different formats. It offers a rich editor with real-time preview for Markdown and HTML, as well as complete note management with search and categorization.',
+
+        // Highlights
+        notepad_highlight_formats: 'Multi-Format',
+        notepad_highlight_formats_desc: 'HTML, Markdown and text support',
+        notepad_highlight_realtime: 'Real-Time',
+        notepad_highlight_realtime_desc: 'Instant preview',
+        notepad_highlight_interface: 'Modern Interface',
+        notepad_highlight_interface_desc: 'Intuitive and responsive design',
+
+        // Formats
+        notepad_formats_title: 'Supported Note Formats',
+        notepad_formats_subtitle: 'Create your notes in the format that suits you best',
+        notepad_format_html_desc: 'Create rich notes with HTML for advanced formatting and interactive elements',
+        notepad_format_markdown_desc: 'Use Markdown syntax for quick writing with real-time preview',
+        notepad_format_text_desc: 'Plain text notes for simple and quick note-taking without formatting',
+
+        // Features
+        notepad_features_title: 'Key Features',
+        notepad_features_subtitle: 'Everything you need for effective note-taking',
+        notepad_feature_multi_format_title: 'Multi-Format Editor',
+        notepad_feature_multi_format_desc: 'Create notes in HTML, Markdown, or plain text according to your needs',
+        notepad_feature_auto_save_title: 'Auto-Save',
+        notepad_feature_auto_save_desc: 'Your notes are automatically saved to prevent any data loss',
+        notepad_feature_editor_title: 'Advanced Editor',
+        notepad_feature_editor_desc: 'Modern editing interface with syntax highlighting and auto-completion',
+        notepad_feature_preview_title: 'Real-Time Preview',
+        notepad_feature_preview_desc: 'Visualize the rendering of your Markdown and HTML notes instantly',
+        notepad_feature_organization_title: 'Note Organization',
+        notepad_feature_organization_desc: 'Organize your notes by categories, tags, and custom folders',
+        notepad_feature_search_title: 'Advanced Search',
+        notepad_feature_search_desc: 'Quickly search through all your notes by content, title, or tags',
+
+        // Tech Stack
+        notepad_tech_stack_title: 'Technology Stack',
+        notepad_tech_stack_subtitle: 'Technologies used for application development',
+        notepad_tech_frontend: 'Frontend',
+        notepad_tech_backend: 'Backend',
+        notepad_tech_testing: 'Unit Testing',
+        notepad_tech_database: 'Database',
+
+        // Architecture
+        notepad_architecture_title: 'Application Architecture',
+        notepad_architecture_editor_title: 'Editing Engine',
+        notepad_architecture_editor_item_1: 'Code editor with syntax highlighting',
+        notepad_architecture_editor_item_2: 'Markdown parser with HTML rendering',
+        notepad_architecture_editor_item_3: 'WYSIWYG editor for HTML',
+        notepad_architecture_editor_item_4: 'Auto-completion and keyboard shortcuts',
+
+        notepad_architecture_storage_title: 'Storage Management',
+        notepad_architecture_storage_item_1: 'Automatic saving to MySQL database',
+        notepad_architecture_storage_item_2: 'Versioning and modification history',
+        notepad_architecture_storage_item_3: 'Real-time data synchronization',
+        notepad_architecture_storage_item_4: 'Local cache for optimal performance',
+
+        notepad_architecture_rendering_title: 'Rendering Engine',
+        notepad_architecture_rendering_item_1: 'Secure and optimized HTML rendering',
+        notepad_architecture_rendering_item_2: 'Markdown to HTML conversion',
+        notepad_architecture_rendering_item_3: 'Real-time preview',
+        notepad_architecture_rendering_item_4: 'PDF export and other formats',
+
+        // GitHub
+        notepad_github_title: 'GitHub Repository',
+        notepad_github_desc: 'Access the complete source code of the note-taking application',
+        //#endregion
+        //#region Intranet Agenda
+        // Hero Section
+        agenda_project_tag: 'Personal Agenda Application',
+        agenda_hero_title: 'Smart Personal Calendar',
+        agenda_hero_subtitle: 'A complete Vue.js application to organize your time and manage events efficiently',
+        agenda_stats_days: 'Days per year',
+        agenda_stats_events: 'Possible events',
+
+        // Overview Section
+        agenda_overview_title: 'Project Overview',
+        agenda_objectives_title: 'Project Objectives',
+        agenda_objective_1: 'Create an intuitive and responsive calendar interface',
+        agenda_objective_2: 'Enable event creation, modification, and deletion',
+        agenda_objective_3: 'Implement notification and reminder system',
+        agenda_objective_4: 'Ensure data persistence with secure authentication',
+        agenda_concept_title: 'Application Concept',
+        agenda_concept_description: 'This personal agenda application offers a complete solution for time management. Users can create events, set reminders, organize their schedule, and receive personalized notifications.',
+
+        // Highlights
+        agenda_highlight_organization: 'Organization',
+        agenda_highlight_organization_desc: 'Efficient time planning',
+        agenda_highlight_reminders: 'Reminders',
+        agenda_highlight_reminders_desc: 'Personalized notifications',
+        agenda_highlight_sharing: 'Sharing',
+        agenda_highlight_sharing_desc: 'Multi-user synchronization',
+
+        // Features
+        agenda_features_title: 'Key Features',
+        agenda_features_subtitle: 'Complete tools for managing your agenda',
+        agenda_feature_calendar_title: 'Calendar View',
+        agenda_feature_calendar_desc: 'Monthly, weekly and daily calendar interface with intuitive navigation',
+        agenda_feature_events_title: 'Event Management',
+        agenda_feature_events_desc: 'Create, edit and delete events with personalized details',
+        agenda_feature_notifications_title: 'Notification System',
+        agenda_feature_notifications_desc: 'Automatic reminders and customizable alerts with SweetAlert2',
+        agenda_feature_customization_title: 'Customization',
+        agenda_feature_customization_desc: 'Customizable themes, colors and display preferences',
+        agenda_feature_responsive_title: 'Responsive Design',
+        agenda_feature_responsive_desc: 'Interface optimized for computers, tablets and smartphones',
+        agenda_feature_security_title: 'Security',
+        agenda_feature_security_desc: 'Secure authentication and personal data protection',
+
+        // Tech Stack
+        agenda_tech_stack_title: 'Technology Stack',
+        agenda_tech_stack_subtitle: 'Modern technologies for a high-performance application',
+        agenda_tech_frontend: 'Frontend',
+        agenda_tech_backend: 'Backend',
+        agenda_tech_testing: 'Unit Testing',
+        agenda_tech_database: 'Database',
+
+        // Architecture
+        agenda_architecture_title: 'Application Architecture',
+        agenda_architecture_frontend_title: 'User Interface',
+        agenda_architecture_frontend_item_1: 'Reactive Vue.js components with Vue Calendar',
+        agenda_architecture_frontend_item_2: 'Centralized state management with Pinia',
+        agenda_architecture_frontend_item_3: 'Modern and intuitive user interface',
+        agenda_architecture_frontend_item_4: 'Elegant notifications with SweetAlert2',
+
+        agenda_architecture_backend_title: 'Backend Services',
+        agenda_architecture_backend_item_1: 'RESTful API with Express.js',
+        agenda_architecture_backend_item_2: 'Secure JWT authentication',
+        agenda_architecture_backend_item_3: 'User and session management',
+        agenda_architecture_backend_item_4: 'Automated email system',
+
+        agenda_architecture_features_title: 'Advanced Features',
+        agenda_architecture_features_item_1: 'Real-time event synchronization',
+        agenda_architecture_features_item_2: 'Calendar export/import',
+        agenda_architecture_features_item_3: 'Advanced search and filtering',
+        agenda_architecture_features_item_4: 'Push and email reminders',
+
+        // GitHub
+        agenda_github_title: 'GitHub Repository',
+        agenda_github_desc: 'Access the complete source code of the Vue.js agenda application',
+        //#endregion
+
+        //#region Kepass Intranet
+        // Hero Section
+        keypass_vue_project_tag: 'Password Manager Project',
+        keypass_vue_hero_title: 'Keypass - Secure Manager',
+        keypass_vue_hero_subtitle: 'Complete password management solution with AES-256 encryption and multi-platform synchronization',
+        keypass_vue_stats_encryption: 'AES Encryption',
+        keypass_vue_stats_platforms: 'Platforms',
+
+        // Overview Section
+        keypass_vue_overview_title: 'Project Overview',
+        keypass_vue_objectives_title: 'Project Objectives',
+        keypass_vue_objective_1: 'Develop a secure password management solution',
+        keypass_vue_objective_2: 'Create web app, browser extension and mobile application',
+        keypass_vue_objective_3: 'Implement AES-256 encryption and 2FA authentication',
+        keypass_vue_objective_4: 'Ensure secure synchronization across all devices',
+        keypass_vue_concept_title: 'Project Concept',
+        keypass_vue_concept_description: 'Keypass is a complete password management solution offering maximum security through AES-256 encryption. The ecosystem includes a Vue.js web application, a browser extension for auto-completion, and a mobile app for on-the-go access.',
+
+        // Highlights
+        keypass_vue_highlight_security: 'Maximum Security',
+        keypass_vue_highlight_security_desc: 'AES-256 encryption and zero-knowledge architecture',
+        keypass_vue_highlight_multiplatform: 'Multi-platform',
+        keypass_vue_highlight_multiplatform_desc: 'Web, browser extension and mobile',
+        keypass_vue_highlight_accessibility: 'Accessibility',
+        keypass_vue_highlight_accessibility_desc: 'Intuitive interface on all devices',
+
+        // Features
+        keypass_vue_features_title: 'Key Features',
+        keypass_vue_features_subtitle: 'Advanced tools for secure password management',
+        keypass_vue_feature_security_title: 'Advanced Encryption',
+        keypass_vue_feature_security_desc: 'AES-256 encryption with zero-knowledge architecture for maximum security',
+        keypass_vue_feature_multiplatform_title: 'Multi-platform',
+        keypass_vue_feature_multiplatform_desc: 'Synchronized web app, browser extension and mobile application',
+        keypass_vue_feature_sync_title: 'Secure Synchronization',
+        keypass_vue_feature_sync_desc: 'Real-time encrypted synchronization across all your devices',
+        keypass_vue_feature_generator_title: 'Password Generator',
+        keypass_vue_feature_generator_desc: 'Automatic generation of strong and customizable passwords',
+        keypass_vue_feature_dashboard_title: 'Intuitive Dashboard',
+        keypass_vue_feature_dashboard_desc: 'Modern interface to manage, organize and search your passwords',
+        keypass_vue_feature_2fa_title: '2FA Authentication',
+        keypass_vue_feature_2fa_desc: 'Two-factor authentication to strengthen your account security',
+
+        // Security Features
+        keypass_vue_security_title: 'Security Architecture',
+        keypass_vue_security_subtitle: 'Security technologies and protocols implemented',
+        keypass_vue_security_encryption_title: 'End-to-End Encryption',
+        keypass_vue_security_encryption_desc: 'All passwords are encrypted locally with AES-256 before transmission',
+        keypass_vue_security_zeroknowledge_title: 'Zero-Knowledge Architecture',
+        keypass_vue_security_zeroknowledge_desc: 'Servers can never access your decrypted passwords',
+        keypass_vue_security_backup_title: 'Secure Backup',
+        keypass_vue_security_backup_desc: 'Automatic encrypted backups with emergency recovery',
+        keypass_vue_security_audit_title: 'Security Audit',
+        keypass_vue_security_audit_desc: 'Weak password analysis and data breach monitoring',
+
+        // Tech Stack
+        keypass_vue_tech_stack_title: 'Technology Stack',
+        keypass_vue_tech_stack_subtitle: 'Technologies used for secure development',
+        keypass_vue_tech_frontend: 'User Interface',
+        keypass_vue_tech_backend: 'Backend Services',
+        keypass_vue_tech_testing: 'Testing & Quality',
+        keypass_vue_tech_database: 'Secure Storage',
+
+        // Architecture
+        keypass_vue_architecture_title: 'Multi-platform Architecture',
+        keypass_vue_architecture_web_title: 'Web Application',
+        keypass_vue_architecture_web_item_1: 'Responsive and modern Vue.js interface',
+        keypass_vue_architecture_web_item_2: 'Centralized state management with Pinia',
+        keypass_vue_architecture_web_item_3: 'Secure API communication with Axios',
+        keypass_vue_architecture_web_item_4: 'User notifications with SweetAlert2',
+
+        keypass_vue_architecture_extension_title: 'Browser Extension',
+        keypass_vue_architecture_extension_item_1: 'Automatic form auto-completion',
+        keypass_vue_architecture_extension_item_2: 'Intelligent login field detection',
+        keypass_vue_architecture_extension_item_3: 'On-the-fly password generation',
+        keypass_vue_architecture_extension_item_4: 'Synchronization with main application',
+
+        keypass_vue_architecture_mobile_title: 'Mobile Application',
+        keypass_vue_architecture_mobile_item_1: 'Mobile-optimized native interface',
+        keypass_vue_architecture_mobile_item_2: 'Biometric authentication (Touch/Face ID)',
+        keypass_vue_architecture_mobile_item_3: 'Offline access to passwords',
+        keypass_vue_architecture_mobile_item_4: 'Secure sharing between applications',
+
+        // GitHub
+        keypass_vue_github_title: 'GitHub Repository',
+        keypass_vue_github_desc: 'Access the complete source code of Keypass password manager',
+        //#endregion
         toggle_details: 'Show more content',
         hide_details: 'Hide details',
         source_code: 'Source code'
@@ -1475,8 +1717,252 @@ const messages = {
         // GitHub
         dashboard_github_title: 'Dépôt GitHub',
         dashboard_github_desc: 'Accédez au code source complet du dashboard Vue.js',
-
         //#endregion
+
+        //#region home NotePad
+        // Hero Section
+        notepad_project_tag: 'Application de Prise de Notes',
+        notepad_hero_title: 'Éditeur de Notes Multi-Format',
+        notepad_hero_subtitle: 'Une application Vue.js pour créer et gérer des notes en HTML, Markdown et texte brut',
+        notepad_stats_formats: 'Formats Supportés',
+        notepad_stats_responsive: 'Responsive',
+
+        // Overview Section
+        notepad_overview_title: 'Vue d\'ensemble du projet',
+        notepad_objectives_title: 'Objectifs du Projet',
+        notepad_objective_1: 'Créer un éditeur de notes supportant plusieurs formats (HTML, Markdown, Texte)',
+        notepad_objective_2: 'Implémenter une interface utilisateur intuitive et moderne',
+        notepad_objective_3: 'Fournir des fonctionnalités d\'organisation et de recherche des notes',
+        notepad_objective_4: 'Assurer la sauvegarde automatique et la synchronisation des données',
+        notepad_concept_title: 'Concept de l\'Application',
+        notepad_concept_description: 'Cette application de prise de notes permet aux utilisateurs de créer, éditer et organiser leurs notes dans différents formats. Elle offre un éditeur riche avec prévisualisation en temps réel pour Markdown et HTML, ainsi qu\'une gestion complète des notes avec recherche et catégorisation.',
+
+        // Highlights
+        notepad_highlight_formats: 'Multi-Formats',
+        notepad_highlight_formats_desc: 'Support HTML, Markdown et texte',
+        notepad_highlight_realtime: 'Temps Réel',
+        notepad_highlight_realtime_desc: 'Prévisualisation instantanée',
+        notepad_highlight_interface: 'Interface Moderne',
+        notepad_highlight_interface_desc: 'Design intuitif et responsive',
+
+        // Formats
+        notepad_formats_title: 'Formats de Notes Supportés',
+        notepad_formats_subtitle: 'Créez vos notes dans le format qui vous convient le mieux',
+        notepad_format_html_desc: 'Créez des notes riches avec du HTML pour des mises en forme avancées et des éléments interactifs',
+        notepad_format_markdown_desc: 'Utilisez la syntaxe Markdown pour une rédaction rapide avec prévisualisation en temps réel',
+        notepad_format_text_desc: 'Notes en texte brut pour une prise de notes simple et rapide sans formatage',
+
+        // Features
+        notepad_features_title: 'Fonctionnalités Principales',
+        notepad_features_subtitle: 'Tout ce dont vous avez besoin pour une prise de notes efficace',
+        notepad_feature_multi_format_title: 'Éditeur Multi-Format',
+        notepad_feature_multi_format_desc: 'Créez des notes en HTML, Markdown ou texte brut selon vos besoins',
+        notepad_feature_auto_save_title: 'Sauvegarde Automatique',
+        notepad_feature_auto_save_desc: 'Vos notes sont automatiquement sauvegardées pour éviter toute perte de données',
+        notepad_feature_editor_title: 'Éditeur Avancé',
+        notepad_feature_editor_desc: 'Interface d\'édition moderne avec coloration syntaxique et auto-complétion',
+        notepad_feature_preview_title: 'Prévisualisation en Temps Réel',
+        notepad_feature_preview_desc: 'Visualisez le rendu de vos notes Markdown et HTML instantanément',
+        notepad_feature_organization_title: 'Organisation des Notes',
+        notepad_feature_organization_desc: 'Organisez vos notes par catégories, tags et dossiers personnalisés',
+        notepad_feature_search_title: 'Recherche Avancée',
+        notepad_feature_search_desc: 'Recherchez rapidement dans toutes vos notes par contenu, titre ou tags',
+
+        // Tech Stack
+        notepad_tech_stack_title: 'Stack Technologique',
+        notepad_tech_stack_subtitle: 'Technologies utilisées pour le développement de l\'application',
+        notepad_tech_frontend: 'Frontend',
+        notepad_tech_backend: 'Backend',
+        notepad_tech_testing: 'Tests Unitaires',
+        notepad_tech_database: 'Base de données',
+
+        // Architecture
+        notepad_architecture_title: 'Architecture de l\'Application',
+        notepad_architecture_editor_title: 'Moteur d\'Édition',
+        notepad_architecture_editor_item_1: 'Éditeur de code avec coloration syntaxique',
+        notepad_architecture_editor_item_2: 'Parser Markdown avec rendu HTML',
+        notepad_architecture_editor_item_3: 'Éditeur WYSIWYG pour HTML',
+        notepad_architecture_editor_item_4: 'Auto-complétion et raccourcis clavier',
+
+        notepad_architecture_storage_title: 'Gestion du Stockage',
+        notepad_architecture_storage_item_1: 'Sauvegarde automatique en base MySQL',
+        notepad_architecture_storage_item_2: 'Versioning et historique des modifications',
+        notepad_architecture_storage_item_3: 'Synchronisation temps réel des données',
+        notepad_architecture_storage_item_4: 'Cache local pour performance optimale',
+
+        notepad_architecture_rendering_title: 'Moteur de Rendu',
+        notepad_architecture_rendering_item_1: 'Rendu HTML sécurisé et optimisé',
+        notepad_architecture_rendering_item_2: 'Conversion Markdown vers HTML',
+        notepad_architecture_rendering_item_3: 'Prévisualisation temps réel',
+        notepad_architecture_rendering_item_4: 'Export PDF et autres formats',
+
+        // GitHub
+        notepad_github_title: 'Dépôt GitHub',
+        //#endregion 
+
+        //#region Intranet Agenda
+        // Hero Section
+        agenda_project_tag: 'Application Agenda Personnelle',
+        agenda_hero_title: 'Agenda Personnel Intelligent',
+        agenda_hero_subtitle: 'Une application Vue.js complète pour organiser votre temps et gérer vos événements efficacement',
+        agenda_stats_days: 'Jours par an',
+        agenda_stats_events: 'Événements possibles',
+
+        // Overview Section
+        agenda_overview_title: 'Vue d\'ensemble du projet',
+        agenda_objectives_title: 'Objectifs du Projet',
+        agenda_objective_1: 'Créer une interface calendrier intuitive et responsive',
+        agenda_objective_2: 'Permettre la création, modification et suppression d\'événements',
+        agenda_objective_3: 'Implémenter un système de notifications et rappels',
+        agenda_objective_4: 'Assurer la persistance des données avec authentification sécurisée',
+        agenda_concept_title: 'Concept de l\'Application',
+        agenda_concept_description: 'Cette application d\'agenda personnel offre une solution complète pour la gestion du temps. Les utilisateurs peuvent créer des événements, définir des rappels, organiser leur planning et recevoir des notifications personnalisées.',
+
+        // Highlights
+        agenda_highlight_organization: 'Organisation',
+        agenda_highlight_organization_desc: 'Planification efficace du temps',
+        agenda_highlight_reminders: 'Rappels',
+        agenda_highlight_reminders_desc: 'Notifications personnalisées',
+        agenda_highlight_sharing: 'Partage',
+        agenda_highlight_sharing_desc: 'Synchronisation multi-utilisateurs',
+
+        // Features
+        agenda_features_title: 'Fonctionnalités Principales',
+        agenda_features_subtitle: 'Outils complets pour la gestion de votre agenda',
+        agenda_feature_calendar_title: 'Vue Calendrier',
+        agenda_feature_calendar_desc: 'Interface calendrier mensuelle, hebdomadaire et journalière avec navigation intuitive',
+        agenda_feature_events_title: 'Gestion d\'Événements',
+        agenda_feature_events_desc: 'Création, modification et suppression d\'événements avec détails personnalisés',
+        agenda_feature_notifications_title: 'Système de Notifications',
+        agenda_feature_notifications_desc: 'Rappels automatiques et alertes personnalisables avec SweetAlert2',
+        agenda_feature_customization_title: 'Personnalisation',
+        agenda_feature_customization_desc: 'Thèmes, couleurs et préférences d\'affichage personnalisables',
+        agenda_feature_responsive_title: 'Design Responsive',
+        agenda_feature_responsive_desc: 'Interface optimisée pour ordinateurs, tablettes et smartphones',
+        agenda_feature_security_title: 'Sécurité',
+        agenda_feature_security_desc: 'Authentification sécurisée et protection des données personnelles',
+
+        // Tech Stack
+        agenda_tech_stack_title: 'Stack Technologique',
+        agenda_tech_stack_subtitle: 'Technologies modernes pour une application performante',
+        agenda_tech_frontend: 'Frontend',
+        agenda_tech_backend: 'Backend',
+        agenda_tech_testing: 'Tests Unitaires',
+        agenda_tech_database: 'Base de données',
+
+        // Architecture
+        agenda_architecture_title: 'Architecture de l\'Application',
+        agenda_architecture_frontend_title: 'Interface Utilisateur',
+        agenda_architecture_frontend_item_1: 'Composants Vue.js réactifs avec Vue Calendar',
+        agenda_architecture_frontend_item_2: 'Gestion d\'état centralisée avec Pinia',
+        agenda_architecture_frontend_item_3: 'Interface utilisateur moderne et intuitive',
+        agenda_architecture_frontend_item_4: 'Notifications élégantes avec SweetAlert2',
+
+        agenda_architecture_backend_title: 'Services Backend',
+        agenda_architecture_backend_item_1: 'API RESTful avec Express.js',
+        agenda_architecture_backend_item_2: 'Authentification JWT sécurisée',
+        agenda_architecture_backend_item_3: 'Gestion des utilisateurs et sessions',
+        agenda_architecture_backend_item_4: 'Système d\'emails automatiques',
+
+        agenda_architecture_features_title: 'Fonctionnalités Avancées',
+        agenda_architecture_features_item_1: 'Synchronisation temps réel des événements',
+        agenda_architecture_features_item_2: 'Export/Import de calendriers',
+        agenda_architecture_features_item_3: 'Recherche et filtrage avancés',
+        agenda_architecture_features_item_4: 'Rappels push et email',
+
+        // GitHub
+        agenda_github_title: 'Dépôt GitHub',
+        agenda_github_desc: 'Accédez au code source complet de l\'application agenda Vue.js',
+        // #endregion
+
+        //#region Kepass Intranet
+        // Hero Section
+        keypass_vue_project_tag: 'Projet Gestionnaire de Mots de Passe',
+        keypass_vue_hero_title: 'Keypass - Gestionnaire Sécurisé',
+        keypass_vue_hero_subtitle: 'Solution complète de gestion de mots de passe avec chiffrement AES-256 et synchronisation multi-plateforme',
+        keypass_vue_stats_encryption: 'Chiffrement AES',
+        keypass_vue_stats_platforms: 'Plateformes',
+
+        // Overview Section
+        keypass_vue_overview_title: 'Vue d\'ensemble du projet',
+        keypass_vue_objectives_title: 'Objectifs du Projet',
+        keypass_vue_objective_1: 'Développer une solution sécurisée de gestion de mots de passe',
+        keypass_vue_objective_2: 'Créer une application web, extension navigateur et app mobile',
+        keypass_vue_objective_3: 'Implémenter un chiffrement AES-256 et authentification 2FA',
+        keypass_vue_objective_4: 'Assurer la synchronisation sécurisée entre tous les appareils',
+        keypass_vue_concept_title: 'Concept du Projet',
+        keypass_vue_concept_description: 'Keypass est une solution complète de gestion de mots de passe offrant une sécurité maximale grâce au chiffrement AES-256. L\'écosystème comprend une application web développée en Vue.js, une extension navigateur pour l\'auto-complétion et une application mobile pour l\'accès nomade.',
+
+        // Highlights
+        keypass_vue_highlight_security: 'Sécurité Maximale',
+        keypass_vue_highlight_security_desc: 'Chiffrement AES-256 et architecture zero-knowledge',
+        keypass_vue_highlight_multiplatform: 'Multi-plateforme',
+        keypass_vue_highlight_multiplatform_desc: 'Web, extension navigateur et mobile',
+        keypass_vue_highlight_accessibility: 'Accessibilité',
+        keypass_vue_highlight_accessibility_desc: 'Interface intuitive sur tous les appareils',
+
+        // Features
+        keypass_vue_features_title: 'Fonctionnalités Principales',
+        keypass_vue_features_subtitle: 'Outils avancés pour la gestion sécurisée des mots de passe',
+        keypass_vue_feature_security_title: 'Chiffrement Avancé',
+        keypass_vue_feature_security_desc: 'Chiffrement AES-256 avec architecture zero-knowledge pour une sécurité maximale',
+        keypass_vue_feature_multiplatform_title: 'Multi-plateforme',
+        keypass_vue_feature_multiplatform_desc: 'Application web, extension navigateur et application mobile synchronisées',
+        keypass_vue_feature_sync_title: 'Synchronisation Sécurisée',
+        keypass_vue_feature_sync_desc: 'Synchronisation chiffrée en temps réel entre tous vos appareils',
+        keypass_vue_feature_generator_title: 'Générateur de Mots de Passe',
+        keypass_vue_feature_generator_desc: 'Génération automatique de mots de passe forts et personnalisables',
+        keypass_vue_feature_dashboard_title: 'Tableau de Bord Intuitif',
+        keypass_vue_feature_dashboard_desc: 'Interface moderne pour gérer, organiser et rechercher vos mots de passe',
+        keypass_vue_feature_2fa_title: 'Authentification 2FA',
+        keypass_vue_feature_2fa_desc: 'Double authentification pour renforcer la sécurité de votre compte',
+
+        // Security Features
+        keypass_vue_security_title: 'Architecture de Sécurité',
+        keypass_vue_security_subtitle: 'Technologies et protocoles de sécurité implémentés',
+        keypass_vue_security_encryption_title: 'Chiffrement de Bout en Bout',
+        keypass_vue_security_encryption_desc: 'Tous les mots de passe sont chiffrés localement avec AES-256 avant transmission',
+        keypass_vue_security_zeroknowledge_title: 'Architecture Zero-Knowledge',
+        keypass_vue_security_zeroknowledge_desc: 'Les serveurs ne peuvent jamais accéder à vos mots de passe déchiffrés',
+        keypass_vue_security_backup_title: 'Sauvegarde Sécurisée',
+        keypass_vue_security_backup_desc: 'Sauvegardes automatiques chiffrées avec récupération d\'urgence',
+        keypass_vue_security_audit_title: 'Audit de Sécurité',
+        keypass_vue_security_audit_desc: 'Analyse des mots de passe faibles et surveillance des fuites de données',
+
+        // Tech Stack
+        keypass_vue_tech_stack_title: 'Stack Technologique',
+        keypass_vue_tech_stack_subtitle: 'Technologies utilisées pour le développement sécurisé',
+        keypass_vue_tech_frontend: 'Interface Utilisateur',
+        keypass_vue_tech_backend: 'Services Backend',
+        keypass_vue_tech_testing: 'Tests et Qualité',
+        keypass_vue_tech_database: 'Stockage Sécurisé',
+
+        // Architecture
+        keypass_vue_architecture_title: 'Architecture Multi-plateforme',
+        keypass_vue_architecture_web_title: 'Application Web',
+        keypass_vue_architecture_web_item_1: 'Interface Vue.js responsive et moderne',
+        keypass_vue_architecture_web_item_2: 'Gestion d\'état centralisée avec Pinia',
+        keypass_vue_architecture_web_item_3: 'Communication API sécurisée avec Axios',
+        keypass_vue_architecture_web_item_4: 'Notifications utilisateur avec SweetAlert2',
+
+        keypass_vue_architecture_extension_title: 'Extension Navigateur',
+        keypass_vue_architecture_extension_item_1: 'Auto-complétion automatique des formulaires',
+        keypass_vue_architecture_extension_item_2: 'Détection intelligente des champs de connexion',
+        keypass_vue_architecture_extension_item_3: 'Génération de mots de passe à la volée',
+        keypass_vue_architecture_extension_item_4: 'Synchronisation avec l\'application principale',
+
+        keypass_vue_architecture_mobile_title: 'Application Mobile',
+        keypass_vue_architecture_mobile_item_1: 'Interface native optimisée pour mobile',
+        keypass_vue_architecture_mobile_item_2: 'Authentification biométrique (Touch/Face ID)',
+        keypass_vue_architecture_mobile_item_3: 'Accès hors ligne aux mots de passe',
+        keypass_vue_architecture_mobile_item_4: 'Partage sécurisé entre applications',
+
+        // GitHub
+        keypass_vue_github_title: 'Dépôt GitHub',
+        keypass_vue_github_desc: 'Accédez au code source complet du gestionnaire de mots de passe Keypass',
+        //#endregion
+
+
         toggle_details: 'Afficher plus de contenu',
         hide_details: 'Masquer les détails',
         source_code: 'Code source'
@@ -2216,7 +2702,249 @@ const messages = {
         dashboard_github_title: 'Repositório GitHub',
         dashboard_github_desc: 'Acesse o código-fonte completo do dashboard Vue.js',
         //#endregion
-        
+        //#region Intranet Agenda 
+        // Hero Section
+        notepad_project_tag: 'Aplicação de Notas',
+        notepad_hero_title: 'Editor de Notas Multi-Formato',
+        notepad_hero_subtitle: 'Uma aplicação Vue.js para criar e gerenciar notas em HTML, Markdown e texto simples',
+        notepad_stats_formats: 'Formatos Suportados',
+        notepad_stats_responsive: 'Responsivo',
+
+        // Overview Section
+        notepad_overview_title: 'Visão Geral do Projeto',
+        notepad_objectives_title: 'Objetivos do Projeto',
+        notepad_objective_1: 'Criar um editor de notas suportando múltiplos formatos (HTML, Markdown, Texto)',
+        notepad_objective_2: 'Implementar uma interface de usuário intuitiva e moderna',
+        notepad_objective_3: 'Fornecer funcionalidades de organização e busca de notas',
+        notepad_objective_4: 'Garantir salvamento automático e sincronização dos dados',
+        notepad_concept_title: 'Conceito da Aplicação',
+        notepad_concept_description: 'Esta aplicação de anotações permite aos usuários criar, editar e organizar suas notas em diferentes formatos. Oferece um editor rico com visualização em tempo real para Markdown e HTML, bem como gestão completa de notas com busca e categorização.',
+
+        // Highlights
+        notepad_highlight_formats: 'Multi-Formatos',
+        notepad_highlight_formats_desc: 'Suporte HTML, Markdown e texto',
+        notepad_highlight_realtime: 'Tempo Real',
+        notepad_highlight_realtime_desc: 'Visualização instantânea',
+        notepad_highlight_interface: 'Interface Moderna',
+        notepad_highlight_interface_desc: 'Design intuitivo e responsivo',
+
+        // Formats
+        notepad_formats_title: 'Formatos de Notas Suportados',
+        notepad_formats_subtitle: 'Crie suas notas no formato que mais lhe convém',
+        notepad_format_html_desc: 'Crie notas ricas com HTML para formatação avançada e elementos interativos',
+        notepad_format_markdown_desc: 'Use sintaxe Markdown para escrita rápida com visualização em tempo real',
+        notepad_format_text_desc: 'Notas em texto simples para anotações rápidas e simples sem formatação',
+
+        // Features
+        notepad_features_title: 'Funcionalidades Principais',
+        notepad_features_subtitle: 'Tudo que você precisa para anotações eficazes',
+        notepad_feature_multi_format_title: 'Editor Multi-Formato',
+        notepad_feature_multi_format_desc: 'Crie notas em HTML, Markdown ou texto simples conforme suas necessidades',
+        notepad_feature_auto_save_title: 'Salvamento Automático',
+        notepad_feature_auto_save_desc: 'Suas notas são automaticamente salvas para evitar qualquer perda de dados',
+        notepad_feature_editor_title: 'Editor Avançado',
+        notepad_feature_editor_desc: 'Interface de edição moderna com destaque de sintaxe e auto-completar',
+        notepad_feature_preview_title: 'Visualização em Tempo Real',
+        notepad_feature_preview_desc: 'Visualize o resultado de suas notas Markdown e HTML instantaneamente',
+        notepad_feature_organization_title: 'Organização de Notas',
+        notepad_feature_organization_desc: 'Organize suas notas por categorias, tags e pastas personalizadas',
+        notepad_feature_search_title: 'Busca Avançada',
+        notepad_feature_search_desc: 'Busque rapidamente em todas suas notas por conteúdo, título ou tags',
+
+        // Tech Stack
+        notepad_tech_stack_title: 'Stack Tecnológico',
+        notepad_tech_stack_subtitle: 'Tecnologias utilizadas para o desenvolvimento da aplicação',
+        notepad_tech_frontend: 'Frontend',
+        notepad_tech_backend: 'Backend',
+        notepad_tech_testing: 'Testes Unitários',
+        notepad_tech_database: 'Banco de dados',
+
+        // Architecture
+        notepad_architecture_title: 'Arquitetura da Aplicação',
+        notepad_architecture_editor_title: 'Motor de Edição',
+        notepad_architecture_editor_item_1: 'Editor de código com destaque de sintaxe',
+        notepad_architecture_editor_item_2: 'Parser Markdown com renderização HTML',
+        notepad_architecture_editor_item_3: 'Editor WYSIWYG para HTML',
+        notepad_architecture_editor_item_4: 'Auto-completar e atalhos de teclado',
+
+        notepad_architecture_storage_title: 'Gestão de Armazenamento',
+        notepad_architecture_storage_item_1: 'Salvamento automático em banco MySQL',
+        notepad_architecture_storage_item_2: 'Versionamento e histórico de modificações',
+        notepad_architecture_storage_item_3: 'Sincronização de dados em tempo real',
+        notepad_architecture_storage_item_4: 'Cache local para performance otimizada',
+
+        notepad_architecture_rendering_title: 'Motor de Renderização',
+        notepad_architecture_rendering_item_1: 'Renderização HTML segura e otimizada',
+        notepad_architecture_rendering_item_2: 'Conversão Markdown para HTML',
+        notepad_architecture_rendering_item_3: 'Visualização em tempo real',
+        notepad_architecture_rendering_item_4: 'Exportação PDF e outros formatos',
+
+        // GitHub
+        notepad_github_title: 'Repositório GitHub',
+        notepad_github_desc: 'Acesse o código-fonte completo da aplicação de anotações',
+
+        //#endregion
+
+        //#region Intranet Agenda
+        // Hero Section
+        agenda_project_tag: 'Aplicação Agenda Pessoal',
+        agenda_hero_title: 'Agenda Pessoal Inteligente',
+        agenda_hero_subtitle: 'Uma aplicação Vue.js completa para organizar seu tempo e gerenciar eventos eficientemente',
+        agenda_stats_days: 'Dias por ano',
+        agenda_stats_events: 'Eventos possíveis',
+
+        // Overview Section
+        agenda_overview_title: 'Visão Geral do Projeto',
+        agenda_objectives_title: 'Objetivos do Projeto',
+        agenda_objective_1: 'Criar uma interface de calendário intuitiva e responsiva',
+        agenda_objective_2: 'Permitir criação, modificação e exclusão de eventos',
+        agenda_objective_3: 'Implementar sistema de notificações e lembretes',
+        agenda_objective_4: 'Garantir persistência de dados com autenticação segura',
+        agenda_concept_title: 'Conceito da Aplicação',
+        agenda_concept_description: 'Esta aplicação de agenda pessoal oferece uma solução completa para gestão de tempo. Os usuários podem criar eventos, definir lembretes, organizar sua agenda e receber notificações personalizadas.',
+
+        // Highlights
+        agenda_highlight_organization: 'Organização',
+        agenda_highlight_organization_desc: 'Planejamento eficiente do tempo',
+        agenda_highlight_reminders: 'Lembretes',
+        agenda_highlight_reminders_desc: 'Notificações personalizadas',
+        agenda_highlight_sharing: 'Compartilhamento',
+        agenda_highlight_sharing_desc: 'Sincronização multi-usuários',
+
+        // Features
+        agenda_features_title: 'Funcionalidades Principais',
+        agenda_features_subtitle: 'Ferramentas completas para gestão da sua agenda',
+        agenda_feature_calendar_title: 'Vista Calendário',
+        agenda_feature_calendar_desc: 'Interface de calendário mensal, semanal e diária com navegação intuitiva',
+        agenda_feature_events_title: 'Gestão de Eventos',
+        agenda_feature_events_desc: 'Criação, edição e exclusão de eventos com detalhes personalizados',
+        agenda_feature_notifications_title: 'Sistema de Notificações',
+        agenda_feature_notifications_desc: 'Lembretes automáticos e alertas personalizáveis com SweetAlert2',
+        agenda_feature_customization_title: 'Personalização',
+        agenda_feature_customization_desc: 'Temas, cores e preferências de exibição personalizáveis',
+        agenda_feature_responsive_title: 'Design Responsivo',
+        agenda_feature_responsive_desc: 'Interface otimizada para computadores, tablets e smartphones',
+        agenda_feature_security_title: 'Segurança',
+        agenda_feature_security_desc: 'Autenticação segura e proteção de dados pessoais',
+
+        // Tech Stack
+        agenda_tech_stack_title: 'Stack Tecnológico',
+        agenda_tech_stack_subtitle: 'Tecnologias modernas para uma aplicação de alta performance',
+        agenda_tech_frontend: 'Frontend',
+        agenda_tech_backend: 'Backend',
+        agenda_tech_testing: 'Testes Unitários',
+        agenda_tech_database: 'Banco de dados',
+
+        // Architecture
+        agenda_architecture_title: 'Arquitetura da Aplicação',
+        agenda_architecture_frontend_title: 'Interface do Usuário',
+        agenda_architecture_frontend_item_1: 'Componentes Vue.js reativos com Vue Calendar',
+        agenda_architecture_frontend_item_2: 'Gestão de estado centralizada com Pinia',
+        agenda_architecture_frontend_item_3: 'Interface moderna e intuitiva',
+        agenda_architecture_frontend_item_4: 'Notificações elegantes com SweetAlert2',
+
+        agenda_architecture_backend_title: 'Serviços Backend',
+        agenda_architecture_backend_item_1: 'API RESTful com Express.js',
+        agenda_architecture_backend_item_2: 'Autenticação JWT segura',
+        agenda_architecture_backend_item_3: 'Gestão de usuários e sessões',
+        agenda_architecture_backend_item_4: 'Sistema de emails automáticos',
+
+        agenda_architecture_features_title: 'Funcionalidades Avançadas',
+        agenda_architecture_features_item_1: 'Sincronização de eventos em tempo real',
+        agenda_architecture_features_item_2: 'Exportação/importação de calendários',
+        agenda_architecture_features_item_3: 'Pesquisa e filtragem avançadas',
+        agenda_architecture_features_item_4: 'Lembretes push e por email',
+
+        // GitHub
+        agenda_github_title: 'Repositório GitHub',
+        agenda_github_desc: 'Acesse o código-fonte completo da aplicação agenda Vue.js',
+        //#endregion
+        //#region Kepass Intranet
+        // Hero Section
+        keypass_vue_project_tag: 'Projeto Gerenciador de Senhas',
+        keypass_vue_hero_title: 'Keypass - Gerenciador Seguro',
+        keypass_vue_hero_subtitle: 'Solução completa de gerenciamento de senhas com criptografia AES-256 e sincronização multiplataforma',
+        keypass_vue_stats_encryption: 'Criptografia AES',
+        keypass_vue_stats_platforms: 'Plataformas',
+
+        // Overview Section
+        keypass_vue_overview_title: 'Visão Geral do Projeto',
+        keypass_vue_objectives_title: 'Objetivos do Projeto',
+        keypass_vue_objective_1: 'Desenvolver uma solução segura de gerenciamento de senhas',
+        keypass_vue_objective_2: 'Criar aplicação web, extensão de navegador e app móvel',
+        keypass_vue_objective_3: 'Implementar criptografia AES-256 e autenticação 2FA',
+        keypass_vue_objective_4: 'Garantir sincronização segura entre todos os dispositivos',
+        keypass_vue_concept_title: 'Conceito do Projeto',
+        keypass_vue_concept_description: 'Keypass é uma solução completa de gerenciamento de senhas oferecendo segurança máxima através da criptografia AES-256. O ecossistema inclui uma aplicação web Vue.js, uma extensão de navegador para autocompletar e um aplicativo móvel para acesso em movimento.',
+
+        // Highlights
+        keypass_vue_highlight_security: 'Segurança Máxima',
+        keypass_vue_highlight_security_desc: 'Criptografia AES-256 e arquitetura zero-knowledge',
+        keypass_vue_highlight_multiplatform: 'Multiplataforma',
+        keypass_vue_highlight_multiplatform_desc: 'Web, extensão de navegador e móvel',
+        keypass_vue_highlight_accessibility: 'Acessibilidade',
+        keypass_vue_highlight_accessibility_desc: 'Interface intuitiva em todos os dispositivos',
+
+        // Features
+        keypass_vue_features_title: 'Funcionalidades Principais',
+        keypass_vue_features_subtitle: 'Ferramentas avançadas para gerenciamento seguro de senhas',
+        keypass_vue_feature_security_title: 'Criptografia Avançada',
+        keypass_vue_feature_security_desc: 'Criptografia AES-256 com arquitetura zero-knowledge para segurança máxima',
+        keypass_vue_feature_multiplatform_title: 'Multiplataforma',
+        keypass_vue_feature_multiplatform_desc: 'Aplicação web, extensão de navegador e aplicativo móvel sincronizados',
+        keypass_vue_feature_sync_title: 'Sincronização Segura',
+        keypass_vue_feature_sync_desc: 'Sincronização criptografada em tempo real entre todos os seus dispositivos',
+        keypass_vue_feature_generator_title: 'Gerador de Senhas',
+        keypass_vue_feature_generator_desc: 'Geração automática de senhas fortes e personalizáveis',
+        keypass_vue_feature_dashboard_title: 'Painel Intuitivo',
+        keypass_vue_feature_dashboard_desc: 'Interface moderna para gerenciar, organizar e buscar suas senhas',
+        keypass_vue_feature_2fa_title: 'Autenticação 2FA',
+        keypass_vue_feature_2fa_desc: 'Autenticação de dois fatores para fortalecer a segurança da sua conta',
+
+        // Security Features
+        keypass_vue_security_title: 'Arquitetura de Segurança',
+        keypass_vue_security_subtitle: 'Tecnologias e protocolos de segurança implementados',
+        keypass_vue_security_encryption_title: 'Criptografia Ponta a Ponta',
+        keypass_vue_security_encryption_desc: 'Todas as senhas são criptografadas localmente com AES-256 antes da transmissão',
+        keypass_vue_security_zeroknowledge_title: 'Arquitetura Zero-Knowledge',
+        keypass_vue_security_zeroknowledge_desc: 'Os servidores nunca podem acessar suas senhas descriptografadas',
+        keypass_vue_security_backup_title: 'Backup Seguro',
+        keypass_vue_security_backup_desc: 'Backups automáticos criptografados com recuperação de emergência',
+        keypass_vue_security_audit_title: 'Auditoria de Segurança',
+        keypass_vue_security_audit_desc: 'Análise de senhas fracas e monitoramento de vazamentos de dados',
+
+        // Tech Stack
+        keypass_vue_tech_stack_title: 'Stack Tecnológico',
+        keypass_vue_tech_stack_subtitle: 'Tecnologias utilizadas para desenvolvimento seguro',
+        keypass_vue_tech_frontend: 'Interface do Usuário',
+        keypass_vue_tech_backend: 'Serviços Backend',
+        keypass_vue_tech_testing: 'Testes e Qualidade',
+        keypass_vue_tech_database: 'Armazenamento Seguro',
+
+        // Architecture
+        keypass_vue_architecture_title: 'Arquitetura Multiplataforma',
+        keypass_vue_architecture_web_title: 'Aplicação Web',
+        keypass_vue_architecture_web_item_1: 'Interface Vue.js responsiva e moderna',
+        keypass_vue_architecture_web_item_2: 'Gerenciamento de estado centralizado com Pinia',
+        keypass_vue_architecture_web_item_3: 'Comunicação API segura com Axios',
+        keypass_vue_architecture_web_item_4: 'Notificações do usuário com SweetAlert2',
+
+        keypass_vue_architecture_extension_title: 'Extensão do Navegador',
+        keypass_vue_architecture_extension_item_1: 'Autocompletar automático de formulários',
+        keypass_vue_architecture_extension_item_2: 'Detecção inteligente de campos de login',
+        keypass_vue_architecture_extension_item_3: 'Geração de senhas instantânea',
+        keypass_vue_architecture_extension_item_4: 'Sincronização com aplicação principal',
+
+        keypass_vue_architecture_mobile_title: 'Aplicativo Móvel',
+        keypass_vue_architecture_mobile_item_1: 'Interface nativa otimizada para móvel',
+        keypass_vue_architecture_mobile_item_2: 'Autenticação biométrica (Touch/Face ID)',
+        keypass_vue_architecture_mobile_item_3: 'Acesso offline às senhas',
+        keypass_vue_architecture_mobile_item_4: 'Compartilhamento seguro entre aplicações',
+
+        // GitHub
+        keypass_vue_github_title: 'Repositório GitHub',
+        keypass_vue_github_desc: 'Acesse o código-fonte completo do gerenciador de senhas Keypass',
+        //#endregion
         toggle_details: 'Mostrar mais conteúdo',
         hide_details: 'Ocultar detalhes',
         source_code: 'Código fonte'
