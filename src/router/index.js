@@ -16,6 +16,12 @@ import Homeassistant2View from '@/views/Homeassistant2View.vue';
 import MiniProjetView from '@/views/MiniProjetView.vue';
 import KeypassView from '@/views/KeypassView.vue';
 import EarningCallView from '@/views/EarningCallView.vue';
+import AgendaHomeView from '@/views/AgendaHomeView.vue';
+import IntranetHomeView from '@/views/IntranetHomeView.vue';
+import IntranetKeypassView from '@/views/IntranetKeypassView.vue';
+import IntranetNotepadView from '@/views/IntranetNotepadView.vue';
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -85,7 +91,7 @@ const router = createRouter({
       name: 'homeassistant',
       component: HomeassistantView,
     },
-      {
+    {
       path: '/homeassistant2',
       name: 'homeassistant2',
       component: Homeassistant2View,
@@ -104,6 +110,26 @@ const router = createRouter({
       path: '/earningcall',
       name: 'earningcall',
       component: EarningCallView,
+    },
+    {
+      path: '/intranet/home',
+      name: 'intranetHome',
+      component: IntranetHomeView,
+    },
+     {
+      path: '/intranet/keypass',
+      name: 'intranetKeypass',
+      component: IntranetKeypassView,
+    },
+     {
+      path: '/intranet/agenda',
+      name: 'intranetAgenda',
+      component: AgendaHomeView,
+    },
+      {
+      path: '/intranet/notepad',
+      name: 'intranetNotepad',
+      component: IntranetNotepadView,
     },
     {
       path: '/about',

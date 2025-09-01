@@ -661,6 +661,88 @@ const messages = {
         java_iot_github_title: 'GitHub Repository',
         java_iot_github_desc: 'Access the complete Java IoT refactoring source code',
         //#endregion
+
+        //#region HomeIntranet 
+        // Hero Section
+        dashboard_project_tag: 'Personal Dashboard Project',
+        dashboard_hero_title: 'Modular Personal Dashboard',
+        dashboard_hero_subtitle: 'A customizable Vue.js dashboard with weather, sports, and productivity modules',
+        dashboard_stats_modules: 'Active Modules',
+        dashboard_stats_apis: 'Integrated APIs',
+
+        // Overview Section
+        dashboard_overview_title: 'Project Overview',
+        dashboard_objectives_title: 'Project Objectives',
+        dashboard_objective_1: 'Create a modular and extensible personal dashboard',
+        dashboard_objective_2: 'Integrate multiple external APIs (weather, sports, etc.)',
+        dashboard_objective_3: 'Implement real-time data updates and notifications',
+        dashboard_objective_4: 'Provide an intuitive user interface with customizable modules',
+        dashboard_concept_title: 'Project Concept',
+        dashboard_concept_description: 'This personal dashboard allows users to manage their daily activities through customizable modules. Users can add weather information for different cities, track their favorite sports teams, manage todo lists, and set timers/alarms.',
+
+        // Highlights
+        dashboard_highlight_api: 'API Integration',
+        dashboard_highlight_api_desc: 'Multiple external APIs integrated',
+        dashboard_highlight_realtime: 'Real-time Updates',
+        dashboard_highlight_realtime_desc: 'Live data synchronization',
+        dashboard_highlight_modular: 'Modular Design',
+        dashboard_highlight_modular_desc: 'Customizable and extensible modules',
+
+        // Features
+        dashboard_features_title: 'Key Features',
+        dashboard_features_subtitle: 'Main functionalities of the dashboard',
+        dashboard_feature_home_title: 'Welcome Dashboard',
+        dashboard_feature_home_desc: 'Personalized home page with time, date, and user greeting',
+        dashboard_feature_weather_title: 'Weather Module',
+        dashboard_feature_weather_desc: 'Real-time weather information for multiple cities via OpenWeatherMap API',
+        dashboard_feature_soccer_title: 'Sports Module',
+        dashboard_feature_soccer_desc: 'Sports team tracking and match results via TheSportsDB API',
+        dashboard_feature_todo_title: 'Task Management',
+        dashboard_feature_todo_desc: 'Personal todo list with add, edit, and complete functionality',
+        dashboard_feature_timer_title: 'Timer & Alarms',
+        dashboard_feature_timer_desc: 'Countdown timers and customizable alarms with audio notifications',
+        dashboard_feature_responsive_title: 'Responsive Design',
+        dashboard_feature_responsive_desc: 'Optimized interface for all devices and screen sizes',
+
+        // APIs
+        dashboard_apis_title: 'Integrated APIs',
+        dashboard_apis_subtitle: 'External services powering the dashboard',
+        dashboard_api_sports_desc: 'Sports database providing team information, match results, and statistics',
+        dashboard_api_weather_desc: 'Weather service providing real-time meteorological data for cities worldwide',
+        dashboard_api_auth_desc: 'Custom authentication API handling user management and sessions',
+
+        // Tech Stack
+        dashboard_tech_stack_title: 'Technology Stack',
+        dashboard_tech_stack_subtitle: 'Technologies and frameworks used in development',
+        dashboard_tech_frontend: 'Frontend',
+        dashboard_tech_backend: 'Backend',
+        dashboard_tech_testing: 'Unit Testing',
+        dashboard_tech_database: 'Database',
+
+        // Architecture
+        dashboard_architecture_title: 'System Architecture',
+        dashboard_architecture_frontend_title: 'Frontend Layer',
+        dashboard_architecture_frontend_item_1: 'Vue.js 3 with Composition API',
+        dashboard_architecture_frontend_item_2: 'Pinia for state management',
+        dashboard_architecture_frontend_item_3: 'TypeScript for type safety',
+        dashboard_architecture_frontend_item_4: 'Responsive CSS with custom design system',
+
+        dashboard_architecture_backend_title: 'Backend Services',
+        dashboard_architecture_backend_item_1: 'Node.js with Express framework',
+        dashboard_architecture_backend_item_2: 'JWT authentication system',
+        dashboard_architecture_backend_item_3: 'Sequelize ORM for database operations',
+        dashboard_architecture_backend_item_4: 'Email notifications with Nodemailer',
+
+        dashboard_architecture_integration_title: 'API Integration',
+        dashboard_architecture_integration_item_1: 'Axios for HTTP client requests',
+        dashboard_architecture_integration_item_2: 'Real-time weather data fetching',
+        dashboard_architecture_integration_item_3: 'Sports data synchronization',
+        dashboard_architecture_integration_item_4: 'Error handling and retry mechanisms',
+
+        // GitHub
+        dashboard_github_title: 'GitHub Repository',
+        dashboard_github_desc: 'Access the complete Vue.js dashboard source code',
+        //#endregion
         toggle_details: 'Show more content',
         hide_details: 'Hide details',
         source_code: 'Source code'
@@ -1311,6 +1393,89 @@ const messages = {
         // GitHub
         java_iot_github_title: 'Dépôt GitHub',
         java_iot_github_desc: 'Accédez au code source complet de la refonte Java IoT',
+        //#endregion
+
+        //#region HomeIntranet 
+        // Hero Section
+        dashboard_project_tag: 'Projet Dashboard Personnel',
+        dashboard_hero_title: 'Dashboard Personnel Modulaire',
+        dashboard_hero_subtitle: 'Un tableau de bord Vue.js personnalisable avec modules météo, sport et productivité',
+        dashboard_stats_modules: 'Modules Actifs',
+        dashboard_stats_apis: 'APIs Intégrées',
+
+        // Overview Section
+        dashboard_overview_title: 'Vue d\'ensemble du projet',
+        dashboard_objectives_title: 'Objectifs du Projet',
+        dashboard_objective_1: 'Créer un tableau de bord personnel modulaire et extensible',
+        dashboard_objective_2: 'Intégrer plusieurs APIs externes (météo, sport, etc.)',
+        dashboard_objective_3: 'Implémenter des mises à jour en temps réel et notifications',
+        dashboard_objective_4: 'Fournir une interface utilisateur intuitive avec modules personnalisables',
+        dashboard_concept_title: 'Concept du Projet',
+        dashboard_concept_description: 'Ce tableau de bord personnel permet aux utilisateurs de gérer leurs activités quotidiennes via des modules personnalisables. Les utilisateurs peuvent ajouter des informations météo pour différentes villes, suivre leurs équipes sportives favorites, gérer des listes de tâches et définir des minuteurs/alarmes.',
+
+        // Highlights
+        dashboard_highlight_api: 'Intégration API',
+        dashboard_highlight_api_desc: 'Plusieurs APIs externes intégrées',
+        dashboard_highlight_realtime: 'Mises à jour temps réel',
+        dashboard_highlight_realtime_desc: 'Synchronisation de données en direct',
+        dashboard_highlight_modular: 'Design Modulaire',
+        dashboard_highlight_modular_desc: 'Modules personnalisables et extensibles',
+
+        // Features
+        dashboard_features_title: 'Fonctionnalités Clés',
+        dashboard_features_subtitle: 'Principales fonctionnalités du tableau de bord',
+        dashboard_feature_home_title: 'Tableau de Bord Accueil',
+        dashboard_feature_home_desc: 'Page d\'accueil personnalisée avec heure, date et salutation utilisateur',
+        dashboard_feature_weather_title: 'Module Météo',
+        dashboard_feature_weather_desc: 'Informations météo en temps réel pour plusieurs villes via l\'API OpenWeatherMap',
+        dashboard_feature_soccer_title: 'Module Sport',
+        dashboard_feature_soccer_desc: 'Suivi d\'équipes sportives et résultats de matchs via l\'API TheSportsDB',
+        dashboard_feature_todo_title: 'Gestion des Tâches',
+        dashboard_feature_todo_desc: 'Liste de tâches personnelle avec fonctionnalités d\'ajout, édition et completion',
+        dashboard_feature_timer_title: 'Minuteur et Alarmes',
+        dashboard_feature_timer_desc: 'Minuteurs décompte et alarmes personnalisables avec notifications audio',
+        dashboard_feature_responsive_title: 'Design Responsive',
+        dashboard_feature_responsive_desc: 'Interface optimisée pour tous appareils et tailles d\'écran',
+
+        // APIs
+        dashboard_apis_title: 'APIs Intégrées',
+        dashboard_apis_subtitle: 'Services externes alimentant le tableau de bord',
+        dashboard_api_sports_desc: 'Base de données sportives fournissant informations équipes, résultats matchs et statistiques',
+        dashboard_api_weather_desc: 'Service météorologique fournissant données météorologiques temps réel pour villes mondiales',
+        dashboard_api_auth_desc: 'API d\'authentification personnalisée gérant utilisateurs et sessions',
+
+        // Tech Stack
+        dashboard_tech_stack_title: 'Stack Technologique',
+        dashboard_tech_stack_subtitle: 'Technologies et frameworks utilisés en développement',
+        dashboard_tech_frontend: 'Frontend',
+        dashboard_tech_backend: 'Backend',
+        dashboard_tech_testing: 'Tests Unitaires',
+        dashboard_tech_database: 'Base de données',
+
+        // Architecture
+        dashboard_architecture_title: 'Architecture Système',
+        dashboard_architecture_frontend_title: 'Couche Frontend',
+        dashboard_architecture_frontend_item_1: 'Vue.js 3 avec Composition API',
+        dashboard_architecture_frontend_item_2: 'Pinia pour gestion d\'état',
+        dashboard_architecture_frontend_item_3: 'TypeScript pour sécurité des types',
+        dashboard_architecture_frontend_item_4: 'CSS responsive avec système de design personnalisé',
+
+        dashboard_architecture_backend_title: 'Services Backend',
+        dashboard_architecture_backend_item_1: 'Node.js avec framework Express',
+        dashboard_architecture_backend_item_2: 'Système d\'authentification JWT',
+        dashboard_architecture_backend_item_3: 'ORM Sequelize pour opérations base de données',
+        dashboard_architecture_backend_item_4: 'Notifications email avec Nodemailer',
+
+        dashboard_architecture_integration_title: 'Intégration API',
+        dashboard_architecture_integration_item_1: 'Axios pour requêtes client HTTP',
+        dashboard_architecture_integration_item_2: 'Récupération données météo temps réel',
+        dashboard_architecture_integration_item_3: 'Synchronisation données sportives',
+        dashboard_architecture_integration_item_4: 'Gestion erreurs et mécanismes de retry',
+
+        // GitHub
+        dashboard_github_title: 'Dépôt GitHub',
+        dashboard_github_desc: 'Accédez au code source complet du dashboard Vue.js',
+
         //#endregion
         toggle_details: 'Afficher plus de contenu',
         hide_details: 'Masquer les détails',
@@ -1969,6 +2134,89 @@ const messages = {
         java_iot_github_title: 'Repositório GitHub',
         java_iot_github_desc: 'Acesse o código-fonte completo da refatoração Java IoT',
         //#endregion
+
+        //#region HomeIntranet 
+        // Hero Section
+        dashboard_project_tag: 'Projeto Dashboard Pessoal',
+        dashboard_hero_title: 'Dashboard Pessoal Modular',
+        dashboard_hero_subtitle: 'Um painel Vue.js personalizável com módulos de clima, esportes e produtividade',
+        dashboard_stats_modules: 'Módulos Ativos',
+        dashboard_stats_apis: 'APIs Integradas',
+
+        // Overview Section
+        dashboard_overview_title: 'Visão Geral do Projeto',
+        dashboard_objectives_title: 'Objetivos do Projeto',
+        dashboard_objective_1: 'Criar um painel pessoal modular e extensível',
+        dashboard_objective_2: 'Integrar múltiplas APIs externas (clima, esportes, etc.)',
+        dashboard_objective_3: 'Implementar atualizações em tempo real e notificações',
+        dashboard_objective_4: 'Fornecer interface intuitiva com módulos personalizáveis',
+        dashboard_concept_title: 'Conceito do Projeto',
+        dashboard_concept_description: 'Este painel pessoal permite aos usuários gerenciar suas atividades diárias através de módulos personalizáveis. Os usuários podem adicionar informações meteorológicas para diferentes cidades, acompanhar suas equipes esportivas favoritas, gerenciar listas de tarefas e definir temporizadores/alarmes.',
+
+        // Highlights
+        dashboard_highlight_api: 'Integração API',
+        dashboard_highlight_api_desc: 'Múltiplas APIs externas integradas',
+        dashboard_highlight_realtime: 'Atualizações Tempo Real',
+        dashboard_highlight_realtime_desc: 'Sincronização de dados ao vivo',
+        dashboard_highlight_modular: 'Design Modular',
+        dashboard_highlight_modular_desc: 'Módulos personalizáveis e extensíveis',
+
+        // Features
+        dashboard_features_title: 'Funcionalidades-Chave',
+        dashboard_features_subtitle: 'Principais funcionalidades do painel',
+        dashboard_feature_home_title: 'Painel de Boas-vindas',
+        dashboard_feature_home_desc: 'Página inicial personalizada com hora, data e saudação do usuário',
+        dashboard_feature_weather_title: 'Módulo Clima',
+        dashboard_feature_weather_desc: 'Informações meteorológicas em tempo real para múltiplas cidades via API OpenWeatherMap',
+        dashboard_feature_soccer_title: 'Módulo Esportes',
+        dashboard_feature_soccer_desc: 'Acompanhamento de equipes esportivas e resultados de jogos via API TheSportsDB',
+        dashboard_feature_todo_title: 'Gestão de Tarefas',
+        dashboard_feature_todo_desc: 'Lista de tarefas pessoal com funcionalidades de adicionar, editar e completar',
+        dashboard_feature_timer_title: 'Timer e Alarmes',
+        dashboard_feature_timer_desc: 'Temporizadores regressivos e alarmes personalizáveis com notificações de áudio',
+        dashboard_feature_responsive_title: 'Design Responsivo',
+        dashboard_feature_responsive_desc: 'Interface otimizada para todos dispositivos e tamanhos de tela',
+
+        // APIs
+        dashboard_apis_title: 'APIs Integradas',
+        dashboard_apis_subtitle: 'Serviços externos que alimentam o painel',
+        dashboard_api_sports_desc: 'Base de dados esportivos fornecendo informações de equipes, resultados de jogos e estatísticas',
+        dashboard_api_weather_desc: 'Serviço meteorológico fornecendo dados meteorológicos em tempo real para cidades mundiais',
+        dashboard_api_auth_desc: 'API de autenticação personalizada gerenciando usuários e sessões',
+
+        // Tech Stack
+        dashboard_tech_stack_title: 'Stack Tecnológico',
+        dashboard_tech_stack_subtitle: 'Tecnologias e frameworks utilizados no desenvolvimento',
+        dashboard_tech_frontend: 'Frontend',
+        dashboard_tech_backend: 'Backend',
+        dashboard_tech_testing: 'Testes Unitários',
+        dashboard_tech_database: 'Banco de dados',
+
+        // Architecture
+        dashboard_architecture_title: 'Arquitetura do Sistema',
+        dashboard_architecture_frontend_title: 'Camada Frontend',
+        dashboard_architecture_frontend_item_1: 'Vue.js 3 com Composition API',
+        dashboard_architecture_frontend_item_2: 'Pinia para gerenciamento de estado',
+        dashboard_architecture_frontend_item_3: 'TypeScript para segurança de tipos',
+        dashboard_architecture_frontend_item_4: 'CSS responsivo com sistema de design personalizado',
+
+        dashboard_architecture_backend_title: 'Serviços Backend',
+        dashboard_architecture_backend_item_1: 'Node.js com framework Express',
+        dashboard_architecture_backend_item_2: 'Sistema de autenticação JWT',
+        dashboard_architecture_backend_item_3: 'ORM Sequelize para operações de banco de dados',
+        dashboard_architecture_backend_item_4: 'Notificações por email com Nodemailer',
+
+        dashboard_architecture_integration_title: 'Integração API',
+        dashboard_architecture_integration_item_1: 'Axios para requisições cliente HTTP',
+        dashboard_architecture_integration_item_2: 'Busca de dados meteorológicos em tempo real',
+        dashboard_architecture_integration_item_3: 'Sincronização de dados esportivos',
+        dashboard_architecture_integration_item_4: 'Tratamento de erros e mecanismos de retry',
+
+        // GitHub
+        dashboard_github_title: 'Repositório GitHub',
+        dashboard_github_desc: 'Acesse o código-fonte completo do dashboard Vue.js',
+        //#endregion
+        
         toggle_details: 'Mostrar mais conteúdo',
         hide_details: 'Ocultar detalhes',
         source_code: 'Código fonte'
