@@ -1,23 +1,23 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-const { locale } = useI18n()
+import { RouterLink, RouterView } from "vue-router";
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
 
 function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDarkMode = document.body.classList.contains('dark-mode');
-  localStorage.setItem('darkMode', isDarkMode);
+  document.body.classList.toggle("dark-mode");
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
 }
 
 function changeLanguage(lang) {
-  locale.value = lang
-  localStorage.setItem('locale', lang)
+  locale.value = lang;
+  localStorage.setItem("locale", lang);
 }
 
 // Fonction pour ouvrir le CV
 function ouvrirPDF1() {
-  const cvPath = './../../public/Cv.pdf'; // Chemin vers ton CV
-  window.open(cvPath, '_blank'); // Ouvre le CV dans un nouvel onglet
+  const cvPath = "./../../public/Cv.pdf"; // Chemin vers ton CV
+  window.open(cvPath, "_blank"); // Ouvre le CV dans un nouvel onglet
 }
 </script>
 
@@ -25,53 +25,51 @@ function ouvrirPDF1() {
   <div id="container-global">
     <nav class="sidebar">
       <router-link to="/" class="lien">
-        {{ $t('welcome') }}
+        {{ $t("welcome") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="/education" class="lien">
-        {{ $t('education') }}
+        {{ $t("education") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="project" class="lien">
-        {{ $t('project') }}
+        {{ $t("project") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="work" class="lien">
-        {{ $t('work') }}
+        {{ $t("work") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="technical" class="lien">
-        {{ $t('technical') }}
+        {{ $t("technical") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="languages" class="lien">
-        {{ $t('languages') }}
+        {{ $t("languages") }}
         <span class="barreVisuel"></span>
       </router-link>
 
       <router-link to="references" class="lien">
-        {{ $t('references') }}
+        {{ $t("references") }}
         <span class="barreVisuel"></span>
       </router-link>
 
-      <router-link to="loisir" class="lien">
+      <!-- <router-link to="loisir" class="lien">
         {{ $t('leisure') }}
         <span class="barreVisuel"></span>
-      </router-link>
-
+      </router-link> -->
 
       <fieldset class="container-buttons">
-        <legend>{{ $t('choose_language') }}</legend>
+        <legend>{{ $t("choose_language") }}</legend>
         <button class="lang-button" @click="changeLanguage('fr')">FR</button>
         <button class="lang-button" @click="changeLanguage('en')">EN</button>
         <button class="lang-button" @click="changeLanguage('pt')">PT</button>
       </fieldset>
-
 
       <div class="cv-container">
         <button @click="ouvrirPDF1()" id="pdf-button">
@@ -80,7 +78,7 @@ function ouvrirPDF1() {
           <span class="circle3"></span>
           <span class="circle4"></span>
           <span class="circle5"></span>
-          <span class="text"> {{ $t('open_cv') }}</span>
+          <span class="text"> {{ $t("open_cv") }}</span>
         </button>
       </div>
     </nav>
@@ -170,7 +168,6 @@ function ouvrirPDF1() {
   transform: scaleX(1);
 }
 
-
 /* ----------------- BOUTONS LANGUES ----------------- */
 .container-buttons {
   margin-top: auto;
@@ -193,7 +190,6 @@ function ouvrirPDF1() {
   color: var(--primary-color);
   font-weight: bold;
 }
-
 
 /* ----------------- RESPONSIVE ----------------- */
 @media (max-width: 768px) {
@@ -264,8 +260,6 @@ function ouvrirPDF1() {
   }
 }
 
-
-
 /*bouton toggle switches */
 
 /* From Uiverse.io by TahaShameli */
@@ -314,15 +308,15 @@ function ouvrirPDF1() {
   transition: 0.4s;
 }
 
-.switch input:checked+.slider .circle {
+.switch input:checked + .slider .circle {
   transform: rotate(0deg) translateX(1.5em) !important;
 }
 
-.switch input:checked+.slider .circle .shine {
+.switch input:checked + .slider .circle .shine {
   transform: translate(0%, 0%) !important;
 }
 
-.switch input:checked+.slider .circle .moon {
+.switch input:checked + .slider .circle .moon {
   left: -10%;
   opacity: 1;
   transform: translateY(-60%);
