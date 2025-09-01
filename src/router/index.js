@@ -112,22 +112,22 @@ const router = createRouter({
       component: EarningCallView,
     },
     {
-      path: '/intranet/home',
+      path: '/intranetHome',
       name: 'intranetHome',
       component: IntranetHomeView,
     },
      {
-      path: '/intranet/keypass',
+      path: '/intranetKeypass',
       name: 'intranetKeypass',
       component: IntranetKeypassView,
     },
      {
-      path: '/intranet/agenda',
+      path: '/intranetAgenda',
       name: 'intranetAgenda',
       component: AgendaHomeView,
     },
       {
-      path: '/intranet/notepad',
+      path: '/intranetNotepad',
       name: 'intranetNotepad',
       component: IntranetNotepadView,
     },
