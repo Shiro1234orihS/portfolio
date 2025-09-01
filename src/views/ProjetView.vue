@@ -289,7 +289,7 @@ onMounted(() => {
       </div>
 
       <div class="projects-grid">
-        <router-link class="project-link" to="miniprojet">
+        <!-- <router-link class="project-link" to="miniprojet">
           <article class="project-card">
             <div class="project-image">
               <img
@@ -323,7 +323,7 @@ onMounted(() => {
               </div>
             </div>
           </article>
-        </router-link>
+        </router-link> -->
 
         <router-link class="project-link" to="keypass">
           <article class="project-card">
@@ -370,7 +370,7 @@ onMounted(() => {
                 alt="Site Earning Call"
                 loading="lazy"
               />
-              <div class="project-status personal">En cours</div>
+              <div class="project-status personal">Terminé</div>
             </div>
             <div class="project-content">
               <div class="project-header">
@@ -399,7 +399,7 @@ onMounted(() => {
           </article>
         </router-link>
 
-        <router-link class="project-link" to="intranet">
+        <!-- <router-link class="project-link" to="intranet">
           <article class="project-card">
             <div class="project-image">
               <img
@@ -414,6 +414,154 @@ onMounted(() => {
                 <h3 class="project-title">{{ $t("project_intranet") }}</h3>
                 <div class="project-tech">
                   <span class="tech-tag enterprise">Enterprise</span>
+                  <span class="tech-tag web">Web</span>
+                </div>
+              </div>
+              <p class="project-description">{{ $t("project_intranet_desc") }}</p>
+              <div class="project-footer">
+                <span class="view-project">
+                  Voir le projet
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        </router-link> -->
+
+        <router-link class="project-link" to="intranet/home">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./../../public/picture/Intranet/Acceuille/home.png"
+                alt="Intranet"
+                loading="lazy"
+              />
+              <div class="project-status">Terminé</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">{{ $t("project_intranet") }}</h3>
+                <div class="project-tech">
+                  <span class="tech-tag intranet">Intranet</span>
+                  <span class="tech-tag web">Web</span>
+                </div>
+              </div>
+              <p class="project-description">{{ $t("project_intranet_desc") }}</p>
+              <div class="project-footer">
+                <span class="view-project">
+                  Voir le projet
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        </router-link>
+
+        <router-link class="project-link" to="intranet">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./../../public/picture/Intranet/Agenda/home.png"
+                alt="Intranet"
+                loading="lazy"
+              />
+              <div class="project-status">Terminé</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">{{ $t("project_intranet") }}</h3>
+                <div class="project-tech">
+                  <span class="tech-tag intranet">Intranet</span>
+                  <span class="tech-tag web">Web</span>
+                </div>
+              </div>
+              <p class="project-description">{{ $t("project_intranet_desc") }}</p>
+              <div class="project-footer">
+                <span class="view-project">
+                  Voir le projet
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        </router-link>
+
+        <router-link class="project-link" to="intranet">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./../../public/picture/Intranet/Kespass/home.png"
+                alt="Intranet"
+                loading="lazy"
+              />
+              <div class="project-status">Terminé</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">{{ $t("project_intranet") }}</h3>
+                <div class="project-tech">
+                  <span class="tech-tag intranet">Intranet</span>
+                  <span class="tech-tag web">Web</span>
+                </div>
+              </div>
+              <p class="project-description">{{ $t("project_intranet_desc") }}</p>
+              <div class="project-footer">
+                <span class="view-project">
+                  Voir le projet
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 17L17 7M17 7H7M17 7V17"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        </router-link>
+
+        <router-link class="project-link" to="intranet">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./../../public/picture/Intranet/Notepad/home.png"
+                alt="Intranet"
+                loading="lazy"
+              />
+              <div class="project-status">Terminé</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">{{ $t("project_intranet") }}</h3>
+                <div class="project-tech">
+                  <span class="tech-tag intranet">Intranet</span>
                   <span class="tech-tag web">Web</span>
                 </div>
               </div>
@@ -551,7 +699,7 @@ onMounted(() => {
 
 .badge {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
+  color: var(--text-primary);
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   font-size: 0.875rem;
@@ -646,7 +794,7 @@ onMounted(() => {
   top: 1rem;
   right: 1rem;
   background: var(--success-color);
-  color: white;
+  color: var(--text-primary);
   padding: 0.375rem 0.875rem;
   border-radius: 50px;
   font-size: 0.75rem;
@@ -701,19 +849,19 @@ onMounted(() => {
 /* Tags colorés selon la technologie */
 .tech-tag.laravel {
   background: #ff2d20;
-  color: white;
+  color: var(--text-primary);
   border-color: #ff2d20;
 }
 
 .tech-tag.php {
   background: #777bb4;
-  color: white;
+  color: var(--text-primary);
   border-color: #777bb4;
 }
 
 .tech-tag.vue {
   background: #4fc08d;
-  color: white;
+  color: var(--text-primary);
   border-color: #4fc08d;
 }
 
@@ -725,37 +873,43 @@ onMounted(() => {
 
 .tech-tag.docker {
   background: #2496ed;
-  color: white;
+  color: var(--text-primary);
   border-color: #2496ed;
 }
 
 .tech-tag.security {
   background: #dc2626;
-  color: white;
+  color: var(--text-primary);
   border-color: #dc2626;
 }
 
 .tech-tag.finance {
   background: #059669;
-  color: white;
+  color: var(--text-primary);
   border-color: #059669;
 }
 
 .tech-tag.api {
   background: #8b5cf6;
-  color: white;
+  color: var(--text-primary);
   border-color: #8b5cf6;
 }
 
 .tech-tag.enterprise {
   background: #374151;
-  color: white;
+  color: var(--text-primary);
+  border-color: #374151;
+}
+
+.tech-tag.intranet {
+  background: #175ac5;
+  color: var(--text-primary);
   border-color: #374151;
 }
 
 .tech-tag.web {
   background: #3b82f6;
-  color: white;
+  color: var(--text-primary);
   border-color: #3b82f6;
 }
 
