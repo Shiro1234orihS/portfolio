@@ -1,75 +1,81 @@
 <script setup>
-import MenuProjet from '@/components/MenuProjet.vue'
-import { ref, onMounted, nextTick } from 'vue'
+import MenuProjet from "@/components/MenuProjet.vue";
+import { ref, onMounted, nextTick } from "vue";
 
-const showContent = ref(false)
-const isLoaded = ref(false)
-const gameFeatures = ref([])
-
+const showContent = ref(false);
+const isLoaded = ref(false);
+const gameFeatures = ref([]);
 
 // Technologies et leurs données
 const techStack = ref([
   {
-    category: 'Dévelopement du jeu',
-    icon: '🎨',
-    color: '#FFA500',
+    category: "Dévelopement du jeu",
+    icon: "🎨",
+    color: "#FFA500",
     skills: [
-      { name: 'C#', percent: 95, image: './../../public/picture/technical/CShapeIcone.png' },
-      { name: 'Monogame', percent: 85, image: './../../public/picture/technical/Monogame.png' }
-    ]
+      {
+        name: "C#",
+        percent: 95,
+        image: "./../../public/picture/technical/CShapeIcone.png",
+      },
+      {
+        name: "Monogame",
+        percent: 85,
+        image: "./../../public/picture/technical/Monogame.png",
+      },
+    ],
   },
 ]);
 
-
 // Animation des compétences
 const animateSkills = () => {
-  const circles = document.querySelectorAll('.progress-circle')
+  const circles = document.querySelectorAll(".progress-circle");
   circles.forEach((circle, index) => {
     setTimeout(() => {
-      const percent = circle.dataset.percent
-      const progressBar = circle.querySelector('.progress-bar')
+      const percent = circle.dataset.percent;
+      const progressBar = circle.querySelector(".progress-bar");
       if (progressBar) {
-        progressBar.style.width = `${percent}%`
+        progressBar.style.width = `${percent}%`;
       }
-    }, index * 300)
-  })
-}
+    }, index * 300);
+  });
+};
 
 function toggleContent() {
-  showContent.value = !showContent.value
+  showContent.value = !showContent.value;
   if (showContent.value) {
     nextTick(() => {
-      const detailsSection = document.querySelector('.details-section')
-      detailsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    })
+      const detailsSection = document.querySelector(".details-section");
+      detailsSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 }
 
 onMounted(() => {
   setTimeout(() => {
-    isLoaded.value = true
-    animateSkills()
-  }, 300)
+    isLoaded.value = true;
+    animateSkills();
+  }, 300);
 
   // Données des fonctionnalités du jeu
   gameFeatures.value = [
     {
-      icon: '🎯',
-      titleKey: 'west_features.immersive_gameplay.title',
-      descriptionKey: 'west_features.immersive_gameplay.description'
+      icon: "🎯",
+      titleKey: "west_features.immersive_gameplay.title",
+      descriptionKey: "west_features.immersive_gameplay.description",
     },
     {
-      icon: '🗺️',
-      titleKey: 'west_features.open_world.title',
-      descriptionKey: 'west_features.open_world.description'
+      icon: "🗺️",
+      titleKey: "west_features.open_world.title",
+      descriptionKey: "west_features.open_world.description",
     },
     {
-      icon: '⚔️',
-      titleKey: 'west_features.dynamic_combat.title',
-      descriptionKey: 'west_features.dynamic_combat.description'
+      icon: "⚔️",
+      titleKey: "west_features.dynamic_combat.title",
+      descriptionKey: "west_features.dynamic_combat.description",
     },
-  ]
-})
+  ];
+});
 </script>
 
 <template>
@@ -77,7 +83,7 @@ onMounted(() => {
     <MenuProjet />
 
     <!-- Hero Section -->
-    <div class="hero-section" :class="{ 'loaded': isLoaded }">
+    <div class="hero-section" :class="{ loaded: isLoaded }">
       <div class="hero-background">
         <div class="western-pattern"></div>
         <div class="hero-overlay"></div>
@@ -86,22 +92,27 @@ onMounted(() => {
       <div class="hero-content">
         <div class="game-badge">
           <span class="badge-icon">🎮</span>
-          <span>{{ $t('west_project_tag') }}</span>
+          <span>{{ $t("west_project_tag") }}</span>
         </div>
 
-        <h1 class="hero-title">{{ $t('west_project_title') }}</h1>
+        <h1 class="hero-title">{{ $t("west_project_title") }}</h1>
 
         <div class="hero-subtitle">
-          {{ $t('west_project_subtitle') }}
+          {{ $t("west_project_subtitle") }}
         </div>
 
         <div class="hero-actions">
-          <a href="https://github.com/Shiro1234orihS/West-of-Survival" target="_blank" class="github-button">
+          <a
+            href="https://github.com/Shiro1234orihS/West-of-Survival"
+            target="_blank"
+            class="github-button"
+          >
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
             </svg>
-            <span>{{ $t('source_code') }}</span>
+            <span>{{ $t("source_code") }}</span>
           </a>
         </div>
       </div>
@@ -109,15 +120,19 @@ onMounted(() => {
 
     <div class="container">
       <!-- Game Features -->
-      <section class="features-section fade-in" :class="{ 'visible': isLoaded }">
+      <section class="features-section fade-in" :class="{ visible: isLoaded }">
         <div class="section-header">
-          <h2 class="section-title">{{ $t('west_features_tilte') }}</h2>
-          <p class="section-subtitle">{{ $t('west_features_subtilte') }}</p>
+          <h2 class="section-title">{{ $t("west_features_tilte") }}</h2>
+          <p class="section-subtitle">{{ $t("west_features_subtilte") }}</p>
         </div>
 
         <div class="features-grid">
-          <div v-for="(feature, index) in gameFeatures" :key="index" class="feature-card"
-            :style="{ '--delay': `${index * 0.1}s` }">
+          <div
+            v-for="(feature, index) in gameFeatures"
+            :key="index"
+            class="feature-card"
+            :style="{ '--delay': `${index * 0.1}s` }"
+          >
             <div class="feature-icon">{{ feature.icon }}</div>
             <h3 class="feature-title">{{ $t(feature.titleKey) }}</h3>
             <p class="feature-description">{{ $t(feature.descriptionKey) }}</p>
@@ -126,10 +141,10 @@ onMounted(() => {
       </section>
 
       <!-- Project Description -->
-      <section class="description-section fade-in" :class="{ 'visible': isLoaded }">
+      <section class="description-section fade-in" :class="{ visible: isLoaded }">
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('west_project_objective') }}</h2>
+            <h2 class="card-title">{{ $t("west_project_objective") }}</h2>
             <div class="card-icon">🎯</div>
           </div>
 
@@ -138,10 +153,15 @@ onMounted(() => {
 
             <button @click="toggleContent" class="toggle-button">
               <span class="button-text">
-                {{ showContent ? $t('west_hide_details') : $t('west_toggle_details') }}
+                {{ showContent ? $t("west_hide_details") : $t("west_toggle_details") }}
               </span>
-              <div class="button-icon" :class="{ 'rotated': showContent }">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="button-icon" :class="{ rotated: showContent }">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="m6 9 6 6 6-6" />
                 </svg>
               </div>
@@ -157,7 +177,7 @@ onMounted(() => {
             <!-- Technologies utilisées -->
             <div class="detail-card">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('west_main_software') }}</h3>
+                <h3 class="detail-title">{{ $t("west_main_software") }}</h3>
                 <div class="detail-icon">🛠️</div>
               </div>
 
@@ -165,16 +185,16 @@ onMounted(() => {
                 <div class="tech-item">
                   <div class="tech-icon">🎨</div>
                   <div class="tech-info">
-                    <h4>{{ $t('west_tiled') }}</h4>
-                    <p>{{ $t('west_tiled_description') }}</p>
+                    <h4>{{ $t("west_tiled") }}</h4>
+                    <p>{{ $t("west_tiled_description") }}</p>
                   </div>
                 </div>
 
                 <div class="tech-item">
                   <div class="tech-icon">🎮</div>
                   <div class="tech-info">
-                    <h4>{{ $t('west_monogame') }}</h4>
-                    <p>{{ $t('west_monogame_description') }}</p>
+                    <h4>{{ $t("west_monogame") }}</h4>
+                    <p>{{ $t("west_monogame_description") }}</p>
                   </div>
                 </div>
               </div>
@@ -183,52 +203,61 @@ onMounted(() => {
             <!-- Défis et Solutions -->
             <div class="detail-card">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('west_challenges') }}</h3>
+                <h3 class="detail-title">{{ $t("west_challenges") }}</h3>
                 <div class="detail-icon">⚡</div>
               </div>
-              <p class="detail-content">{{ $t('west_challenges_description') }}</p>
+              <p class="detail-content">{{ $t("west_challenges_description") }}</p>
             </div>
 
             <!-- Mon Rôle -->
             <div class="detail-card">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('west_role') }}</h3>
+                <h3 class="detail-title">{{ $t("west_role") }}</h3>
                 <div class="detail-icon">👨‍💻</div>
               </div>
-              <p class="detail-content">{{ $t('west_role_description') }}</p>
+              <p class="detail-content">{{ $t("west_role_description") }}</p>
             </div>
 
             <!-- Résultats -->
             <div class="detail-card highlight">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('west_results') }}</h3>
+                <h3 class="detail-title">{{ $t("west_results") }}</h3>
                 <div class="detail-icon">🎉</div>
               </div>
-              <p class="detail-content">{{ $t('west_results_description') }}</p>
+              <p class="detail-content">{{ $t("west_results_description") }}</p>
             </div>
           </div>
         </section>
       </Transition>
 
       <!-- Technical Skills -->
-      <section class="features-section fade-in" :class="{ 'visible': isLoaded }">
+      <section class="features-section fade-in" :class="{ visible: isLoaded }">
         <div class="section-header">
-          <h2 class="section-title">{{ $t('vue_technical_skills') }}</h2>
+          <h2 class="section-title">{{ $t("vue_technical_skills") }}</h2>
           <p class="section-subtitle">Technologies et frameworks utilisés</p>
         </div>
 
         <div class="tech-stack-grid">
-          <div v-for="(category, catIndex) in techStack" :key="catIndex" class="tech-category"
-            :style="{ '--category-color': category.color, '--delay': `${catIndex * 0.2}s` }">
-
+          <div
+            v-for="(category, catIndex) in techStack"
+            :key="catIndex"
+            class="tech-category"
+            :style="{
+              '--category-color': category.color,
+              '--delay': `${catIndex * 0.2}s`,
+            }"
+          >
             <div class="category-header">
               <div class="category-icon">{{ category.icon }}</div>
               <h3 class="category-title">{{ category.category }}</h3>
             </div>
 
             <div class="skills-grid">
-              <div v-for="(skill, skillIndex) in category.skills" :key="skillIndex" class="skill-card">
-
+              <div
+                v-for="(skill, skillIndex) in category.skills"
+                :key="skillIndex"
+                class="skill-card"
+              >
                 <div class="skill-visual">
                   <div class="progress-circle" :data-percent="skill.percent">
                     <svg viewBox="0 0 100 100">
@@ -246,8 +275,13 @@ onMounted(() => {
                   <h4 class="skill-name">{{ skill.name }}</h4>
                   <div class="skill-level">
                     <div class="level-bar">
-                      <div class="level-fill" :style="{ width: skill.percent + '%', backgroundColor: category.color }">
-                      </div>
+                      <div
+                        class="level-fill"
+                        :style="{
+                          width: skill.percent + '%',
+                          backgroundColor: category.color,
+                        }"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -257,41 +291,52 @@ onMounted(() => {
         </div>
       </section>
 
-
-
-
       <!-- Availability Section -->
-      <section class="availability-section fade-in" :class="{ 'visible': isLoaded }">
+      <section class="availability-section fade-in" :class="{ visible: isLoaded }">
         <div class="content-card highlight-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('west_availability') }}</h2>
+            <h2 class="card-title">{{ $t("west_availability") }}</h2>
             <div class="card-icon">🚀</div>
           </div>
 
           <div class="card-content">
             <p class="availability-text">
-              {{ $t('west_availability_text') }}
-              <a href="https://ricardonunesemilio.fr/jeux_web/phaser/west_of_survival/" target="_blank"
-                class="inline-link">
-                {{ $t('west_available') }}
+              {{ $t("west_availability_text") }}
+              <a
+                href="https://ricardonunesemilio.fr/jeux_web/phaser/west_of_survival/"
+                target="_blank"
+                class="inline-link"
+              >
+                {{ $t("west_available") }}
               </a>
             </p>
 
             <p class="availability-text">
-              {{ $t('west_github_source') }}
-              <a href="https://github.com/Shiro1234orihS/West-of-Survival" target="_blank" class="inline-link">
+              {{ $t("west_github_source") }}
+              <a
+                href="https://github.com/Shiro1234orihS/West-of-Survival"
+                target="_blank"
+                class="inline-link"
+              >
                 GitHub
               </a>
             </p>
 
             <div class="action-buttons">
-              <a href="https://ricardonunesemilio.fr/jeux_web/phaser/west_of_survival/" target="_blank"
-                class="action-btn primary">
+              <a
+                href="https://ricardonunesemilio.fr/jeux_web/phaser/west_of_survival/"
+                target="_blank"
+                class="action-btn primary"
+              >
                 <span class="btn-icon">🎮</span>
-                <span>{{ $t('west_action') }}</span>
+                <span>{{ $t("west_action") }}</span>
               </a>
 
-              <a href="https://github.com/Shiro1234orihS/West-of-Survival" target="_blank" class="action-btn secondary">
+              <a
+                href="https://github.com/Shiro1234orihS/West-of-Survival"
+                target="_blank"
+                class="action-btn secondary"
+              >
                 <span class="btn-icon">📖</span>
                 <span class="color">{{ $t("west_view") }}</span>
               </a>
@@ -306,10 +351,10 @@ onMounted(() => {
 <style scoped>
 /* Variables CSS */
 :root {
-  --western-primary: #8B4513;
-  --western-secondary: #D2691E;
-  --western-accent: #CD853F;
-  --western-gold: #DAA520;
+  --western-primary: #8b4513;
+  --western-secondary: #d2691e;
+  --western-accent: #cd853f;
+  --western-gold: #daa520;
   --background: #ffffff;
   --surface: #f8fafc;
   --text-primary: #1e293b;
@@ -321,25 +366,25 @@ onMounted(() => {
   --radius: 0.75rem;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-  --monogame-primary: #E73C00;
+  --monogame-primary: #e73c00;
   /* Rouge-orange principal de MonoGame */
-  --monogame-secondary: #FF6A00;
+  --monogame-secondary: #ff6a00;
   /* Orange secondaire */
-  --monogame-accent: #FF4500;
+  --monogame-accent: #ff4500;
   /* Orange vif d'accent */
-  --monogame-dark: #B8300A;
+  --monogame-dark: #b8300a;
   /* Rouge foncé */
-  --monogame-light: #FF8C42;
+  --monogame-light: #ff8c42;
   /* Orange clair pour le mode sombre */
-  --western-primary: #8B4513;
-  --western-secondary: #D2691E;
-  --western-accent: #CD853F;
-  --western-gold: #DAA520;
+  --western-primary: #8b4513;
+  --western-secondary: #d2691e;
+  --western-accent: #cd853f;
+  --western-gold: #daa520;
 }
 
 .dark-mode {
-  --western-primary: #A0522D;
-  --western-secondary: #F4A460;
+  --western-primary: #a0522d;
+  --western-secondary: #f4a460;
   --background: #0f172a;
   --surface: #1e293b;
   --text-primary: #f1f5f9;
@@ -349,15 +394,15 @@ onMounted(() => {
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 
-  --monogame-primary-dark: #C73400;
+  --monogame-primary-dark: #c73400;
   /* Version plus sombre du primary */
-  --monogame-secondary-dark: #E55A00;
+  --monogame-secondary-dark: #e55a00;
   /* Version plus sombre du secondary */
-  --monogame-accent-dark: #E03E00;
+  --monogame-accent-dark: #e03e00;
   /* Version plus sombre de l'accent */
-  --monogame-bg-dark: #1A0A06;
+  --monogame-bg-dark: #1a0a06;
   /* Fond très sombre avec teinte MonoGame */
-  --monogame-surface-dark: #2D1510;
+  --monogame-surface-dark: #2d1510;
   /* Surface sombre avec teinte MonoGame */
 }
 
@@ -403,14 +448,21 @@ onMounted(() => {
 .hero-background {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--monogame-primary) 0%, var(--monogame-secondary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--monogame-primary) 0%,
+    var(--monogame-secondary) 100%
+  );
 }
 
 .western-pattern {
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(circle at 25% 25%, rgba(231, 60, 0, 0.2) 0%, transparent 50%),
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(231, 60, 0, 0.2) 0%,
+      transparent 50%
+    ),
     radial-gradient(circle at 75% 75%, rgba(255, 106, 0, 0.2) 0%, transparent 50%);
   background-size: 100px 100px;
 }
@@ -418,18 +470,20 @@ onMounted(() => {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg,
-      rgba(231, 60, 0, 0.3) 0%,
-      rgba(255, 69, 0, 0.25) 35%,
-      rgba(255, 106, 0, 0.2) 70%,
-      rgba(184, 48, 10, 0.3) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(231, 60, 0, 0.3) 0%,
+    rgba(255, 69, 0, 0.25) 35%,
+    rgba(255, 106, 0, 0.2) 70%,
+    rgba(184, 48, 10, 0.3) 100%
+  );
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: white;
+  color: var(--text-primary);
   max-width: 800px;
   padding: 2rem;
 }
@@ -491,7 +545,7 @@ onMounted(() => {
 
 .github-button {
   background: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: var(--text-primary);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -531,7 +585,7 @@ onMounted(() => {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
@@ -656,7 +710,7 @@ onMounted(() => {
   gap: 0.75rem;
   padding: 1rem 2rem;
   background: linear-gradient(135deg, var(--western-primary), var(--western-secondary));
-  color: white;
+  color: var(--text-primary);
   border: none;
   border-radius: 3rem;
   font-size: 1.125rem;
@@ -716,7 +770,7 @@ onMounted(() => {
 }
 
 .detail-card.highlight {
-  background: linear-gradient(135deg, var(--western-gold), #FFD700);
+  background: linear-gradient(135deg, var(--western-gold), #ffd700);
   color: var(--text-primary);
   border-color: var(--western-accent);
 }
@@ -907,7 +961,6 @@ onMounted(() => {
   font-weight: 600;
   transition: var(--transition);
   box-shadow: var(--shadow);
-
 }
 
 .action-btn.primary {
@@ -1158,12 +1211,19 @@ onMounted(() => {
 
 /* Améliorations pour le mode sombre */
 .dark-mode .hero-background {
-  background: linear-gradient(135deg, var(--monogame-dark) 0%, var(--monogame-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--monogame-dark) 0%,
+    var(--monogame-primary) 100%
+  );
 }
 
 .dark-mode .western-pattern {
-  background-image:
-    radial-gradient(circle at 25% 25%, rgba(231, 60, 0, 0.15) 0%, transparent 50%),
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(231, 60, 0, 0.15) 0%,
+      transparent 50%
+    ),
     radial-gradient(circle at 75% 75%, rgba(255, 106, 0, 0.15) 0%, transparent 50%);
 }
 
@@ -1173,26 +1233,28 @@ onMounted(() => {
 }
 
 .dark-mode .hero-overlay {
-  background: linear-gradient(45deg,
-      rgba(184, 48, 10, 0.4) 0%,
-      rgba(231, 60, 0, 0.3) 35%,
-      rgba(255, 69, 0, 0.25) 70%,
-      rgba(139, 35, 8, 0.4) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(184, 48, 10, 0.4) 0%,
+    rgba(231, 60, 0, 0.3) 35%,
+    rgba(255, 69, 0, 0.25) 70%,
+    rgba(139, 35, 8, 0.4) 100%
+  );
 }
 
 /* Variante alternative avec effet de dégradé plus subtil */
 .hero-overlay-subtle {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at top, rgba(231, 60, 0, 0.2) 0%, transparent 70%),
+  background: radial-gradient(ellipse at top, rgba(231, 60, 0, 0.2) 0%, transparent 70%),
     radial-gradient(ellipse at bottom, rgba(255, 106, 0, 0.15) 0%, transparent 70%),
-    linear-gradient(45deg,
+    linear-gradient(
+      45deg,
       rgba(231, 60, 0, 0.1) 0%,
       rgba(255, 69, 0, 0.05) 50%,
-      rgba(184, 48, 10, 0.1) 100%);
+      rgba(184, 48, 10, 0.1) 100%
+    );
 }
-
 
 .dark-mode .detail-card.highlight {
   background: linear-gradient(135deg, var(--western-secondary), var(--western-accent));
@@ -1222,12 +1284,15 @@ onMounted(() => {
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image:
-    radial-gradient(2px 2px at 20px 30px, rgba(231, 60, 0, 0.3), transparent),
+  background-image: radial-gradient(
+      2px 2px at 20px 30px,
+      rgba(231, 60, 0, 0.3),
+      transparent
+    ),
     radial-gradient(2px 2px at 40px 70px, rgba(255, 106, 0, 0.2), transparent),
     radial-gradient(1px 1px at 90px 40px, rgba(255, 69, 0, 0.25), transparent);
   background-repeat: repeat;
@@ -1256,7 +1321,7 @@ onMounted(() => {
 
 /* Amélioration des tooltips et interactions */
 .feature-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1272,7 +1337,7 @@ onMounted(() => {
 }
 
 .detail-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1519,16 +1584,18 @@ onMounted(() => {
 
 /* Effet de lueur MonoGame */
 .hero-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center,
-      rgba(231, 60, 0, 0.1) 0%,
-      rgba(255, 106, 0, 0.05) 40%,
-      transparent 70%);
+  background: radial-gradient(
+    circle at center,
+    rgba(231, 60, 0, 0.1) 0%,
+    rgba(255, 106, 0, 0.05) 40%,
+    transparent 70%
+  );
   animation: monogameGlow 4s ease-in-out infinite alternate;
 }
 

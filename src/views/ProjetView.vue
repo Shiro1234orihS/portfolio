@@ -436,7 +436,7 @@ onMounted(() => {
           </article>
         </router-link> -->
 
-        <router-link class="project-link" to="intranet/home">
+        <router-link class="project-link" to="intranetHome">
           <article class="project-card">
             <div class="project-image">
               <img
@@ -473,7 +473,7 @@ onMounted(() => {
           </article>
         </router-link>
 
-        <router-link class="project-link" to="intranet">
+        <router-link class="project-link" to="intranetAgenda">
           <article class="project-card">
             <div class="project-image">
               <img
@@ -510,7 +510,7 @@ onMounted(() => {
           </article>
         </router-link>
 
-        <router-link class="project-link" to="intranet">
+        <router-link class="project-link" to="intranetKeypass">
           <article class="project-card">
             <div class="project-image">
               <img
@@ -547,7 +547,7 @@ onMounted(() => {
           </article>
         </router-link>
 
-        <router-link class="project-link" to="intranet">
+        <router-link class="project-link" to="intranetNotepad">
           <article class="project-card">
             <div class="project-image">
               <img

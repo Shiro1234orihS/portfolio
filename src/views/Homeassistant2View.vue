@@ -1350,67 +1350,6 @@ onMounted(() => {
   margin-right: 0.75rem;
 }
 
-/* GitHub Section */
-.github-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.github-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 1;
-}
-
-.github-icon {
-  width: 3rem;
-  height: 3rem;
-  color: var(--text-primary);
-  flex-shrink: 0;
-}
-
-.github-text h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 0.25rem 0;
-}
-
-.github-text p {
-  color: var(--text-secondary);
-  margin: 0;
-  line-height: 1.5;
-}
-
-.github-button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--java-primary), var(--java-secondary));
-  color: var(--text-primary);
-  text-decoration: none;
-  border-radius: 2rem;
-  font-weight: 600;
-  transition: var(--transition);
-  box-shadow: var(--shadow);
-}
-
-.github-button:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  text-decoration: none;
-  color: var(--text-primary);
-}
-
-.github-button .button-icon {
-  width: 1rem;
-  height: 1rem;
-}
-
 /* Transitions */
 .slide-fade-enter-active {
   transition: all 0.5s ease-out;
