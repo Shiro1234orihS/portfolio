@@ -67,7 +67,7 @@ const techStack = ref([
     icon: '🎨',
     color: '#4FC08D',
     skills: [
-      { name: 'Laravel', percent: 80, image: './../../public/picture/technical/laravelIcone.png' }
+      { name: 'Laravel', percent: 80, image: '/picture/technical/laravelIcone.png' }
     ]
   },
   {
@@ -75,7 +75,7 @@ const techStack = ref([
     icon: '⚙️',
     color: '#512BD4',
     skills: [
-      { name: 'Laravel', percent: 80, image: './../../public/picture/technical/laravelIcone.png' }
+      { name: 'Laravel', percent: 80, image: '/picture/technical/laravelIcone.png' }
     ]
   },
   {
@@ -83,7 +83,7 @@ const techStack = ref([
     icon: '🗄️',
     color: '#336791',
     skills: [
-      { name: 'Postgresql', percent: 75, image: './../../public/picture/technical/PostgresqlIcone.png' }
+      { name: 'Postgresql', percent: 75, image: '/picture/technical/PostgresqlIcone.png' }
     ]
   }
 ]);

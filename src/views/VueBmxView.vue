@@ -13,8 +13,8 @@ const techStack = ref([
         icon: '🎨',
         color: '#4FC08D',
         skills: [
-            { name: 'Vue.js', percent: 90, image: './../../public/picture/technical/vueIcone.png' },
-            { name: 'Pinia', percent: 85, image: './../../public/picture/technical/Pinialogo.png' }
+            { name: 'Vue.js', percent: 90, image: '/picture/technical/vueIcone.png' },
+            { name: 'Pinia', percent: 85, image: '/picture/technical/Pinialogo.png' }
         ]
     },
     {
@@ -22,8 +22,8 @@ const techStack = ref([
         icon: '⚙️',
         color: '#512BD4',
         skills: [
-            { name: 'ASP.NET Core', percent: 80, image: './../../public/picture/technical/ASPIcone.png' },
-            { name: 'Entity Framework', percent: 75, image: './../../public/picture/technical/EntityFrameworkCore.png' }
+            { name: 'ASP.NET Core', percent: 80, image: '/picture/technical/ASPIcone.png' },
+            { name: 'Entity Framework', percent: 75, image: '/picture/technical/EntityFrameworkCore.png' }
         ]
     },
     {
@@ -31,7 +31,7 @@ const techStack = ref([
         icon: '🗄️',
         color: '#336791',
         skills: [
-            { name: 'PostgreSQL', percent: 75, image: './../../public/picture/technical/PostgresqlIcone.png' }
+            { name: 'PostgreSQL', percent: 75, image: '/picture/technical/PostgresqlIcone.png' }
         ]
     }
 ]);

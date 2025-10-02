@@ -16,7 +16,7 @@ function changeLanguage(lang) {
 
 // Fonction pour ouvrir le CV
 function ouvrirPDF1() {
-  const cvPath = "./../../public/Cv.pdf"; // Chemin vers ton CV
+  const cvPath = "/Cv.pdf"; // Chemin vers ton CV
   window.open(cvPath, "_blank"); // Ouvre le CV dans un nouvel onglet
 }
 </script>

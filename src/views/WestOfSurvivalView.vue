@@ -16,12 +16,12 @@ const techStack = ref([
       {
         name: "C#",
         percent: 95,
-        image: "./../../public/picture/technical/CShapeIcone.png",
+        image: "/picture/technical/CShapeIcone.png",
       },
       {
         name: "Monogame",
         percent: 85,
-        image: "./../../public/picture/technical/Monogame.png",
+        image: "/picture/technical/Monogame.png",
       },
     ],
   },

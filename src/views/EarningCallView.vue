@@ -13,7 +13,7 @@ const technologies = ref([
     level: 85,
     icon: "🅰️",
     color: "#DD0031",
-    image: "./../../public/picture/technical/angularIcone.png",
+    image: "/picture/technical/angularIcone.png",
     description: "Framework TypeScript pour interfaces dynamiques",
   },
   {

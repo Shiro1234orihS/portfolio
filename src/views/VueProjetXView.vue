@@ -12,8 +12,8 @@ const techStack = ref([
         icon: '🎨',
         color: '#4FC08D',
         skills: [
-            { name: 'Vue.js', percent: 90, image: './../../public/picture/technical/vueIcone.png' },
-            { name: 'Pinia', percent: 85, image: './../../public/picture/technical/Pinialogo.png' }
+            { name: 'Vue.js', percent: 90, image: '/picture/technical/vueIcone.png' },
+            { name: 'Pinia', percent: 85, image: '/picture/technical/Pinialogo.png' }
         ]
     },
     {
@@ -21,8 +21,8 @@ const techStack = ref([
         icon: '⚙️',
         color: '#512BD4',
         skills: [
-            { name: 'Node.js', percent: 50, image: './../../public/picture/technical/nodeJsIncone.png' },
-            { name: 'Express', percent: 50, image: './../../public/picture/technical/ExpressIcone.png' }
+            { name: 'Node.js', percent: 50, image: '/picture/technical/nodeJsIncone.png' },
+            { name: 'Express', percent: 50, image: '/picture/technical/ExpressIcone.png' }
         ]
     },
     {
@@ -30,7 +30,7 @@ const techStack = ref([
         icon: '🗄️',
         color: '#336791',
         skills: [
-            { name: 'MySQL', percent: 75, image: './../../public/picture/technical/MySQLIcone.png' }
+            { name: 'MySQL', percent: 75, image: '/picture/technical/MySQLIcone.png' }
         ]
     }
 ]);
