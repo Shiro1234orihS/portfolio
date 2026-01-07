@@ -3,208 +3,204 @@
 </script>
 
 <template>
-  <div class="main-content">
-    <div class="experience-section">
-      <!-- En-tête principal -->
-      <header class="main-header">
-        <h1 class="section-title">Expérience Professionnelle</h1>
-        <p class="subtitle">Découvrez mes différents loisir</p>
-      </header>
+  <div class="experience-section">
+    <!-- En-tête principal -->
+    <header class="main-header">
+      <h1 class="section-title">Expérience Professionnelle</h1>
+      <p class="subtitle">Découvrez mes différents loisir</p>
+    </header>
 
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
 
-        <div class="experience-item" data-year="2025">
-          <div class="timeline-marker">
-            <div class="marker-dot current"></div>
-            <div class="marker-pulse"></div>
-            <div class="year-badge">2025</div>
-          </div>
-          <div class="experience-card">
-            <div class="card-header">
-              <div class="company-logo">
-                <img
-                  src="./../../public/picture/experiancePro/ParkerMeggitt.png"
-                  alt="Logo ParkerMeggit"
-                  class="logo-image"
-                />
-              </div>
-              <div class="card-content">
-                <h2 class="position-title">
-                  Stage de troisiéme Année - BUT Informatique
-                </h2>
-                <div class="company-name">Parker Meggitt</div>
-                <div class="experience-meta">
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>14 semaines</span>
-                  </div>
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>Développeur full stack</span>
-                  </div>
+      <div class="experience-item" data-year="2025">
+        <div class="timeline-marker">
+          <div class="marker-dot current"></div>
+          <div class="marker-pulse"></div>
+          <div class="year-badge">2025</div>
+        </div>
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-logo">
+              <img
+                src="./../../public/picture/experiancePro/ParkerMeggitt.png"
+                alt="Logo ParkerMeggit"
+                class="logo-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="position-title">Stage de troisiéme Année - BUT Informatique</h2>
+              <div class="company-name">Parker Meggitt</div>
+              <div class="experience-meta">
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>14 semaines</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Développeur full stack</span>
                 </div>
               </div>
             </div>
-            <div class="card-body">
-              <div class="mission-section">
-                <h4 class="mission-title">Missions principales</h4>
-                <p class="mission-description">
-                  Création de processus de vérification des bases de données à l'aide de
-                  Power Automate, optimisation des workflows et amélioration des outils
-                  internes.
-                </p>
-              </div>
-              <div class="status-badge completed-work">
-                <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>Terminé</span>
-              </div>
+          </div>
+          <div class="card-body">
+            <div class="mission-section">
+              <h4 class="mission-title">Missions principales</h4>
+              <p class="mission-description">
+                Création de processus de vérification des bases de données à l'aide de
+                Power Automate, optimisation des workflows et amélioration des outils
+                internes.
+              </p>
+            </div>
+            <div class="status-badge completed-work">
+              <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Terminé</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="experience-item" data-year="2024">
-          <div class="timeline-marker">
-            <div class="marker-dot completed"></div>
-            <div class="year-badge">2024</div>
-          </div>
-          <div class="experience-card">
-            <div class="card-header">
-              <div class="company-logo">
-                <img
-                  src="./../../public/picture/experiancePro/ATMB.png"
-                  alt="Logo Autoroutes et Tunnel du Mont Blanc (ATMB)"
-                  class="logo-image"
-                />
-              </div>
-              <div class="card-content">
-                <h2 class="position-title">Stage de Deuxième Année - BUT Informatique</h2>
-                <div class="company-name">Autoroutes et Tunnel du Mont Blanc (ATMB)</div>
-                <div class="experience-meta">
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>12 semaines</span>
-                  </div>
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>Chargé de Qualité Système d'Information</span>
-                  </div>
+      <div class="experience-item" data-year="2024">
+        <div class="timeline-marker">
+          <div class="marker-dot completed"></div>
+          <div class="year-badge">2024</div>
+        </div>
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-logo">
+              <img
+                src="./../../public/picture/experiancePro/ATMB.png"
+                alt="Logo Autoroutes et Tunnel du Mont Blanc (ATMB)"
+                class="logo-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="position-title">Stage de Deuxième Année - BUT Informatique</h2>
+              <div class="company-name">Autoroutes et Tunnel du Mont Blanc (ATMB)</div>
+              <div class="experience-meta">
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>12 semaines</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Chargé de Qualité Système d'Information</span>
                 </div>
               </div>
             </div>
-            <div class="card-body">
-              <div class="mission-section">
-                <h4 class="mission-title">Missions principales</h4>
-                <p class="mission-description">
-                  Création de processus de vérification des bases de données à l'aide de
-                  Power Automate, optimisation des workflows et amélioration des outils
-                  internes.
-                </p>
-              </div>
-              <div class="status-badge completed-work">
-                <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>Terminé</span>
-              </div>
+          </div>
+          <div class="card-body">
+            <div class="mission-section">
+              <h4 class="mission-title">Missions principales</h4>
+              <p class="mission-description">
+                Création de processus de vérification des bases de données à l'aide de
+                Power Automate, optimisation des workflows et amélioration des outils
+                internes.
+              </p>
+            </div>
+            <div class="status-badge completed-work">
+              <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Terminé</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="experience-item" data-year="2023">
-          <div class="timeline-marker">
-            <div class="marker-dot completed"></div>
-            <div class="year-badge">2023</div>
-          </div>
-          <div class="experience-card">
-            <div class="card-header">
-              <div class="company-logo">
-                <img
-                  src="./../../public/picture/experiancePro/Decremps.png"
-                  alt="Logo Decremps BTP"
-                  class="logo-image"
-                />
-              </div>
-              <div class="card-content">
-                <h2 class="position-title">Job d'Été - Aide Maçon</h2>
-                <div class="company-name">Decremps BTP</div>
-                <div class="experience-meta">
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>12 semaines</span>
-                  </div>
-                  <div class="meta-item">
-                    <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fill-rule="evenodd"
-                        d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span>Aide Maçon</span>
-                  </div>
+      <div class="experience-item" data-year="2023">
+        <div class="timeline-marker">
+          <div class="marker-dot completed"></div>
+          <div class="year-badge">2023</div>
+        </div>
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-logo">
+              <img
+                src="./../../public/picture/experiancePro/Decremps.png"
+                alt="Logo Decremps BTP"
+                class="logo-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="position-title">Job d'Été - Aide Maçon</h2>
+              <div class="company-name">Decremps BTP</div>
+              <div class="experience-meta">
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>12 semaines</span>
+                </div>
+                <div class="meta-item">
+                  <svg class="meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h2zm4-3a1 1 0 00-1 1v1h2V4a1 1 0 00-1-1zM4 9a1 1 0 000 2v5a1 1 0 001 1h10a1 1 0 001-1v-5a1 1 0 100-2H4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Aide Maçon</span>
                 </div>
               </div>
             </div>
-            <div class="card-body">
-              <div class="mission-section">
-                <h4 class="mission-title">Missions principales</h4>
-                <p class="mission-description">
-                  Assistance dans les travaux de maçonnerie, préparation des chantiers,
-                  manipulation des matériaux de construction et respect des normes de
-                  sécurité.
-                </p>
-              </div>
-              <div class="status-badge completed-work">
-                <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>Terminé</span>
-              </div>
+          </div>
+          <div class="card-body">
+            <div class="mission-section">
+              <h4 class="mission-title">Missions principales</h4>
+              <p class="mission-description">
+                Assistance dans les travaux de maçonnerie, préparation des chantiers,
+                manipulation des matériaux de construction et respect des normes de
+                sécurité.
+              </p>
+            </div>
+            <div class="status-badge completed-work">
+              <svg class="badge-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Terminé</span>
             </div>
           </div>
         </div>
@@ -214,10 +210,6 @@
 </template>
 
 <style scoped>
-.main-content {
-  padding: 20px;
-}
-
 .experience-section {
   position: relative;
 }
@@ -615,10 +607,6 @@
 }
 
 @media (max-width: 480px) {
-  .main-content {
-    padding: 15px;
-  }
-
   .timeline-line {
     left: 20px;
   }
