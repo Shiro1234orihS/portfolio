@@ -1,6 +1,6 @@
 <script setup>
-import MenuProjet from '@/components/MenuProjet.vue'
-import { ref, onMounted, nextTick } from 'vue';
+import MenuProjet from "@/components/MenuProjet.vue";
+import { ref, onMounted, nextTick } from "vue";
 
 const showContent = ref(false);
 const isLoaded = ref(false);
@@ -8,92 +8,96 @@ const skillsAnimated = ref(false);
 
 // Données du projet Laravel
 const projectStats = ref([
-  { labelKey: 'laravel_stats_users', value: '1000+', icon: '👥' },
-  { labelKey: 'laravel_stats_motorcycles', value: '500+', icon: '🏍️' },
-  { labelKey: 'laravel_stats_equipment', value: '2000+', icon: '🛠️' },
-  { labelKey: 'laravel_stats_performance', value: '95%', icon: '⚡' }
+  { labelKey: "laravel_stats_users", value: "1000+", icon: "👥" },
+  { labelKey: "laravel_stats_motorcycles", value: "500+", icon: "🏍️" },
+  { labelKey: "laravel_stats_equipment", value: "2000+", icon: "🛠️" },
+  { labelKey: "laravel_stats_performance", value: "95%", icon: "⚡" },
 ]);
 
 const features = ref([
   {
-    icon: '👥',
-    titleKey: 'laravel_feature_users_title',
-    descriptionKey: 'laravel_feature_users_description',
-    color: '#3B82F6'
+    icon: "👥",
+    titleKey: "laravel_feature_users_title",
+    descriptionKey: "laravel_feature_users_description",
+    color: "#3B82F6",
   },
   {
-    icon: '🏍️',
-    titleKey: 'laravel_feature_catalog_title',
-    descriptionKey: 'laravel_feature_catalog_description',
-    color: '#EF4444'
+    icon: "🏍️",
+    titleKey: "laravel_feature_catalog_title",
+    descriptionKey: "laravel_feature_catalog_description",
+    color: "#EF4444",
   },
   {
-    icon: '🛠️',
-    titleKey: 'laravel_feature_equipment_title',
-    descriptionKey: 'laravel_feature_equipment_description',
-    color: '#10B981'
+    icon: "🛠️",
+    titleKey: "laravel_feature_equipment_title",
+    descriptionKey: "laravel_feature_equipment_description",
+    color: "#10B981",
   },
   {
-    icon: '👨‍💼',
-    titleKey: 'laravel_feature_admin_title',
-    descriptionKey: 'laravel_feature_admin_description',
-    color: '#8B5CF6'
+    icon: "👨‍💼",
+    titleKey: "laravel_feature_admin_title",
+    descriptionKey: "laravel_feature_admin_description",
+    color: "#8B5CF6",
   },
   {
-    icon: '📊',
-    titleKey: 'laravel_feature_powerbi_title',
-    descriptionKey: 'laravel_feature_powerbi_description',
-    color: '#F59E0B'
-  }
+    icon: "📊",
+    titleKey: "laravel_feature_powerbi_title",
+    descriptionKey: "laravel_feature_powerbi_description",
+    color: "#F59E0B",
+  },
 ]);
 
 const challenges = ref([
   {
-    titleKey: 'laravel_challenge_performance_title',
-    icon: '⚡',
-    color: '#EF4444',
-    descriptionKey: 'laravel_challenge_performance_description'
+    titleKey: "laravel_challenge_performance_title",
+    icon: "⚡",
+    color: "#EF4444",
+    descriptionKey: "laravel_challenge_performance_description",
   },
   {
-    titleKey: 'laravel_challenge_powerbi_title',
-    icon: '📊',
-    color: '#F59E0B',
-    descriptionKey: 'laravel_challenge_powerbi_description'
-  }
+    titleKey: "laravel_challenge_powerbi_title",
+    icon: "📊",
+    color: "#F59E0B",
+    descriptionKey: "laravel_challenge_powerbi_description",
+  },
 ]);
 const techStack = ref([
   {
-    category: 'Frontend',
-    icon: '🎨',
-    color: '#4FC08D',
+    category: "Frontend",
+    icon: "🎨",
+    color: "#4FC08D",
     skills: [
-      { name: 'Laravel', percent: 80, image: '/picture/technical/laravelIcone.png' }
-    ]
+      { name: "Laravel", percent: 80, image: "/picture/technical/laravelIcone.png" },
+    ],
   },
   {
-    category: 'Backend et API',
-    icon: '⚙️',
-    color: '#512BD4',
+    category: "Backend et API",
+    icon: "⚙️",
+    color: "#512BD4",
     skills: [
-      { name: 'Laravel', percent: 80, image: '/picture/technical/laravelIcone.png' }
-    ]
+      { name: "Laravel", percent: 80, image: "/picture/technical/laravelIcone.png" },
+    ],
   },
   {
-    category: 'Base de données',
-    icon: '🗄️',
-    color: '#336791',
+    category: "Base de données",
+    icon: "🗄️",
+    color: "#336791",
     skills: [
-      { name: 'Postgresql', percent: 75, image: '/picture/technical/PostgresqlIcone.png' }
-    ]
-  }
+      {
+        name: "Postgresql",
+        percent: 75,
+        image: "/picture/technical/PostgresqlIcone.png",
+      },
+    ],
+  },
 ]);
 
 function toggleContent() {
   showContent.value = !showContent.value;
   if (showContent.value) {
     nextTick(() => {
-      const detailsSection = document.querySelector('.details-section');
-      detailsSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const detailsSection = document.querySelector(".details-section");
+      detailsSection?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 }
@@ -101,11 +105,11 @@ function toggleContent() {
 const animateSkills = () => {
   if (skillsAnimated.value) return;
 
-  const circles = document.querySelectorAll('.progress-circle');
+  const circles = document.querySelectorAll(".progress-circle");
   circles.forEach((circle, index) => {
     setTimeout(() => {
       const percent = circle.dataset.percent;
-      const progress = circle.querySelector('.progress-ring');
+      const progress = circle.querySelector(".progress-ring");
       if (progress) {
         const radius = progress.r.baseVal.value;
         const circumference = 2 * Math.PI * radius;
@@ -113,7 +117,7 @@ const animateSkills = () => {
 
         progress.style.strokeDasharray = circumference;
         progress.style.strokeDashoffset = circumference;
-        progress.style.transition = 'stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        progress.style.transition = "stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1)";
 
         requestAnimationFrame(() => {
           progress.style.strokeDashoffset = offset;
@@ -128,12 +132,12 @@ onMounted(() => {
   // Observer pour les animations d'apparition
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
+          entry.target.classList.add("animate-in");
 
           // Animer les compétences quand elles apparaissent
-          if (entry.target.classList.contains('skills-section')) {
+          if (entry.target.classList.contains("skills-section")) {
             animateSkills();
           }
         }
@@ -143,7 +147,7 @@ onMounted(() => {
   );
 
   // Observer les éléments à animer
-  document.querySelectorAll('.fade-in').forEach(el => {
+  document.querySelectorAll(".fade-in").forEach((el) => {
     observer.observe(el);
   });
 
@@ -158,7 +162,7 @@ onMounted(() => {
     <MenuProjet />
 
     <!-- Hero Section -->
-    <div class="hero-section" :class="{ 'loaded': isLoaded }">
+    <div class="hero-section" :class="{ loaded: isLoaded }">
       <div class="hero-background">
         <div class="bmw-pattern"></div>
         <div class="hero-overlay"></div>
@@ -167,25 +171,34 @@ onMounted(() => {
       <div class="hero-content">
         <div class="project-badge">
           <span class="badge-icon">🏍️</span>
-          <span>{{ $t('laravel_tag_projet') }}</span>
+          <span>{{ $t("laravel_tag_projet") }}</span>
         </div>
 
-        <h1 class="hero-title">{{ $t('laravel_project_title') }}</h1>
+        <h1 class="hero-title">{{ $t("laravel_project_title") }}</h1>
 
         <div class="hero-subtitle">
-          {{ $t('laravel_projet_tag_desc') }}
+          {{ $t("laravel_projet_tag_desc") }}
         </div>
 
         <div class="hero-cta">
-          <a href="http://ricardonunesemilio.fr:8008/" target="_blank" rel="noopener noreferrer" class="demo-button">
+          <a
+            href="https://bmw.ricardonunesemilio.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="demo-button"
+          >
             <span class="button-icon">🚀</span>
-            <span>{{ $t('languages_view_online') }}</span>
+            <span>{{ $t("languages_view_online") }}</span>
           </a>
         </div>
 
         <div class="stats-grid">
-          <div v-for="(stat, index) in projectStats" :key="index" class="stat-card"
-            :style="{ '--delay': `${index * 0.1}s` }">
+          <div
+            v-for="(stat, index) in projectStats"
+            :key="index"
+            class="stat-card"
+            :style="{ '--delay': `${index * 0.1}s` }"
+          >
             <div class="stat-icon">{{ stat.icon }}</div>
             <div class="stat-value">{{ stat.value }}</div>
             <div class="stat-label">{{ $t(stat.labelKey) }}</div>
@@ -231,18 +244,22 @@ onMounted(() => {
       <section class="overview-section fade-in">
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('laravel_project_presentation') }}</h2>
+            <h2 class="card-title">{{ $t("laravel_project_presentation") }}</h2>
             <div class="card-icon">🎯</div>
           </div>
 
           <div class="card-content">
-            <p class="project-description">{{ $t('laravel_project_description') }}</p>
+            <p class="project-description">{{ $t("laravel_project_description") }}</p>
 
             <div class="features-preview">
-              <h3 class="features-title">{{ $t('laravel_feature_title') }}</h3>
+              <h3 class="features-title">{{ $t("laravel_feature_title") }}</h3>
               <div class="features-grid">
-                <div v-for="(feature, index) in features" :key="index" class="feature-card"
-                  :style="{ '--feature-color': feature.color }">
+                <div
+                  v-for="(feature, index) in features"
+                  :key="index"
+                  class="feature-card"
+                  :style="{ '--feature-color': feature.color }"
+                >
                   <div class="feature-icon">{{ feature.icon }}</div>
                   <h3 class="feature-title">{{ $t(feature.titleKey) }}</h3>
                   <p class="feature-description">{{ $t(feature.descriptionKey) }}</p>
@@ -252,10 +269,15 @@ onMounted(() => {
 
             <button @click="toggleContent" class="toggle-button">
               <span class="button-text">
-                {{ showContent ? $t('hide_details') : $t('toggle_details') }}
+                {{ showContent ? $t("hide_details") : $t("toggle_details") }}
               </span>
-              <div class="button-icon" :class="{ 'rotated': showContent }">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="button-icon" :class="{ rotated: showContent }">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="m6 9 6 6 6-6" />
                 </svg>
               </div>
@@ -271,7 +293,7 @@ onMounted(() => {
             <!-- Fonctionnalités détaillées -->
             <div class="detail-card">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('laravel_project_features') }}</h3>
+                <h3 class="detail-title">{{ $t("laravel_project_features") }}</h3>
                 <div class="detail-icon">🚀</div>
               </div>
 
@@ -302,17 +324,23 @@ onMounted(() => {
             <!-- Défis et Solutions -->
             <div class="detail-card">
               <div class="detail-header">
-                <h3 class="detail-title">{{ $t('laravel_challenges') }}</h3>
+                <h3 class="detail-title">{{ $t("laravel_challenges") }}</h3>
                 <div class="detail-icon">⚡</div>
               </div>
 
               <div class="challenges-list">
-                <div v-for="(challenge, index) in challenges" :key="index" class="challenge-item"
-                  :style="{ '--challenge-color': challenge.color }">
+                <div
+                  v-for="(challenge, index) in challenges"
+                  :key="index"
+                  class="challenge-item"
+                  :style="{ '--challenge-color': challenge.color }"
+                >
                   <div class="challenge-icon">{{ challenge.icon }}</div>
                   <div class="challenge-content">
                     <h4 class="challenge-title">{{ $t(challenge.titleKey) }}</h4>
-                    <p class="challenge-description">{{ $t(challenge.descriptionKey) }}</p>
+                    <p class="challenge-description">
+                      {{ $t(challenge.descriptionKey) }}
+                    </p>
                     <template v-if="index === 0">
                       <p v-html="$t('laravel_challenge_performance')"></p>
                     </template>
@@ -330,22 +358,31 @@ onMounted(() => {
       <!-- Technical Skills -->
       <section class="skills-section fade-in">
         <div class="section-header">
-          <h2 class="section-title">{{ $t('vue_technical_skills') }}</h2>
-          <p class="section-subtitle">{{ $t('vue_technical_skills_subtitle') }}</p>
+          <h2 class="section-title">{{ $t("vue_technical_skills") }}</h2>
+          <p class="section-subtitle">{{ $t("vue_technical_skills_subtitle") }}</p>
         </div>
 
         <div class="tech-stack-grid">
-          <div v-for="(category, catIndex) in techStack" :key="catIndex" class="tech-category"
-            :style="{ '--category-color': category.color, '--delay': `${catIndex * 0.2}s` }">
-
+          <div
+            v-for="(category, catIndex) in techStack"
+            :key="catIndex"
+            class="tech-category"
+            :style="{
+              '--category-color': category.color,
+              '--delay': `${catIndex * 0.2}s`,
+            }"
+          >
             <div class="category-header">
               <div class="category-icon">{{ category.icon }}</div>
               <h3 class="category-title">{{ category.category }}</h3>
             </div>
 
             <div class="skills-grid">
-              <div v-for="(skill, skillIndex) in category.skills" :key="skillIndex" class="skill-card">
-
+              <div
+                v-for="(skill, skillIndex) in category.skills"
+                :key="skillIndex"
+                class="skill-card"
+              >
                 <div class="skill-visual">
                   <div class="progress-circle" :data-percent="skill.percent">
                     <svg viewBox="0 0 100 100">
@@ -363,8 +400,13 @@ onMounted(() => {
                   <h4 class="skill-name">{{ skill.name }}</h4>
                   <div class="skill-level">
                     <div class="level-bar">
-                      <div class="level-fill" :style="{ width: skill.percent + '%', backgroundColor: category.color }">
-                      </div>
+                      <div
+                        class="level-fill"
+                        :style="{
+                          width: skill.percent + '%',
+                          backgroundColor: category.color,
+                        }"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -378,7 +420,7 @@ onMounted(() => {
       <section class="demo-section fade-in">
         <div class="content-card highlight-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('laravel_available_link') }}</h2>
+            <h2 class="card-title">{{ $t("laravel_available_link") }}</h2>
             <div class="card-icon">🌐</div>
           </div>
 
@@ -386,21 +428,39 @@ onMounted(() => {
             <div class="demo-showcase">
               <div class="demo-info">
                 <div class="demo-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.71" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.71"
+                    />
                   </svg>
                 </div>
                 <div class="demo-text">
-                  <h3>{{ $t('laravel_demo_online_title') }}</h3>
-                  <p>{{ $t('laravel_demo_online_description') }}</p>
+                  <h3>{{ $t("laravel_demo_online_title") }}</h3>
+                  <p>{{ $t("laravel_demo_online_description") }}</p>
                 </div>
               </div>
 
-              <a href="http://ricardonunesemilio.fr:8008/" target="_blank" rel="noopener noreferrer"
-                class="demo-link-button">
+              <a
+                href="https://bmw.ricardonunesemilio.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="demo-link-button"
+              >
                 <span class="button-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </span>
@@ -415,7 +475,7 @@ onMounted(() => {
       <section class="conclusion-section fade-in">
         <div class="content-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('laravel_project_conclusion') }}</h2>
+            <h2 class="card-title">{{ $t("laravel_project_conclusion") }}</h2>
             <div class="card-icon">🎉</div>
           </div>
 
@@ -424,7 +484,7 @@ onMounted(() => {
               <div class="conclusion-item">
                 <div class="conclusion-icon">🔧</div>
                 <div class="conclusion-content">
-                  <h4>{{ $t('laravel_conclusion_flexibility_title') }}</h4>
+                  <h4>{{ $t("laravel_conclusion_flexibility_title") }}</h4>
                   <p v-html="$t('laravel_conclusion_flexibility')"></p>
                 </div>
               </div>
@@ -432,7 +492,7 @@ onMounted(() => {
               <div class="conclusion-item">
                 <div class="conclusion-icon">👥</div>
                 <div class="conclusion-content">
-                  <h4>{{ $t('laravel_conclusion_user_experience_title') }}</h4>
+                  <h4>{{ $t("laravel_conclusion_user_experience_title") }}</h4>
                   <p v-html="$t('laravel_conclusion_user_experience')"></p>
                 </div>
               </div>
@@ -440,7 +500,7 @@ onMounted(() => {
               <div class="conclusion-item">
                 <div class="conclusion-icon">📚</div>
                 <div class="conclusion-content">
-                  <h4>{{ $t('laravel_conclusion_learnings_title') }}</h4>
+                  <h4>{{ $t("laravel_conclusion_learnings_title") }}</h4>
                   <p v-html="$t('laravel_conclusion_learnings')"></p>
                 </div>
               </div>
@@ -452,7 +512,7 @@ onMounted(() => {
       <section class="source-section fade-in">
         <div class="content-card highlight-card">
           <div class="card-header">
-            <h2 class="card-title">{{ $t('source_code') }}</h2>
+            <h2 class="card-title">{{ $t("source_code") }}</h2>
             <div class="card-icon">💻</div>
           </div>
 
@@ -462,22 +522,32 @@ onMounted(() => {
                 <div class="github-icon">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
                   </svg>
                 </div>
                 <div class="github-text">
-                  <h4>{{ $t('vue_git_repo') }}</h4>
-                  <p>{{ $t('vue_git_info') }}</p>
+                  <h4>{{ $t("vue_git_repo") }}</h4>
+                  <p>{{ $t("vue_git_info") }}</p>
                 </div>
               </div>
 
-              <a href="https://github.com/phtuongvy/virtualisation_X" target="_blank" class="github-button">
+              <a
+                href="https://github.com/phtuongvy/virtualisation_X"
+                target="_blank"
+                class="github-button"
+              >
                 <span class="button-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </span>
-                <span>{{ $t('vue_view_code') }}</span>
+                <span>{{ $t("vue_view_code") }}</span>
               </a>
             </div>
           </div>
@@ -490,9 +560,9 @@ onMounted(() => {
 <style scoped>
 /* Variables CSS */
 :root {
-  --laravel-primary: #FF2D20;
-  --laravel-secondary: #E53E3E;
-  --bmw-blue: #0066CC;
+  --laravel-primary: #ff2d20;
+  --laravel-secondary: #e53e3e;
+  --bmw-blue: #0066cc;
   --bmw-gray: #666666;
   --background: #ffffff;
   --surface: #f8fafc;
@@ -507,8 +577,8 @@ onMounted(() => {
 }
 
 .dark-mode {
-  --laravel-primary: #FF4F3D;
-  --laravel-secondary: #FF6B5A;
+  --laravel-primary: #ff4f3d;
+  --laravel-secondary: #ff6b5a;
   --background: #0f172a;
   --surface: #1e293b;
   --text-primary: #f1f5f9;
@@ -554,14 +624,21 @@ onMounted(() => {
 .hero-background {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--laravel-primary) 0%, var(--laravel-secondary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--laravel-primary) 0%,
+    var(--laravel-secondary) 100%
+  );
 }
 
 .bmw-pattern {
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
     radial-gradient(circle at 75% 75%, rgba(0, 102, 204, 0.1) 0%, transparent 50%);
   background-size: 100px 100px;
 }
@@ -700,7 +777,6 @@ onMounted(() => {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -824,7 +900,6 @@ onMounted(() => {
 }
 
 @keyframes contentPulse {
-
   0%,
   100% {
     opacity: 0.6;
@@ -844,7 +919,6 @@ onMounted(() => {
 }
 
 @keyframes motoRide {
-
   0%,
   100% {
     transform: translateX(0px) rotate(0deg);
@@ -1085,23 +1159,23 @@ onMounted(() => {
 }
 
 .feature-bullet.users {
-  background: #3B82F6;
+  background: #3b82f6;
 }
 
 .feature-bullet.motos {
-  background: #EF4444;
+  background: #ef4444;
 }
 
 .feature-bullet.equipment {
-  background: #10B981;
+  background: #10b981;
 }
 
 .feature-bullet.admin {
-  background: #8B5CF6;
+  background: #8b5cf6;
 }
 
 .feature-bullet.powerbi {
-  background: #F59E0B;
+  background: #f59e0b;
 }
 
 .challenges-list {

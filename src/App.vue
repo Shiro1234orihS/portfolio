@@ -1,7 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { onMounted } from "vue";
+import { useEmailStore } from "./stores/eMailStrores";
 const { locale } = useI18n();
+
+const emailStore = useEmailStore();
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
@@ -19,6 +23,18 @@ function ouvrirPDF1() {
   const cvPath = "/Cv.pdf"; // Chemin vers ton CV
   window.open(cvPath, "_blank"); // Ouvre le CV dans un nouvel onglet
 }
+
+onMounted(() => {
+  emailStore
+    .sendEmail(
+      "Visite du portfolio",
+      "Un utilisateur est sur le portfolio",
+      "ricardonunesemilio@gmail.com"
+    )
+    .catch((error) => {
+      console.error("Erreur lors de l'envoi:", error);
+    });
+});
 </script>
 
 <template>

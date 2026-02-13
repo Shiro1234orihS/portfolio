@@ -1,276 +1,276 @@
 <script setup>
-import MenuProjet from "@/components/MenuProjet.vue";
-import * as THREE from "https://esm.sh/three@0.129.0";
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
-import { onMounted, ref } from "vue";
+// import MenuProjet from "@/components/MenuProjet.vue";
+// import * as THREE from "https://esm.sh/three@0.129.0";
+// import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+// import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
+// import { onMounted, ref } from "vue";
 
-const isLoaded = ref(false);
-const is3DLoaded = ref(false);
-const currentSection = ref("3d");
+// const isLoaded = ref(false);
+// const is3DLoaded = ref(false);
+// const currentSection = ref("3d");
 
-// Données des projets
-const projectCategories = ref([
-  {
-    id: "3d",
-    title: "Modélisation 3D",
-    icon: "🎮",
-    description: "Expérimentation avec Three.js et modèles GLTF",
-    color: "#8B5CF6",
-  },
-  {
-    id: "css",
-    title: "Animations CSS",
-    icon: "🎨",
-    description: "Logos animés avec SVG et CSS avancé",
-    color: "#06B6D4",
-  },
-]);
+// // Données des projets
+// const projectCategories = ref([
+//   {
+//     id: "3d",
+//     title: "Modélisation 3D",
+//     icon: "🎮",
+//     description: "Expérimentation avec Three.js et modèles GLTF",
+//     color: "#8B5CF6",
+//   },
+//   {
+//     id: "css",
+//     title: "Animations CSS",
+//     icon: "🎨",
+//     description: "Logos animés avec SVG et CSS avancé",
+//     color: "#06B6D4",
+//   },
+// ]);
 
-const socialLogos = ref([
-  {
-    name: "GitHub",
-    color: "#2ff63c",
-    category: "Development",
-    description: "Plateforme de développement collaboratif",
-  },
-  {
-    name: "LinkedIn",
-    color: "#2AF",
-    category: "Professional",
-    description: "Réseau professionnel et opportunités",
-  },
-  {
-    name: "Instagram",
-    color: "#E1306C",
-    category: "Social",
-    description: "Partage de contenu visuel",
-  },
-]);
+// const socialLogos = ref([
+//   {
+//     name: "GitHub",
+//     color: "#2ff63c",
+//     category: "Development",
+//     description: "Plateforme de développement collaboratif",
+//   },
+//   {
+//     name: "LinkedIn",
+//     color: "#2AF",
+//     category: "Professional",
+//     description: "Réseau professionnel et opportunités",
+//   },
+//   {
+//     name: "Instagram",
+//     color: "#E1306C",
+//     category: "Social",
+//     description: "Partage de contenu visuel",
+//   },
+// ]);
 
-const techniques = ref([
-  { name: "Three.js", icon: "🌐", description: "Rendu 3D dans le navigateur" },
-  { name: "GLTF Loading", icon: "📦", description: "Chargement de modèles 3D" },
-  { name: "SVG Animation", icon: "🎨", description: "Animations vectorielles fluides" },
-  { name: "CSS Keyframes", icon: "⚡", description: "Animations CSS performantes" },
-]);
+// const techniques = ref([
+//   { name: "Three.js", icon: "🌐", description: "Rendu 3D dans le navigateur" },
+//   { name: "GLTF Loading", icon: "📦", description: "Chargement de modèles 3D" },
+//   { name: "SVG Animation", icon: "🎨", description: "Animations vectorielles fluides" },
+//   { name: "CSS Keyframes", icon: "⚡", description: "Animations CSS performantes" },
+// ]);
 
-let scene, camera, renderer, object, controls;
+// let scene, camera, renderer, object, controls;
 
-onMounted(() => {
-  onMounted(() => {
-    // Animation d'apparition progressive
-    setTimeout(() => {
-      isLoaded.value = true;
-    }, 300);
+// onMounted(() => {
+//   onMounted(() => {
+//     // Animation d'apparition progressive
+//     setTimeout(() => {
+//       isLoaded.value = true;
+//     }, 300);
 
-    // Initialisation de la scène 3D
-    init3DScene();
+//     // Initialisation de la scène 3D
+//     init3DScene();
 
-    // Initialisation des cercles de progression
-    initProgressCircles();
+//     // Initialisation des cercles de progression
+//     initProgressCircles();
 
-    // 🔥 AJOUTEZ CETTE PARTIE :
-    // Observer pour les animations d'apparition
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+//     // 🔥 AJOUTEZ CETTE PARTIE :
+//     // Observer pour les animations d'apparition
+//     const observer = new IntersectionObserver(
+//       (entries) => {
+//         entries.forEach((entry) => {
+//           if (entry.isIntersecting) {
+//             entry.target.classList.add("animate-in");
+//           }
+//         });
+//       },
+//       { threshold: 0.1 }
+//     );
 
-    // Observer les éléments à animer
-    document.querySelectorAll(".fade-in").forEach((el) => {
-      observer.observe(el);
-    });
-  });
-});
+//     // Observer les éléments à animer
+//     document.querySelectorAll(".fade-in").forEach((el) => {
+//       observer.observe(el);
+//     });
+//   });
+// });
 
-const init3DScene = () => {
-  // Création de la scène principale
-  scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x0a0a0a);
+// const init3DScene = () => {
+//   // Création de la scène principale
+//   scene = new THREE.Scene();
+//   scene.background = new THREE.Color(0x0a0a0a);
 
-  // Configuration de la caméra
-  const container = document.getElementById("container3D");
-  if (!container) return;
+//   // Configuration de la caméra
+//   const container = document.getElementById("container3D");
+//   if (!container) return;
 
-  camera = new THREE.PerspectiveCamera(
-    75,
-    container.clientWidth / container.clientHeight,
-    0.1,
-    1000
-  );
-  camera.position.set(0, 2, 5);
+//   camera = new THREE.PerspectiveCamera(
+//     75,
+//     container.clientWidth / container.clientHeight,
+//     0.1,
+//     1000
+//   );
+//   camera.position.set(0, 2, 5);
 
-  // Configuration du renderer
-  renderer = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true,
-    powerPreference: "high-performance",
-  });
-  renderer.setSize(container.clientWidth, container.clientHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  container.appendChild(renderer.domElement);
+//   // Configuration du renderer
+//   renderer = new THREE.WebGLRenderer({
+//     alpha: true,
+//     antialias: true,
+//     powerPreference: "high-performance",
+//   });
+//   renderer.setSize(container.clientWidth, container.clientHeight);
+//   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+//   renderer.shadowMap.enabled = true;
+//   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+//   container.appendChild(renderer.domElement);
 
-  // Chargement du modèle GLTF avec gestion d'erreur améliorée
-  const loader = new GLTFLoader();
-  const loadingProgress = document.getElementById("loading-progress");
+//   // Chargement du modèle GLTF avec gestion d'erreur améliorée
+//   const loader = new GLTFLoader();
+//   const loadingProgress = document.getElementById("loading-progress");
 
-  loader.load(
-    "/picture/MiniProjet/models/scene.gltf",
-    function (gltf) {
-      object = gltf.scene;
-      object.scale.set(0.5, 0.5, 0.5);
-      object.position.y = -1;
+//   loader.load(
+//     "/picture/MiniProjet/models/scene.gltf",
+//     function (gltf) {
+//       object = gltf.scene;
+//       object.scale.set(0.5, 0.5, 0.5);
+//       object.position.y = -1;
 
-      // Activer les ombres pour tous les objets
-      object.traverse((child) => {
-        if (child.isMesh) {
-          child.castShadow = true;
-          child.receiveShadow = true;
-          if (child.material) {
-            child.material.envMapIntensity = 0.8;
-          }
-        }
-      });
+//       // Activer les ombres pour tous les objets
+//       object.traverse((child) => {
+//         if (child.isMesh) {
+//           child.castShadow = true;
+//           child.receiveShadow = true;
+//           if (child.material) {
+//             child.material.envMapIntensity = 0.8;
+//           }
+//         }
+//       });
 
-      scene.add(object);
-      is3DLoaded.value = true;
-      if (loadingProgress) loadingProgress.style.display = "none";
-    },
-    function (xhr) {
-      if (loadingProgress && xhr.lengthComputable) {
-        const percentComplete = (xhr.loaded / xhr.total) * 100;
-        loadingProgress.style.width = percentComplete + "%";
-      }
-    },
-    function (error) {
-      console.error("Erreur de chargement du modèle 3D:", error);
-      if (loadingProgress) {
-        loadingProgress.parentElement.innerHTML =
-          '<p style="color: #ef4444;">Erreur de chargement du modèle 3D</p>';
-      }
-    }
-  );
+//       scene.add(object);
+//       is3DLoaded.value = true;
+//       if (loadingProgress) loadingProgress.style.display = "none";
+//     },
+//     function (xhr) {
+//       if (loadingProgress && xhr.lengthComputable) {
+//         const percentComplete = (xhr.loaded / xhr.total) * 100;
+//         loadingProgress.style.width = percentComplete + "%";
+//       }
+//     },
+//     function (error) {
+//       console.error("Erreur de chargement du modèle 3D:", error);
+//       if (loadingProgress) {
+//         loadingProgress.parentElement.innerHTML =
+//           '<p style="color: #ef4444;">Erreur de chargement du modèle 3D</p>';
+//       }
+//     }
+//   );
 
-  // Système d'éclairage amélioré
-  setupLighting();
+//   // Système d'éclairage amélioré
+//   setupLighting();
 
-  // Configuration des contrôles
-  setupControls();
+//   // Configuration des contrôles
+//   setupControls();
 
-  // Démarrer l'animation
-  animate();
+//   // Démarrer l'animation
+//   animate();
 
-  // Gestion du redimensionnement
-  window.addEventListener("resize", onWindowResize);
-};
+//   // Gestion du redimensionnement
+//   window.addEventListener("resize", onWindowResize);
+// };
 
-const setupLighting = () => {
-  // Lumière ambiante douce
-  const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
-  scene.add(ambientLight);
+// const setupLighting = () => {
+//   // Lumière ambiante douce
+//   const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+//   scene.add(ambientLight);
 
-  // Lumière directionnelle principale
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
-  directionalLight.position.set(10, 10, 5);
-  directionalLight.castShadow = true;
-  directionalLight.shadow.mapSize.width = 2048;
-  directionalLight.shadow.mapSize.height = 2048;
-  directionalLight.shadow.camera.near = 0.5;
-  directionalLight.shadow.camera.far = 500;
-  scene.add(directionalLight);
+//   // Lumière directionnelle principale
+//   const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
+//   directionalLight.position.set(10, 10, 5);
+//   directionalLight.castShadow = true;
+//   directionalLight.shadow.mapSize.width = 2048;
+//   directionalLight.shadow.mapSize.height = 2048;
+//   directionalLight.shadow.camera.near = 0.5;
+//   directionalLight.shadow.camera.far = 500;
+//   scene.add(directionalLight);
 
-  // Lumières d'appoint colorées
-  const lights = [
-    { color: 0x8b5cf6, position: [15, 0, 15], intensity: 0.8 },
-    { color: 0x06b6d4, position: [-15, 0, -15], intensity: 0.8 },
-    { color: 0xf59e0b, position: [0, 15, 0], intensity: 0.6 },
-  ];
+//   // Lumières d'appoint colorées
+//   const lights = [
+//     { color: 0x8b5cf6, position: [15, 0, 15], intensity: 0.8 },
+//     { color: 0x06b6d4, position: [-15, 0, -15], intensity: 0.8 },
+//     { color: 0xf59e0b, position: [0, 15, 0], intensity: 0.6 },
+//   ];
 
-  lights.forEach(({ color, position, intensity }) => {
-    const light = new THREE.PointLight(color, intensity, 100);
-    light.position.set(...position);
-    scene.add(light);
-  });
-};
+//   lights.forEach(({ color, position, intensity }) => {
+//     const light = new THREE.PointLight(color, intensity, 100);
+//     light.position.set(...position);
+//     scene.add(light);
+//   });
+// };
 
-const setupControls = () => {
-  controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.05;
-  controls.enableZoom = true;
-  controls.enablePan = false;
-  controls.maxPolarAngle = Math.PI / 1.5;
-  controls.minDistance = 3;
-  controls.maxDistance = 10;
-  controls.autoRotate = true;
-  controls.autoRotateSpeed = 0.5;
-};
+// const setupControls = () => {
+//   controls = new OrbitControls(camera, renderer.domElement);
+//   controls.enableDamping = true;
+//   controls.dampingFactor = 0.05;
+//   controls.enableZoom = true;
+//   controls.enablePan = false;
+//   controls.maxPolarAngle = Math.PI / 1.5;
+//   controls.minDistance = 3;
+//   controls.maxDistance = 10;
+//   controls.autoRotate = true;
+//   controls.autoRotateSpeed = 0.5;
+// };
 
-const animate = () => {
-  requestAnimationFrame(animate);
+// const animate = () => {
+//   requestAnimationFrame(animate);
 
-  if (controls) {
-    controls.update();
-  }
+//   if (controls) {
+//     controls.update();
+//   }
 
-  if (object) {
-    // Animation subtile de l'objet
-    object.rotation.y += 0.005;
-    object.position.y = Math.sin(Date.now() * 0.001) * 0.1 - 1;
-  }
+//   if (object) {
+//     // Animation subtile de l'objet
+//     object.rotation.y += 0.005;
+//     object.position.y = Math.sin(Date.now() * 0.001) * 0.1 - 1;
+//   }
 
-  if (renderer && scene && camera) {
-    renderer.render(scene, camera);
-  }
-};
+//   if (renderer && scene && camera) {
+//     renderer.render(scene, camera);
+//   }
+// };
 
-const onWindowResize = () => {
-  const container = document.getElementById("container3D");
-  if (!container || !camera || !renderer) return;
+// const onWindowResize = () => {
+//   const container = document.getElementById("container3D");
+//   if (!container || !camera || !renderer) return;
 
-  camera.aspect = container.clientWidth / container.clientHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(container.clientWidth, container.clientHeight);
-};
+//   camera.aspect = container.clientWidth / container.clientHeight;
+//   camera.updateProjectionMatrix();
+//   renderer.setSize(container.clientWidth, container.clientHeight);
+// };
 
-const initProgressCircles = () => {
-  const circles = document.querySelectorAll(".progress-circle");
-  circles.forEach((circle) => {
-    const percent = circle.dataset.percent;
-    const progress = circle.querySelector(".progress");
-    if (progress && progress.r) {
-      const radius = progress.r.baseVal.value;
-      const circumference = 2 * Math.PI * radius;
-      const offset = circumference - (percent / 100) * circumference;
-      progress.style.strokeDashoffset = offset;
-    }
-  });
-};
+// const initProgressCircles = () => {
+//   const circles = document.querySelectorAll(".progress-circle");
+//   circles.forEach((circle) => {
+//     const percent = circle.dataset.percent;
+//     const progress = circle.querySelector(".progress");
+//     if (progress && progress.r) {
+//       const radius = progress.r.baseVal.value;
+//       const circumference = 2 * Math.PI * radius;
+//       const offset = circumference - (percent / 100) * circumference;
+//       progress.style.strokeDashoffset = offset;
+//     }
+//   });
+// };
 
-const switchSection = (sectionId) => {
-  currentSection.value = sectionId;
+// const switchSection = (sectionId) => {
+//   currentSection.value = sectionId;
 
-  // Scroll vers la section correspondante
-  const element = document.getElementById(`section-${sectionId}`);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-};
+//   // Scroll vers la section correspondante
+//   const element = document.getElementById(`section-${sectionId}`);
+//   if (element) {
+//     element.scrollIntoView({ behavior: "smooth", block: "start" });
+//   }
+// };
 
-const toggleAutoRotate = () => {
-  if (controls) {
-    controls.autoRotate = !controls.autoRotate;
-  }
-};
+// const toggleAutoRotate = () => {
+//   if (controls) {
+//     controls.autoRotate = !controls.autoRotate;
+//   }
+// };
 </script>
 
 <template>
